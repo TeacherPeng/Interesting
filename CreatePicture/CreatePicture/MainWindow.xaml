@@ -1,0 +1,59 @@
+﻿<Window x:Class="CreatePicture.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CreatePicture"
+        mc:Ignorable="d"
+        Title="Create Picture" Height="400" Width="800" Icon="logo.ico">
+    <Window.Resources>
+        <RoutedCommand x:Key="SavePicture" />
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource SavePicture}" Executed="OnSavePicture_Executed" CanExecute="OnSavePicture_CanExecute" />
+    </Window.CommandBindings>
+    <UniformGrid Rows="1" Margin="5">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Label Content="W=" />
+                <TextBox Text="{Binding Width}" MinWidth="50" VerticalAlignment="Center" />
+                <Label Content="，H=" />
+                <TextBox Text="{Binding Height}" MinWidth="50" VerticalAlignment="Center" />
+            </StackPanel>
+            <TextBox Grid.Row="1" Text="{Binding C}" AcceptsReturn="True" />
+            <DockPanel Grid.Row="2">
+                <TextBlock DockPanel.Dock="Top">int R(int x, int y)<LineBreak />{</TextBlock>
+                <TextBlock Text="}" DockPanel.Dock="Bottom" />
+                <TextBox Text="{Binding R}" AcceptsReturn="True" />
+            </DockPanel>
+            <DockPanel Grid.Row="3">
+                <TextBlock DockPanel.Dock="Top">int G(int x, int y)<LineBreak />{</TextBlock>
+                <TextBlock Text="}" DockPanel.Dock="Bottom" />
+                <TextBox Text="{Binding G}" AcceptsReturn="True" />
+            </DockPanel>
+            <DockPanel Grid.Row="4">
+                <TextBlock DockPanel.Dock="Top">int B(int x, int y)<LineBreak />{</TextBlock>
+                <TextBlock Text="}" DockPanel.Dock="Bottom" />
+                <TextBox Text="{Binding B}" AcceptsReturn="True" />
+            </DockPanel>
+            <Button Content="生成图像" Grid.Row="5" Click="OnExec_Click" />
+            <UniformGrid Grid.Row="6" Rows="1">
+                <Button Content="加载代码" Click="OnLoadCode_Click" />
+                <Button Content="保存代码" Click="OnSaveCode_Click" />
+            </UniformGrid>
+        </Grid>
+        <DockPanel>
+            <Button Content="保存图像" Command="{StaticResource SavePicture}" DockPanel.Dock="Bottom" />
+            <Image Source="{Binding Picture}" Margin="10,0,0,0" />
+        </DockPanel>
+    </UniformGrid>
+</Window>
