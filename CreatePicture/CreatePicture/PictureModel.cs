@@ -20,19 +20,7 @@ namespace CreatePicture
         private int _Height = 1024;
 
         public string C { get { return _C; }set { if (_C == value) return; _C = value; OnPropertyChanged(nameof(C)); } }
-        private string _C = @"private const int C = 256;
-private Random _random = new Random();
-private int rand() { return _random.Next(); }
-private int rand(int n) { return _random.Next(n); }
-private int rand(int s, int t) {return _random.Next(s, t); }
-private double randdbl() { return _random.NextDouble(); }
-private double _sq(double x) { return x * x; }
-private double _cb(double x) { return Math.Abs(x * x * x); }
-private double _cr(double x) { return Math.Pow(x, 1.0/3.0); }
-private double sin(double x) { return Math.Sin(x); }
-private double cos(double x) { return Math.Cos(x); }
-private double atan2(double x, double y) { return Math.Atan2(x, y); }
-private double acos(double x) {return Math.Acos(x); }";
+        private string _C = @"private const int C = 256;";
 
         public string R { get { return _R; } set { if (_R == value) return; _R = value; OnPropertyChanged(nameof(R)); } }
         private string _R = "return rand(C);";
