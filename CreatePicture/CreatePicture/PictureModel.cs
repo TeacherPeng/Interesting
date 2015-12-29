@@ -83,6 +83,7 @@ namespace CreatePicture
             {
                 string[] aLines = Code.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.None);
                 System.Text.StringBuilder aErrorTextBuilder = new System.Text.StringBuilder();
+                aErrorTextBuilder.AppendLine(Code);
                 foreach (CompilerError aCompilerError in aCompilerResults.Errors)
                 {
                     aErrorTextBuilder.AppendLine($"【{aLines[aCompilerError.Line - 1]}】：{aCompilerError.ErrorText}");
