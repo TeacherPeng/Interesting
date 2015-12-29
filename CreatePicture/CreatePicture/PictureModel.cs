@@ -99,7 +99,7 @@ namespace CreatePicture
                 {
                     aErrorTextBuilder.AppendLine($"【{aLines[aCompilerError.Line - 1]}】：{aCompilerError.ErrorText}");
                 }
-                throw new System.ApplicationException(aErrorTextBuilder.ToString());
+                throw new ApplicationException(aErrorTextBuilder.ToString());
             }
             else
             {
