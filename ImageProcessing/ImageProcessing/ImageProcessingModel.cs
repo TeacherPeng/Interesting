@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace ImageProcessing
@@ -38,7 +36,7 @@ namespace ImageProcessing
         private BitmapSource _ResultImage;
 
         public Processing[] Processings { get { return _Processings; } }
-        private Processing[] _Processings = new Processing[]
+        private static readonly Processing[] _Processings = new Processing[]
         {
             new Processing01(),
         };
