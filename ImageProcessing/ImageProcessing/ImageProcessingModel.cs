@@ -39,6 +39,7 @@ namespace ImageProcessing
         private static readonly Processing[] _Processings = new Processing[]
         {
             new Processing01(),
+            new Processing_Negative(),
         };
 
         private void OnPropertyChanged(string aPropertyName) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(aPropertyName)); }
