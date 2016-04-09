@@ -2,7 +2,7 @@
 
 namespace ImageProcessing
 {
-    class Processing01 : Processing
+    class Processing_Border : Processing
     {
         public override string Name
         {

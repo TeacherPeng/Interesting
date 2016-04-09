@@ -38,7 +38,7 @@ namespace ImageProcessing
         public Processing[] Processings { get { return _Processings; } }
         private static readonly Processing[] _Processings = new Processing[]
         {
-            new Processing01(),
+            new Processing_Border(),
             new Processing_Negative(),
         };
 

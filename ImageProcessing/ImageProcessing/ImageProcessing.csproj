@@ -72,7 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Processing.cs" />
-    <Compile Include="Processing01.cs" />
+    <Compile Include="Processing_Border.cs" />
     <Compile Include="Processing_Negative.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
