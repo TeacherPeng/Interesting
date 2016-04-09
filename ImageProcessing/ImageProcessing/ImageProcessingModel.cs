@@ -40,6 +40,7 @@ namespace ImageProcessing
         {
             new Processing_Border(),
             new Processing_Negative(),
+            new Processing_HalfSize(),
         };
 
         private void OnPropertyChanged(string aPropertyName) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(aPropertyName)); }

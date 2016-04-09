@@ -73,6 +73,7 @@
   <ItemGroup>
     <Compile Include="Processing.cs" />
     <Compile Include="Processing_Border.cs" />
+    <Compile Include="Processing_HalfSize.cs" />
     <Compile Include="Processing_Negative.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

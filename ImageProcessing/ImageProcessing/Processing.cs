@@ -6,7 +6,7 @@ namespace ImageProcessing
     abstract class Processing
     {
         public abstract string Name { get; }
-        protected abstract byte[] ProcessImage(byte[] aSourceRawData, int aPixelWidth, int aPixelHeight, int aBytesPerPixel, int aStride);
+        protected abstract byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride);
 
         public virtual BitmapSource GetResultImage(BitmapImage aSourceImage)
         {
@@ -19,14 +19,16 @@ namespace ImageProcessing
             aFormatedImage.CopyPixels(aSourceRawData, aStride, 0);
 
             // 处理图片数据
-            byte[] aResultRawData = ProcessImage(aSourceRawData, aFormatedImage.PixelWidth, aFormatedImage.PixelHeight, (aFormatedImage.Format.BitsPerPixel + 7) / 8, aStride);
+            int aPixelWidth = aFormatedImage.PixelWidth;
+            int aPixelHeight = aFormatedImage.PixelHeight;
+            byte[] aResultRawData = ProcessImage(aSourceRawData, ref aPixelWidth, ref aPixelHeight, (aFormatedImage.Format.BitsPerPixel + 7) / 8, ref aStride);
 
             // 生成结果图片
             BitmapSource aImageFromRawData = BitmapImage.Create(
-                aFormatedImage.PixelWidth, aFormatedImage.PixelHeight,
+                aPixelWidth, aPixelHeight,
                 aFormatedImage.DpiX, aFormatedImage.DpiY,
                 aFormatedImage.Format, aFormatedImage.Palette,
-                aSourceRawData, aStride);
+                aResultRawData, aStride);
 
             return aImageFromRawData;
         }

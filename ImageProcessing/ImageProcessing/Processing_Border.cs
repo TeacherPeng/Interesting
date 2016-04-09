@@ -12,7 +12,7 @@ namespace ImageProcessing
             }
         }
 
-        protected override byte[] ProcessImage(byte[] aSourceRawData, int aPixelWidth, int aPixelHeight, int aBytesPerPixel, int aStride)
+        protected override byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride)
         {
             // 上边框
             int aIndex = 0;
