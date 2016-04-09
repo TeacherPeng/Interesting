@@ -40,10 +40,14 @@
             </MenuItem>
         </Menu>
         <GroupBox Grid.Row="1" Grid.Column="0" Header="源图片">
-            <Image Source="{Binding SourceImage}" Margin="5" />
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <Image Source="{Binding SourceImage}" Margin="5" Stretch="None" />
+            </ScrollViewer>
         </GroupBox>
         <GroupBox Grid.Row="1" Grid.Column="1" Header="处理结果">
-            <Image Source="{Binding ResultImage}" Margin="5" />
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <Image Source="{Binding ResultImage}" Margin="5" Stretch="None" />
+            </ScrollViewer>
         </GroupBox>
     </Grid>
 </Window>
