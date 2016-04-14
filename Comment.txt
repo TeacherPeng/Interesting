@@ -1,0 +1,2 @@
+The ImageProcessing Solution is a framework for image processing. 
+You can add a image processing algorithm and test it.
