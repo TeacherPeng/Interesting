@@ -1,13 +1,15 @@
-﻿using System.Windows.Media;
+﻿using System;
+using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace ImageProcessing
 {
-    abstract class Processing
+    public abstract class Processing
     {
         public abstract string Name { get; }
         protected abstract byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride);
-
+        public virtual UserControl Control { get { return null; } }
         public virtual BitmapSource GetResultImage(BitmapImage aSourceImage)
         {
             // 转换为标准Bgr32格式
@@ -32,5 +34,7 @@ namespace ImageProcessing
 
             return aImageFromRawData;
         }
+        public event EventHandler Apply;
+        public void OnApply() { Apply?.Invoke(this, null); }
     }
 }

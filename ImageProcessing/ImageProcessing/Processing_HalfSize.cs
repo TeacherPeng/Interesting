@@ -2,7 +2,7 @@
 
 namespace ImageProcessing
 {
-    class Processing_HalfSize : Processing
+    public class Processing_HalfSize : Processing
     {
         public override string Name { get { return "缩小"; } }
 

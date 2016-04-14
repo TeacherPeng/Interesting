@@ -2,7 +2,7 @@
 
 namespace ImageProcessing
 {
-    class Processing_Negative : Processing
+    public class Processing_Negative : Processing
     {
         public override string Name
         {
