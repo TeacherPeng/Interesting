@@ -76,6 +76,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Processing_IncConstrast_Ui.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Processing.cs" />
@@ -85,6 +89,10 @@
     <Compile Include="Processing_IncBrightness.cs" />
     <Compile Include="Processing_IncBrightness_Ui.xaml.cs">
       <DependentUpon>Processing_IncBrightness_Ui.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Processing_IncConstrast.cs" />
+    <Compile Include="Processing_IncConstrast_Ui.xaml.cs">
+      <DependentUpon>Processing_IncConstrast_Ui.xaml</DependentUpon>
     </Compile>
     <Compile Include="Processing_Negative.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
