@@ -4,8 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ImageProcessing"
-             mc:Ignorable="d" >
-    <StackPanel Orientation="Horizontal">
-        <Slider Minimum="0" Maximum="100" Value="{Binding Level}" Width="200" ValueChanged="OnApply_Click"/>
-    </StackPanel>
+             mc:Ignorable="d">
+    <Grid>
+        <Slider Minimum="0" Maximum="100" Value="{Binding Level}" VerticalAlignment="Stretch" ValueChanged="OnApply_Click"/>
+    </Grid>
 </UserControl>

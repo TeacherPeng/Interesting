@@ -22,8 +22,8 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="5*"/>
-            <RowDefinition Height="56*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
             <MenuItem Header="文件(_F)">
@@ -40,12 +40,12 @@
                 </MenuItem.ItemTemplate>
             </MenuItem>
         </Menu>
+        <GroupBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Header="{Binding CurrentProcessing.Name}" Content="{Binding CurrentProcessing.Control}"  />
         <GroupBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Header="源图片" Margin="5" >
             <Image Source="{Binding SourceImage}" Margin="5" Stretch="Uniform" />
         </GroupBox>
         <GroupBox Grid.Row="2" Grid.Column="1" Header="处理结果" Margin="5" >
             <Image Source="{Binding ResultImage}" Margin="5" Stretch="Uniform" />
         </GroupBox>
-        <GroupBox Grid.Row="1" Grid.Column="1" Header="{Binding CurrentProcessing.Name}" Content="{Binding CurrentProcessing.Control}"  />
     </Grid>
 </Window>
