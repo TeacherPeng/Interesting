@@ -53,7 +53,8 @@ namespace ImageProcessing
             new Processing_Negative(),
             new Processing_HalfSize(),
             new Processing_IncBrightness(),
-            new Processing_Emgu()
+            new Processing_Emgu(),
+            new Processing_IncConstrast(),
         };
 
         private void OnPropertyChanged(string aPropertyName) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(aPropertyName)); }

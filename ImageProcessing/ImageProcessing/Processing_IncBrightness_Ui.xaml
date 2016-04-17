@@ -6,7 +6,6 @@
              xmlns:local="clr-namespace:ImageProcessing"
              mc:Ignorable="d">
     <StackPanel Orientation="Horizontal">
-        <Slider Minimum="0" Maximum="100" Value="{Binding Level}" Width="200" />
-        <Button Content="应用" Click="OnApply_Click" />
+        <Slider Minimum="0" Maximum="100" Value="{Binding Level}" Width="200" ValueChanged="OnApply_Click"/>
     </StackPanel>
 </UserControl>
