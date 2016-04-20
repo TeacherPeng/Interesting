@@ -28,7 +28,7 @@ public static class Dehaze
     //=====================================================================================================
 
     //median filtered dark channel
-    private static Image<Gray, byte> getMedianDarkChannel(Image<Bgr, byte> src, int patch)
+    public static Image<Gray, byte> getMedianDarkChannel(Image<Bgr, byte> src, int patch)
     {
         Image<Gray, byte> rgbmin = new Image<Gray, byte>(src.Width, src.Height); //Mat::zeros(src.rows, src.cols, CV_8UC1);
 
@@ -110,7 +110,7 @@ public static class Dehaze
 
     public static Image<Bgr, Byte> Dehaze_Image(Image<Bgr, Byte> src)
     {
-        Image<Gray, Byte> darkChannel;
+        Image<Gray, Byte> darkChannel;  //灰度图
         Image<Gray, Byte> T;
         Image<Bgr, Byte> fogfree = src.CopyBlank();
 

@@ -1,36 +1,14 @@
-﻿using Emgu.CV.Structure;
-using System.Windows.Media.Imaging;
-using System.Drawing;
-using System.IO;
-using Emgu.CV;
+﻿using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
+using System.Windows.Media.Imaging;
 
 namespace ImageProcessing
 {
-    class Processing_Emgu : Processing
+    public static class Method_BitmapChange  
+    //为方便使用EmguCV 进行一些图片格式的转换
     {
-        public override string Name
-        {
-            get
-            {
-                return "高斯平滑滤波";
-            }
-        }
-
-        public override BitmapSource GetResultImage(BitmapImage aSourceImage)
-        {
-            Image<Bgr, byte> img = new Image<Bgr, byte>(BitmapImage2Bitmap(aSourceImage));
-            Image<Bgr, byte> img1 = img.SmoothGaussian(31);
-            return Bitmap2BitmapImage(img1.ToBitmap());
-        }
-
-        protected override byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride)
-        {
-            return aSourceRawData;
-        }
-
-        //类型转换函数 ！！
-        private Bitmap BitmapImage2Bitmap(BitmapImage bitmapImage)
+        public static Bitmap BitmapImage2Bitmap(BitmapImage bitmapImage)
         {
             // BitmapImage bitmapImage = new BitmapImage(new Uri("../Images/test.png", UriKind.Relative));
 
@@ -46,7 +24,7 @@ namespace ImageProcessing
         }
 
 
-        private BitmapImage Bitmap2BitmapImage(Bitmap bitmap)
+        public static BitmapImage Bitmap2BitmapImage(Bitmap bitmap)
         {
             using (MemoryStream memory = new MemoryStream())
             {
@@ -64,6 +42,3 @@ namespace ImageProcessing
         }
     }
 }
-
-
-

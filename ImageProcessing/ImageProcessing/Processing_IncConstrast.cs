@@ -10,13 +10,12 @@ namespace ImageProcessing
     {
         public Processing_IncConstrast()
         {
-            _Control = new Processing_IncConstrast_Ui(this);
+            _Control = new Ui_Slider(this);
             Level = 50;
         }
-        public override string Name { get { return "对比度"; } }
+        public override string Name { get { return "Constrast"; } }
         public override UserControl Control { get { return _Control; } }
-        private Processing_IncConstrast_Ui _Control;
-
+        private Ui_Slider _Control;
         public double Level { get; set; }
 
         protected override byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride)
