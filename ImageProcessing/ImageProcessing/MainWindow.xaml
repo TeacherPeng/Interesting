@@ -40,7 +40,7 @@
                 </MenuItem.ItemTemplate>
             </MenuItem>
         </Menu>
-        <GroupBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Header="{Binding CurrentProcessing.Name}" Content="{Binding CurrentProcessing.Control}"  />
+        <GroupBox Grid.Row="1" Grid.Column="1"  Header="{Binding CurrentProcessing.Name}" Content="{Binding CurrentProcessing.Control}"  />
         <GroupBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Header="源图片" Margin="5" >
             <Image Source="{Binding SourceImage}" Margin="5" Stretch="Uniform" />
         </GroupBox>

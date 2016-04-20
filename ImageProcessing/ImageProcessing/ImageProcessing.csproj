@@ -67,11 +67,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Dehaze.cs" />
     <Compile Include="ImageProcessingModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Processing_IncSaturation_Ui.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Processing_IncBrightness_Ui.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -83,10 +88,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Processing.cs" />
+    <Compile Include="Processing_Dehaze.cs" />
     <Compile Include="Processing_Border.cs" />
     <Compile Include="Processing_Emgu.cs" />
     <Compile Include="Processing_HalfSize.cs" />
+    <Compile Include="Processing_IncSaturation.cs" />
     <Compile Include="Processing_IncBrightness.cs" />
+    <Compile Include="Processing_IncSaturation_Ui.xaml.cs">
+      <DependentUpon>Processing_IncSaturation_Ui.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Processing_IncBrightness_Ui.xaml.cs">
       <DependentUpon>Processing_IncBrightness_Ui.xaml</DependentUpon>
     </Compile>
