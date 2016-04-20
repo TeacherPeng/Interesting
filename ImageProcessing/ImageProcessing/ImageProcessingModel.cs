@@ -51,10 +51,12 @@ namespace ImageProcessing
         {
             new Processing_Border(),
             new Processing_Negative(),
-            new Processing_HalfSize(),
-            new Processing_IncBrightness(),
+            //new Processing_HalfSize(),  加了自适应无法实现
             new Processing_Emgu(),
+            new Processing_IncBrightness(),
             new Processing_IncConstrast(),
+            new Processing_IncSaturation(),
+            new Processing_Dehaze(),
         };
 
         private void OnPropertyChanged(string aPropertyName) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(aPropertyName)); }

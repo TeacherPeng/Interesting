@@ -1,26 +1,31 @@
-﻿using Emgu.CV.Structure;
-using System.Windows.Media.Imaging;
+﻿using Emgu.CV;
+using Emgu.CV.Structure;
 using System.Drawing;
-using System.IO;
-using Emgu.CV;
 using System.Drawing.Imaging;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Windows.Media.Imaging;
 
 namespace ImageProcessing
 {
-    class Processing_Emgu : Processing
+    public class Processing_Dehaze : Processing
     {
         public override string Name
         {
             get
             {
-                return "高斯平滑滤波";
+                return "去雾算法";
             }
         }
+
+        [DllImport("HazeRemoval.dll", CallingConvention = CallingConvention.StdCall, CharSet = CharSet.Unicode, ExactSpelling = true)]
+        private static extern void HazeRemovalUseDarkChannelPrior(byte[] Src, byte[] Dest, int Width, int Height, int Stride, int Radius, int GuideRadius, int MaxAtom, float Omega, float Epsilon, float T0);
 
         public override BitmapSource GetResultImage(BitmapImage aSourceImage)
         {
             Image<Bgr, byte> img = new Image<Bgr, byte>(BitmapImage2Bitmap(aSourceImage));
-            Image<Bgr, byte> img1 = img.SmoothGaussian(31);
+            
+            Image<Bgr, byte> img1 = Dehaze.Dehaze_Image(img);
             return Bitmap2BitmapImage(img1.ToBitmap());
         }
 
@@ -45,7 +50,6 @@ namespace ImageProcessing
             }
         }
 
-
         private BitmapImage Bitmap2BitmapImage(Bitmap bitmap)
         {
             using (MemoryStream memory = new MemoryStream())
@@ -64,6 +68,3 @@ namespace ImageProcessing
         }
     }
 }
-
-
-
