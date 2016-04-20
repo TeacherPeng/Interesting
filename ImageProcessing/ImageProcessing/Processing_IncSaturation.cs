@@ -17,10 +17,10 @@ namespace ImageProcessing
         
         protected override byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride)
         {
-            int t = 0, abyte;
+            int abyte;
             double r,g,b;
             r = g = b = 0;
-            for (int i = 0; i < aSourceRawData.Length; i+=4)
+            for (int i = 3; i < aSourceRawData.Length; i+=4)
             {
                 b = aSourceRawData[i-3];
                 g = aSourceRawData[i-2];
