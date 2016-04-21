@@ -1,11 +1,10 @@
 ﻿using Emgu.CV.Structure;
-using System.Windows.Media.Imaging;
 using Emgu.CV;
 using System.Windows.Controls;
 
 namespace ImageProcessing
 {
-    class Processing_SmoothMedian : Processing
+    class Processing_SmoothMedian : Processing_Emgu
     {
         public Processing_SmoothMedian()
         {
@@ -18,18 +17,10 @@ namespace ImageProcessing
         private Ui_Slider _Control;
         public double Level { get; set; }
 
-        public override BitmapSource GetResultImage(BitmapImage aSourceImage)
+        protected override IImage ProcessImage_Emgu(Image<Bgr, byte> img)
         {
-            Image<Bgr, byte> img = new Image<Bgr, byte>(Method_BitmapChange.BitmapImage2Bitmap(aSourceImage));
-            Image<Bgr, byte> img1 = img.SmoothMedian((int)(Level/10)*2+1);
-            return Method_BitmapChange.Bitmap2BitmapImage(img1.ToBitmap());
+            return img.SmoothMedian((int)(Level / 10) * 2 + 1);
         }
-
-        protected override byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride)
-        {
-            return aSourceRawData;
-        }
-
     }
 }
 

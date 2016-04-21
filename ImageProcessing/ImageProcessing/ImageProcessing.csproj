@@ -84,6 +84,7 @@
     <Compile Include="Processing_DarkChannel.cs" />
     <Compile Include="Processing_Dehaze.cs" />
     <Compile Include="Processing_Border.cs" />
+    <Compile Include="Processing_Emgu.cs" />
     <Compile Include="Processing_Erode.cs" />
     <Compile Include="Processing_Sobel.cs" />
     <Compile Include="Processing_SmoothMedian.cs" />

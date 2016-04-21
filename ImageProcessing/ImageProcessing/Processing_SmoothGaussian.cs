@@ -1,14 +1,10 @@
 ﻿using Emgu.CV.Structure;
-using System.Windows.Media.Imaging;
-using System.Drawing;
-using System.IO;
 using Emgu.CV;
-using System.Drawing.Imaging;
 using System.Windows.Controls;
 
 namespace ImageProcessing
 {
-    class Processing_SmoothGaussian : Processing
+    class Processing_SmoothGaussian : Processing_Emgu
     {
         public Processing_SmoothGaussian()
         {
@@ -22,18 +18,10 @@ namespace ImageProcessing
 
         public double Level { get; set; }
 
-        public override BitmapSource GetResultImage(BitmapImage aSourceImage)
+        protected override IImage ProcessImage_Emgu(Image<Bgr, byte> img)
         {
-            Image<Bgr, byte> img = new Image<Bgr, byte>(Method_BitmapChange.BitmapImage2Bitmap(aSourceImage));
-            Image<Bgr, byte> img1 = img.SmoothGaussian((int)(Level/5)*2+1);
-            return Method_BitmapChange.Bitmap2BitmapImage(img1.ToBitmap());
+            return img.SmoothGaussian((int)(Level / 5) * 2 + 1);
         }
-
-        protected override byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride)
-        {
-            return aSourceRawData;
-        }
-
     }
 }
 

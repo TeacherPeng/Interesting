@@ -1,26 +1,18 @@
 ﻿using Emgu.CV.Structure;
 using System.Windows.Media.Imaging;
 using Emgu.CV;
-using System.Windows.Controls;
+using static ImageProcessing.Method_BitmapChange;
+using System;
 
 namespace ImageProcessing
 {
-    class Processing_Sobel : Processing
+    class Processing_Sobel : Processing_Emgu
     {
         public override string Name { get { return "Sobel"; } } //函数
-
-        public override BitmapSource GetResultImage(BitmapImage aSourceImage)
+        protected override IImage ProcessImage_Emgu(Image<Bgr, byte> img)
         {
-            Image<Bgr, byte> img = new Image<Bgr, byte>(Method_BitmapChange.BitmapImage2Bitmap(aSourceImage));
-            Image<Bgr, float> img1 = img.Sobel(1, 0, 3);
-            return Method_BitmapChange.Bitmap2BitmapImage(img1.ToBitmap());
+            return img.Sobel(1, 0, 3);
         }
-
-        protected override byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride)
-        {
-            return aSourceRawData;
-        }
-
     }
 }
 

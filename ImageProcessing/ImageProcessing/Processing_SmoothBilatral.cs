@@ -1,29 +1,18 @@
 ﻿using Emgu.CV.Structure;
 using System.Windows.Media.Imaging;
-using System.Drawing;
-using System.IO;
 using Emgu.CV;
-using System.Drawing.Imaging;
-using System.Windows.Controls;
+using static ImageProcessing.Method_BitmapChange;
+using System;
 
 namespace ImageProcessing
 {
-    class Processing_SmoothBilatral : Processing
+    class Processing_SmoothBilatral : Processing_Emgu
     {
         public override string Name { get { return "SmoothBilatral"; } } //函数名
-
-        public override BitmapSource GetResultImage(BitmapImage aSourceImage)
+        protected override IImage ProcessImage_Emgu(Image<Bgr, byte> img)
         {
-            Image<Bgr, byte> img = new Image<Bgr, byte>(Method_BitmapChange.BitmapImage2Bitmap(aSourceImage));
-            Image<Bgr, byte> img1 = img.SmoothBilatral(51,100,100);
-            return Method_BitmapChange.Bitmap2BitmapImage(img1.ToBitmap());
+            return img.SmoothBilatral(51, 100, 100);
         }
-
-        protected override byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride)
-        {
-            return aSourceRawData;
-        }
-
     }
 }
 

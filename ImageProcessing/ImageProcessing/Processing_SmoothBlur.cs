@@ -1,14 +1,10 @@
 ﻿using Emgu.CV.Structure;
-using System.Windows.Media.Imaging;
-using System.Drawing;
-using System.IO;
 using Emgu.CV;
-using System.Drawing.Imaging;
 using System.Windows.Controls;
 
 namespace ImageProcessing
 {
-    class Processing_SmoothBlur : Processing
+    class Processing_SmoothBlur : Processing_Emgu
     {
         public Processing_SmoothBlur()
         {
@@ -22,19 +18,11 @@ namespace ImageProcessing
 
         public double Level { get; set; }
 
-        public override BitmapSource GetResultImage(BitmapImage aSourceImage)
+        protected override IImage ProcessImage_Emgu(Image<Bgr, byte> img)
         {
             int temp = 5+(int)Level/5;
-            Image<Bgr, byte> img = new Image<Bgr, byte>(Method_BitmapChange.BitmapImage2Bitmap(aSourceImage));
-            Image<Bgr, byte> img1 = img.SmoothBlur(temp, temp);
-            return Method_BitmapChange.Bitmap2BitmapImage(img1.ToBitmap());
+            return img.SmoothBlur(temp, temp);
         }
-
-        protected override byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride)
-        {
-            return aSourceRawData;
-        }
-
     }
 }
 
