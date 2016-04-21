@@ -8,7 +8,7 @@ namespace ImageProcessing
         {
             get
             {
-                return "生成负片";
+                return "Negative";
             }
         }
 

@@ -1,26 +1,27 @@
-﻿using Emgu.CV;
-using Emgu.CV.Structure;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.IO;
+﻿using Emgu.CV.Structure;
 using System.Windows.Media.Imaging;
+using Emgu.CV;
+using System.Windows.Controls;
 
 namespace ImageProcessing
 {
-    public class Processing_Dehaze : Processing
+    class Processing_SmoothMedian : Processing
     {
-        public override string Name
+        public Processing_SmoothMedian()
         {
-            get
-            {
-                return "Dehaze";
-            }
+            _Control = new Ui_Slider(this); //加入滑动条
+            Level = 50;
         }
+
+        public override string Name { get { return "SmoothMedian"; } } //函数名
+        public override UserControl Control { get { return _Control; } }
+        private Ui_Slider _Control;
+        public double Level { get; set; }
 
         public override BitmapSource GetResultImage(BitmapImage aSourceImage)
         {
             Image<Bgr, byte> img = new Image<Bgr, byte>(Method_BitmapChange.BitmapImage2Bitmap(aSourceImage));
-            Image<Bgr, byte> img1 = Dehaze.Dehaze_Image(img);
+            Image<Bgr, byte> img1 = img.SmoothMedian((int)(Level/10)*2+1);
             return Method_BitmapChange.Bitmap2BitmapImage(img1.ToBitmap());
         }
 
@@ -28,5 +29,9 @@ namespace ImageProcessing
         {
             return aSourceRawData;
         }
+
     }
 }
+
+
+

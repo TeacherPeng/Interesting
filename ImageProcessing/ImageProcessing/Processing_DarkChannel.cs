@@ -3,24 +3,25 @@ using Emgu.CV.Structure;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows.Media.Imaging;
 
 namespace ImageProcessing
 {
-    public class Processing_Dehaze : Processing
+    public class Processing_DarkChannel : Processing
     {
         public override string Name
         {
             get
             {
-                return "Dehaze";
+                return "DarkChannel";
             }
         }
 
         public override BitmapSource GetResultImage(BitmapImage aSourceImage)
         {
             Image<Bgr, byte> img = new Image<Bgr, byte>(Method_BitmapChange.BitmapImage2Bitmap(aSourceImage));
-            Image<Bgr, byte> img1 = Dehaze.Dehaze_Image(img);
+            Image<Gray, byte> img1 = Dehaze.getMedianDarkChannel(img,5);
             return Method_BitmapChange.Bitmap2BitmapImage(img1.ToBitmap());
         }
 

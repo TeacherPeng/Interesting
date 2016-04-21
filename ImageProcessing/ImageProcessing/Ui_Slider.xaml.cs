@@ -7,15 +7,15 @@ namespace ImageProcessing
     /// <summary>
     /// Processing_IncBrightness_Ui.xaml 的交互逻辑
     /// </summary>
-    public partial class Processing_IncSaturation_Ui : UserControl
+    public partial class Ui_Slider : UserControl
     {
-        public Processing_IncSaturation_Ui(Processing_IncSaturation aProcessing)
+        public Ui_Slider(Processing aProcessing)
         {
             InitializeComponent();
             _Processing = aProcessing;
             this.DataContext = aProcessing;
         }
-        Processing_IncSaturation _Processing;
+        Processing _Processing;
         private void OnApply_Click(object sender, RoutedEventArgs e)
         {
             try

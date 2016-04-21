@@ -67,43 +67,36 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Dehaze.cs" />
+    <Compile Include="Method_BitmapChange.cs" />
+    <Compile Include="Method_Dehaze.cs" />
     <Compile Include="ImageProcessingModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Processing_IncSaturation_Ui.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Processing_IncBrightness_Ui.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Processing_IncConstrast_Ui.xaml">
+    <Page Include="Ui_Slider.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Processing.cs" />
+    <Compile Include="Processing_DarkChannel.cs" />
     <Compile Include="Processing_Dehaze.cs" />
     <Compile Include="Processing_Border.cs" />
-    <Compile Include="Processing_Emgu.cs" />
+    <Compile Include="Processing_Erode.cs" />
+    <Compile Include="Processing_Sobel.cs" />
+    <Compile Include="Processing_SmoothMedian.cs" />
+    <Compile Include="Processing_SmoothBilatral.cs" />
+    <Compile Include="Processing_SmoothBlur.cs" />
+    <Compile Include="Processing_SmoothGaussian.cs" />
     <Compile Include="Processing_HalfSize.cs" />
     <Compile Include="Processing_IncSaturation.cs" />
     <Compile Include="Processing_IncBrightness.cs" />
-    <Compile Include="Processing_IncSaturation_Ui.xaml.cs">
-      <DependentUpon>Processing_IncSaturation_Ui.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Processing_IncBrightness_Ui.xaml.cs">
-      <DependentUpon>Processing_IncBrightness_Ui.xaml</DependentUpon>
+    <Compile Include="Ui_Slider.xaml.cs">
+      <DependentUpon>Ui_Slider.xaml</DependentUpon>
     </Compile>
     <Compile Include="Processing_IncConstrast.cs" />
-    <Compile Include="Processing_IncConstrast_Ui.xaml.cs">
-      <DependentUpon>Processing_IncConstrast_Ui.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Processing_Negative.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
