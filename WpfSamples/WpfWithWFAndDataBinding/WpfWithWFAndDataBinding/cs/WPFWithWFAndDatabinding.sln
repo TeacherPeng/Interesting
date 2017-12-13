@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFWithWFAndDatabinding", "WPFWithWFAndDatabinding.csproj", "{857A1FB2-7D14-48DE-B741-02C34627014A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{857A1FB2-7D14-48DE-B741-02C34627014A}.Debug|x86.ActiveCfg = Debug|x86
+		{857A1FB2-7D14-48DE-B741-02C34627014A}.Debug|x86.Build.0 = Debug|x86
+		{857A1FB2-7D14-48DE-B741-02C34627014A}.Release|x86.ActiveCfg = Release|x86
+		{857A1FB2-7D14-48DE-B741-02C34627014A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

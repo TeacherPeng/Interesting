@@ -1,0 +1,208 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns:xlink = "http://www.w3.org/1999/xlink" XMLNS:MSHelp = 
+"http://msdn.microsoft.com/mshelp" xmlns:ddue = 
+"http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl = 
+"urn:schemas-microsoft-com:xslt"><HEAD><TITLE>XBAP Hosting Silverlight Sample</TITLE>
+<META content="text/html; charset=UTF-8" http-equiv=Content-Type>
+<META name=save content=history><LINK rel=stylesheet type=text/css 
+href="readme_files/presentation.css"><LINK rel=stylesheet type=text/css 
+href="ms-help://Hx/HxRuntime/HxLink.css">
+
+<xml>
+      <MSHelp:Keyword Index="A" Term="4cb406c2-2803-41ab-9ba9-42b2eab511cc" />
+      <MSHelp:Keyword Index="K" Term="XBAP Hosting Silverlight sample [WPF]" />
+      <MSHelp:Attr Name="RevisionNumber" Value="6" />
+      <MSHelp:Attr Name="AssetID" Value="4cb406c2-2803-41ab-9ba9-42b2eab511cc" />
+      <MSHelp:Attr Name="Abstract" Value="This sample demonstrates the following:" />
+      <MSHelp:Attr Name="CommunityContent" Value="1" />
+      <MSHelp:Attr Name="DocSet" Value="wpf" />
+      <MSHelp:Attr Name="PlatformIntro" Value="Vista" />
+      <MSHelp:Attr Name="SampleDownloadUrl" Value="http://download.microsoft.com/download/f/6/e/f6e32974-726e-4054-96af-9c747bf89a6e/XBAPHostingSilverlightSample.exe" />
+      <MSHelp:Attr Name="TopicVersion" Value="8.0.10097.10000" />
+      <MSHelp:Attr Name="Catalog Container" Value="System_Default_Catalog" />
+      <MSHelp:Attr Name="Content Set Container" Value="System_Default_Content_Set" />
+      <MSHelp:Attr Name="TopicType" Value="kbSampleProd" />
+      <MSHelp:Attr Name="Locale" Value="en-us" />
+    </xml>
+<META name=GENERATOR content="MSHTML 8.00.7600.16535"></HEAD>
+<BODY><INPUT id=userDataCache class=userDataStyle type=hidden> <INPUT 
+id=hiddenScrollOffset type=hidden> <IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=collapseImage 
+title="Collapse image" alt="Collapse image" src="readme_files/collapse_all.gif"> 
+<IMG style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=expandImage 
+title="Expand Image" alt="Expand Image" src="readme_files/expand_all.gif"> <IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=collapseAllImage 
+src="readme_files/collapse_all.gif"> <IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=expandAllImage 
+src="readme_files/expand_all.gif"> <IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=dropDownImage 
+src="readme_files/dropdown.gif"> <IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=dropDownHoverImage 
+src="readme_files/dropdownHover.gif"> <IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=copyImage title="Copy image" 
+alt="Copy image" src="readme_files/copycode.gif"> <IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=copyHoverImage 
+title="CopyHover image" alt="CopyHover image" 
+src="readme_files/copycodeHighlight.gif"> 
+<DIV id=header>
+
+
+<TABLE id=gradientTable>
+  <TBODY>
+  <TR>
+    <TD class=nsrBottom 
+background=readme_files/gradient.gif></TD></TR></TBODY></TABLE></DIV>
+<DIV id=mainSection>
+<DIV id=mainBody>
+<DIV id=allHistory class=saveHistory onload="loadAll()" onsave="saveAll()"><FONT 
+color=darkgray></FONT>
+<P>
+<P><FONT color=darkgray>Updated: April&nbsp;2010</FONT></P>
+<DIV class=introduction>
+<P>The XBAP Hosting Silverlight Sample demonstrates the following:</P>
+<UL>
+  <LI>
+  <P>How to host a Silverlight application in a XAML browser application 
+  (XBAP).</P>
+  <LI>
+  <P>How to communicate between the host XBAP and the hosted Silverlight 
+  application.</P></LI></UL></DIV>
+
+
+<H1 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress="ExpandCollapse_CheckKey(sectionToggle0, event)" 
+onclick=ExpandCollapse(sectionToggle0)><IMG id=sectionToggle0 class=toggle 
+name=toggleSwitch src="readme_files/collapse_all.gif">Hosting a 
+Silverlight Application in an XBAP</SPAN></H1>
+<DIV id=sectionSection0 class=section name="collapseableSection">
+<P>Silverlight applications can be hosted in XBAPs&nbsp;by using the <SPAN 
+target="T:System.Windows.Controls.WebBrowser" sdata="cer"><mshelp:link 
+tabIndex=0 
+keywords="T:System.Windows.Controls.WebBrowser">WebBrowser</mshelp:link></SPAN> 
+control. The content of a XBAP&nbsp; page contains the 
+<SPAN target="T:System.Windows.Controls.WebBrowser" sdata="cer"><mshelp:link 
+tabIndex=0 
+keywords="T:System.Windows.Controls.WebBrowser">WebBrowser</mshelp:link></SPAN> 
+control whose source URI identifies the HTML page that hosts the 
+Silverlight application. The HTML&nbsp;page uses the Silverlight plug-in to host the Silverlight application.</P>
+<P>The following illustration shows the architecture for hosting a 
+Silverlight application in an XBAP.</P><IMG 
+alt="WPF Application Hosting a Silverlight Application" 
+src="readme_files/XBAP_HostContain.png"></DIV>
+<H1 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress="ExpandCollapse_CheckKey(sectionToggle1, event)" 
+onclick=ExpandCollapse(sectionToggle1)><IMG id=sectionToggle1 class=toggle 
+name=toggleSwitch src="readme_files/collapse_all.gif">Communicating from the 
+XBAP to the Silverlight Application</SPAN></H1>
+<DIV id=sectionSection1 class=section name="collapseableSection">
+<P>An XBAP&nbsp;can communicate with a hosted Silverlight
+ application 
+via script methods implemented by the HTML&nbsp;page that hosts the 
+Silverlight application. An XBAP&nbsp;calls the script methods using the 
+<SPAN target="Overload:System.Windows.Controls.WebBrowser.InvokeScript" 
+sdata="cer"><mshelp:link tabIndex=0 
+keywords="Overload:System.Windows.Controls.WebBrowser.InvokeScript">InvokeScript</mshelp:link></SPAN> 
+method. The script methods then call methods implemented by a scriptable object 
+that is exposed from the Silverlight application and available to script 
+from the <SPAN sdata="langKeyword" value="Content"><SPAN 
+class=keyword>Content</SPAN></SPAN> property of the Silverlight plug-in.</P>
+<P>The following illustration shows the architecture for hosting a 
+Silverlight application in an XBAP and the method calls from an XBAP to a hosted Silverlight 
+application.</P><IMG alt="WPF Interoperating with Silverlight" 
+src="readme_files/XBAP_HostCall.png">
+<P> For more information about implementing 
+Silverlight applications that expose scriptable objects, see <A 
+href="http://go.microsoft.com/fwlink/?LinkID=117288">Walkthrough: Calling 
+Managed Code from JavaScript</A>. For an introduction to Silverlight 
+application development, see <A 
+href="http://go.microsoft.com/fwlink/?LinkID=117290">Getting Started with 
+Silverlight</A>.</P></DIV>
+<H1 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress="ExpandCollapse_CheckKey(sectionToggle2, event)" 
+onclick=ExpandCollapse(sectionToggle2)><IMG id=sectionToggle2 class=toggle 
+name=toggleSwitch src="readme_files/collapse_all.gif">Communicating from the 
+Silverlight Application to the XBAP</SPAN></H1>
+<DIV id=sectionSection2 class=section name="collapseableSection">
+<P>A hosted Silverlight application can communicate with an 
+XBAP&nbsp;via script methods implemented by the HTML page that hosts the 
+Silverlight application. A Silverlight application calls the script 
+methods using the <SPAN sdata="langKeyword" value="Invoke"><SPAN 
+class=keyword>Invoke</SPAN></SPAN> method of the <SPAN sdata="langKeyword" 
+value="HtmlWindow"><SPAN class=keyword>HtmlWindow</SPAN></SPAN> class (from the 
+Silverlight <SPAN sdata="langKeyword" value="System.Windows.Browser"><SPAN 
+class=keyword>System.Windows.Browser</SPAN></SPAN> namespace). A 
+Silverlight application gets a reference to the window (represented by the 
+<SPAN sdata="langKeyword" value="HtmlWindow"><SPAN 
+class=keyword>HtmlWindow</SPAN></SPAN> class) from the <SPAN sdata="langKeyword" 
+value="Window"><SPAN class=keyword>Window</SPAN></SPAN> property of the <SPAN 
+sdata="langKeyword" value="HtmlPage"><SPAN class=keyword>HtmlPage</SPAN></SPAN> 
+class (also in the <SPAN sdata="langKeyword" 
+value="System.Windows.Browser"><SPAN 
+class=keyword>System.Windows.Browser</SPAN></SPAN> namespace). The script 
+methods then call methods implemented by a scriptable object that is exposed by the XBAP. The scriptable object is specified using the <SPAN 
+target="P:System.Windows.Controls.WebBrowser.ObjectForScripting" 
+sdata="cer"><mshelp:link tabIndex=0 
+keywords="P:System.Windows.Controls.WebBrowser.ObjectForScripting">ObjectForScripting</mshelp:link></SPAN> 
+property on the WebBrowser control. The scriptable object must also be marked with the ComVisibleAttribute and appropriate permissions. This makes the scriptable object available to script from the <SPAN sdata="langKeyword" 
+value="external"><SPAN class=keyword>external</SPAN></SPAN> property of the 
+<SPAN sdata="langKeyword" value="window"><SPAN 
+class=keyword>window</SPAN></SPAN> object that is exposed by the host 
+browser. </P>
+<P>The following figure shows both the high-level architecture for hosting a 
+Silverlight application in an XBAP and the key technology used to 
+propagate method calls from a hosted Silverlight application to a host 
+XBAP.</P><IMG alt="Silverlight Interoperating with WPF" 
+src="readme_files/XBAP_HostCallWPF.png">
+<P>To call script methods from a Silverlight application, see <A 
+href="http://go.microsoft.com/fwlink/?LinkID=117293">Walkthrough: Calling 
+JavaScript from Managed Code</A>. For more information about exposing scriptable 
+objects from XBAPs, see <a href="http://msdn.microsoft.com/en-us/library/system.windows.controls.webbrowser.objectforscripting(v=VS.100).aspx">ObjectForScripting</a>.</P></DIV>
+<H1 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress="ExpandCollapse_CheckKey(sectionToggle3, event)" 
+onclick=ExpandCollapse(sectionToggle3)><IMG id=sectionToggle3 class=toggle 
+name=toggleSwitch src="readme_files/collapse_all.gif">Configuring the 
+Sample</SPAN></H1>
+<DIV id=sectionSection3 class=section name="collapseableSection">
+<P>The sample consists of one solution (XBAPHostingSilverlightSample) with three 
+projects:</P>
+<OL>
+  <LI>
+  The XBAP project (WPFHostingSilverlight) that hosts the Silverlight 
+  application.
+  <LI>
+ The Silverlight application project 
+(SilverlightApplication).</LI>
+<li>The Silverlight application web project (SilverlightApplication.Web).</li></OL>
+
+<P>The following steps describe how to configure the sample to load the SilverlightApplicationTestPage.html from the <SPAN class=code>localhost</SPAN> 
+using the following steps:</P>
+<OL>
+<li>Open the WPFHostingSilverlight.sln file in Visual Studio 2010.</li>
+<li>In the Solution Explorer, expand the SilverlightApplication.Web project.</li>
+  <li>
+  Right-click on the SilverlightApplicationTestPage.html and selecting <span class=ui>View in Browser</span>.</li>
+ 
+ <li> In the address bar, copy the URL of the SilverlightApplicationTestPage.html.</LI>
+  <li>In the Solution Explorer, expand the WpfHostingSilverlight project.</li>
+    <LI>
+    Open the Page1.xaml.</LI>
+    
+    <li>In XAML view, locate the WebBrowser element.</li>
+    <li>In the Source property, paste the URL to SilverlightApplicationTestPage.html.</li>
+    </OL>
+  </DIV>
+<H1 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress="ExpandCollapse_CheckKey(sectionToggle4, event)" 
+onclick=ExpandCollapse(sectionToggle4)><IMG id=sectionToggle4 class=toggle 
+name=toggleSwitch src="readme_files/collapse_all.gif">Building and Running the 
+Sample</SPAN></H1>
+<DIV id=sectionSection4 class=section name="collapseableSection">
+<P>The following steps describe how to build and run the XBAP Hosting Silverlight sample:</P>
+<ol>
+<li>In Visual Studio, press F5 to build and run the sample.</li>
+<li>To communicate from the XBAP to the Silverlight application, click the Send Message to Silverlight button.</li>
+<li>To communicate from the Silverlight application to the XBAP, click the Send Message to WPF.</li>
+</ol>
+</DIV>
+
+</BODY></HTML>

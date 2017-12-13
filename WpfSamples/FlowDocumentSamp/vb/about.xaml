@@ -1,0 +1,13 @@
+<FlowDocumentPageViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<FlowDocument ColumnWidth="800">
+   
+    <Paragraph Style="{StaticResource HeaderStyle}">About This Sample</Paragraph >
+    <Paragraph><Rectangle Fill="Black" Height="1" Width="500" HorizontalAlignment="Left" /><LineBreak/></Paragraph>
+    
+    <Paragraph Style="{StaticResource mainContentStyle}">This sample is intended to illustrate FlowDocument API and concepts, as well as some basic frame design with menus and navigation.</Paragraph>
+
+<Paragraph Style="{StaticResource mainContentStyle}">© Microsoft Corporation. All rights reserved.</Paragraph>
+    
+</FlowDocument>
+</FlowDocumentPageViewer>

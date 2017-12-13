@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUserControlHost", "WpfUserControlHost.csproj", "{B46FE7AE-B76C-46FA-A197-1057EF2E2253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingWpfUserControlInWf", "..\HostingWpfUserControlInWf\HostingWpfUserControlInWf.csproj", "{1983ABA1-AC8E-4ADD-8F36-089A38CD3EA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B46FE7AE-B76C-46FA-A197-1057EF2E2253}.Debug|x86.ActiveCfg = Debug|x86
+		{B46FE7AE-B76C-46FA-A197-1057EF2E2253}.Debug|x86.Build.0 = Debug|x86
+		{B46FE7AE-B76C-46FA-A197-1057EF2E2253}.Release|x86.ActiveCfg = Release|x86
+		{B46FE7AE-B76C-46FA-A197-1057EF2E2253}.Release|x86.Build.0 = Release|x86
+		{1983ABA1-AC8E-4ADD-8F36-089A38CD3EA9}.Debug|x86.ActiveCfg = Debug|x86
+		{1983ABA1-AC8E-4ADD-8F36-089A38CD3EA9}.Debug|x86.Build.0 = Debug|x86
+		{1983ABA1-AC8E-4ADD-8F36-089A38CD3EA9}.Release|x86.ActiveCfg = Release|x86
+		{1983ABA1-AC8E-4ADD-8F36-089A38CD3EA9}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

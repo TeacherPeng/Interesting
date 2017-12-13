@@ -1,0 +1,13 @@
+﻿<Application x:Class="Mil4dPoints.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Startup="AppStartingUp" >
+  <Application.Resources>
+      <Style TargetType="{x:Type RadioButton}">
+          <Setter Property="RadioButton.Margin" Value="0,10,0,0" />
+      </Style>
+      <Style TargetType="{x:Type TextBlock}">
+          <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+      </Style>
+  </Application.Resources>
+</Application>

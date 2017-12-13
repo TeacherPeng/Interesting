@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPickerSample", "ColorPickerSample\ColorPickerSample.csproj", "{1B8DDBB8-599D-4863-B278-F57288A86515}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPickerControl", "ColorPickerControl\ColorPickerControl.csproj", "{679D3C27-C216-4646-BCEE-181AC7043C8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B8DDBB8-599D-4863-B278-F57288A86515}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1B8DDBB8-599D-4863-B278-F57288A86515}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{1B8DDBB8-599D-4863-B278-F57288A86515}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{1B8DDBB8-599D-4863-B278-F57288A86515}.Debug|x86.ActiveCfg = Debug|x86
+		{1B8DDBB8-599D-4863-B278-F57288A86515}.Debug|x86.Build.0 = Debug|x86
+		{1B8DDBB8-599D-4863-B278-F57288A86515}.Release|Any CPU.ActiveCfg = Release|x86
+		{1B8DDBB8-599D-4863-B278-F57288A86515}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{1B8DDBB8-599D-4863-B278-F57288A86515}.Release|Mixed Platforms.Build.0 = Release|x86
+		{1B8DDBB8-599D-4863-B278-F57288A86515}.Release|x86.ActiveCfg = Release|x86
+		{1B8DDBB8-599D-4863-B278-F57288A86515}.Release|x86.Build.0 = Release|x86
+		{679D3C27-C216-4646-BCEE-181AC7043C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679D3C27-C216-4646-BCEE-181AC7043C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679D3C27-C216-4646-BCEE-181AC7043C8B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{679D3C27-C216-4646-BCEE-181AC7043C8B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{679D3C27-C216-4646-BCEE-181AC7043C8B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{679D3C27-C216-4646-BCEE-181AC7043C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679D3C27-C216-4646-BCEE-181AC7043C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679D3C27-C216-4646-BCEE-181AC7043C8B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{679D3C27-C216-4646-BCEE-181AC7043C8B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{679D3C27-C216-4646-BCEE-181AC7043C8B}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
