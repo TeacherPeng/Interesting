@@ -1,7 +1,0 @@
-LIBRARY AITCODEC
-
-EXPORTS
-	DllGetClassObject PRIVATE
-	DllRegisterServer PRIVATE
-	DllUnregisterServer PRIVATE
-	
