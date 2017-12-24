@@ -17,6 +17,11 @@ namespace CreateDatastructureDatas
         }
         public class Vex
         {
+            public Vex(int aWeight)
+            {
+                Id = null;
+                Weight = aWeight;
+            }
             public Vex(string aId, int aWeight)
             {
                 Id = aId;
@@ -27,6 +32,10 @@ namespace CreateDatastructureDatas
             public List<Arc> Arcs { get; } = new List<Arc>();
         }
         public List<Vex> Vexes { get; } = new List<Vex>();
+        public void AddVex(int aWeight)
+        {
+            Vexes.Add(new Vex(aWeight));
+        }
         public void AddVex(string aId, int aWeight)
         {
             Vexes.Add(new Vex(aId, aWeight));
@@ -34,6 +43,11 @@ namespace CreateDatastructureDatas
         public void AddArc(int aStart, int aEnd, int aWeight)
         {
             Vexes[aStart].Arcs.Add(new Arc(aEnd, aWeight));
+        }
+        public void AddEdge(int aStart, int aEnd, int aWeight)
+        {
+            AddArc(aStart, aEnd, aWeight);
+            AddArc(aEnd, aStart, aWeight);
         }
         public override string ToString()
         {

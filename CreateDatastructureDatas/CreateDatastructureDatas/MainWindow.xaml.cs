@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 
 namespace CreateDatastructureDatas
 {
@@ -10,6 +11,22 @@ namespace CreateDatastructureDatas
         public MainWindow()
         {
             InitializeComponent();
+            _Model = new MainModel();
+            this.DataContext = _Model;
+        }
+
+        private MainModel _Model;
+
+        private void Exec(Action aAction)
+        {
+            try
+            {
+                aAction();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void OnSequence_Click(object sender, RoutedEventArgs e)
@@ -28,7 +45,7 @@ namespace CreateDatastructureDatas
 
         private void OnDirectedAcyclicGraph_Click(object sender, RoutedEventArgs e)
         {
-
+            Exec(_Model.CreateDirectedAcyclicGraph);
         }
     }
 }
