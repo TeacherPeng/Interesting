@@ -5,9 +5,9 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Xml.Linq;
 
-namespace Words
+namespace Dictation
 {
-    internal class WordsModel : INotifyPropertyChanged
+    public class WordsModel : INotifyPropertyChanged
     {
         private const string WordsFileName = "words.xml";
 

@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Speech.Synthesis;
 
-namespace Words
+namespace Dictation
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -48,6 +48,7 @@ namespace Words
 
         private void OnSkip_Click(object sender, RoutedEventArgs e)
         {
+            Model.CurrentWord.Skip = true;
             StartQuestion();
         }
 
@@ -73,6 +74,17 @@ namespace Words
         private void OnReadSentence_Click(object sender, RoutedEventArgs e)
         {
             Read(Model?.CurrentWord?.Sentence);
+        }
+
+        private void OnEdit_Executed(object sender, System.Windows.Input.ExecutedRoutedEventArgs e)
+        {
+            Edit aEdit = new(Model);
+            aEdit.ShowDialog();
+        }
+
+        private void OnEdit_CanExecute(object sender, System.Windows.Input.CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
         }
     }
 }

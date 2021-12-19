@@ -1,8 +1,8 @@
 ﻿using System.Xml.Linq;
 
-namespace Words
+namespace Dictation
 {
-    internal class WordItem
+    public class WordItem
     {
         public string? Word { get; set; }
         public string? Mean { get; set; }
