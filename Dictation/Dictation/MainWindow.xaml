@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dictation"
-        mc:Ignorable="d" FontSize="24"
+        mc:Ignorable="d" FontSize="24" Background="Black"
         Title="听写" Height="450" Width="800">
     <Window.DataContext>
         <local:WordsModel />
@@ -18,7 +18,7 @@
     <Window.InputBindings>
         <KeyBinding Gesture="F12" Command="{StaticResource Edit}" />
     </Window.InputBindings>
-    <DockPanel>
+    <DockPanel Background="Black">
         <Grid DockPanel.Dock="Bottom" Margin="10">
             <Button x:Name="cmdLook" Content="看答案" Click="OnLook_Click" />
             <UniformGrid x:Name="cmdJudges" Rows="1" Margin="10">
@@ -31,6 +31,6 @@
             <Button Content="听单词" Margin="10" Click="OnRead_Click" />
             <Button Content="听例句" Margin="10" Click="OnReadSentence_Click" />
         </UniformGrid>
-        <TextBlock x:Name="txtWord" TextAlignment="Center" Margin="20" />
+        <TextBlock x:Name="txtWord" TextAlignment="Center" Margin="20" Foreground="Gray" Background="Transparent" />
     </DockPanel>
 </Window>

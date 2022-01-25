@@ -1,762 +1,762 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Words>
-	<WordItem Word="ability" Mean="n. 能力，才能" Sentence="I try to do my job to the best of my ability." Weight="10" Skip="false" />
-	<WordItem Word="accept" Mean="v. 接受，认可，承担" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="accident" Mean="n. 事故，意外的事" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="achieve" Mean="v. 达到，取得" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="action" Mean="n. 行动" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="active" Mean="a. 积极地、主动的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="activity" Mean="n. 活动" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="actor" Mean="n. 演员，男演员，行为者" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="address" Mean="n. 地址" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="adult" Mean="n. 成人，成年人" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="advangate" Mean="n. 优点，好处" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="advice" Mean="n. 忠告，劝告，建议" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="advise" Mean="v. 忠告，劝告，建议，商量" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="afternoon" Mean="n. 下午，午后" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="age" Mean="n. 年龄， 时代" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="agree" Mean="v. 同意，应允" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="air" Mean="n. 空气，大气" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="airport" Mean="n. 航空站，飞机场" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="allow" Mean="v. 允许，准许" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="alone" Mean="a. 单独的，孤独的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="ancient" Mean="a. 古代的，古老的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="angry" Mean="a. 生气的，愤怒的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="animal" Mean="n. 动物" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="answer" Mean="n./v. 回答，答复；回信；（作出）答案" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="appear" Mean="v. 出现" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="apple" Mean="n. 苹果" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="area" Mean="n. 面积，地域，地方，区域，范围，领域" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="argue" Mean="v. 争辩，争论，说服" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="arm" Mean="n./v. 臂，武器；装备，武装" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="army" Mean="n. 军队" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="arrive" Mean="v. 到达，达到" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="art" Mean="n. 艺术，美术，技艺" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="article" Mean="n. 文章，物品" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="artist" Mean="n. 艺术家" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="Asian" Mean="a. 亚洲的，亚洲人的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="ask" Mean="v. 问；要求" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="attend" Mean="v. 出席，参加" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="attention" Mean="n. 注意，关心，（口令）立正" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="attitude" Mean="n. 态度，看法" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="attract" Mean="v. 吸引，引起" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="aunt" Mean="n. 伯母，舅母，婶，姑，姨" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="autumn" Mean="n. 秋天，秋季" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="avoid" Mean="v. 避免，消除" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="bad" Mean="a. 坏的，有害的，不利的" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="bank" Mean="n. （河、海、湖的）岸，堤，银行" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="baseball" Mean="n. 棒球" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="basketball" Mean="n. 篮球" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="beach" Mean="n. 海滨，海滩" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="beat" Mean="n./v. 节拍；敲打，跳动，打赢" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="beautiful" Mean="a. 美丽的，美观的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="bed" Mean="n. 床" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="begin" Mean="v. 开始，着手" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="best" Mean="a. 最好的，最出色的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="better" Mean="a. 更好的，较好的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="believe" Mean="v. 相信，认为" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="benefit" Mean="n./v. 利益，好处；有益于，受益于" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="big" Mean="a. 大的" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="bird" Mean="n. 鸟" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="birthday" Mean="n. 生日" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="black" Mean="a./n. 黑色的，黑色" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="blood" Mean="n. 血液" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="blow" Mean="v. 吹，刮风，吹起" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="blue" Mean="a./n. 蓝色的，沮丧的，悲伤的；蓝色" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="boat" Mean="n. 小船，小舟" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="book" Mean="n./v. 书，本；预定" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="bottle" Mean="n. 瓶子" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="brain" Mean="n. 脑，头脑" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="brave" Mean="a. 勇敢的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="break" Mean="n.v. 间隙；打破，损坏，撕开" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="breakfast" Mean="n. 早餐" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="breathe" Mean="v. 呼吸" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="bridge" Mean="n. 桥" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="bright" Mean="a. 明亮的，聪明的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="bring" Mean="v. 拿来，带来，取来" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="brother" Mean="n. 兄，弟" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="brown" Mean="a./n. 褐色的，棕色的；褐色，棕色" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="build" Mean="v. 建筑，造" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="business" Mean="n. 生意，交易，职责" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="bus" Mean="n. 公共汽车" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="busy" Mean="a. 忙碌的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="buy" Mean="v. 买" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="call" Mean="n./v. 喊叫，通话；称呼，呼唤" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="calm" Mean="a. 镇静的，沉着的，平静的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="camera" Mean="n. 照相机" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="camp" Mean="n./v. 露营地；露营，扎营" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="cancel" Mean="v. 取消，废除" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="capital" Mean="n. 首都，省会，大写，资本" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="car" Mean="n. 汽车，小卧车" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="card" Mean="n. 卡片，名片，纸牌" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="care" Mean="n./v. 照料，保护，小心；在乎，关心" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="careful" Mean="a. 小心的，仔细的，谨慎的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="carry" Mean="v. 拿，搬，带" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="cartoon" Mean="n. 动画片，卡通" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="catch" Mean="v. 接住，抓住，赶上" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="celebrate" Mean="v. 庆祝" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="central" Mean="a. 中心的，中央的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="centre" Mean="n. 中心，中央" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="century" Mean="n. 世纪，百年" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="chair" Mean="n. 椅子" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="challenge" Mean="n. 挑战" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="chance" Mean="n. 机会，可能性" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="change" Mean="n./v. 零钱，找头；变化，更换，兑换" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="character" Mean="n. （汉）字，字体，特征，性格，任务" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="cheap" Mean="a. 便宜的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="check" Mean="n./v. 检查，批改；核对，检查" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="cheer" Mean="n./v. 喝彩，安慰；欢呼，感到振奋" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="child（children）" Mean="n. 孩子，儿童" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="China" Mean="n. 中国" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="Chinese" Mean="a./n. 中国的；汉语" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="choice" Mean="n. 选择，抉择" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="choose" Mean="v. 选择，抉择" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="cinema" Mean="n. 电影院" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="circle" Mean="n./v. 圆圈；将......圈起来" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="city" Mean="n. 市，城市" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="class" Mean="n. 班，年级，课" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="classmate" Mean="n. 同班同学" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="clean" Mean="a./v. 清洁的，干净的；弄干净" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="clever" Mean="a. 聪明的，伶俐的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="climb" Mean="v. 爬，攀登" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="close" Mean="a./ad./v. 亲密的，近的，封闭的；接近地；关闭，靠拢" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="clothes" Mean="n. 衣服，各种衣物" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="club" Mean="n. 俱乐部；纸牌中的梅花" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="coast" Mean="n.. 海岸" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="coat" Mean="n. 外套" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="cold" Mean="a./n. 冷的；感冒，伤风" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="collect" Mean="v. 收集" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="college" Mean="n. 学院，专科学校" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="colour" Mean="n./v. 颜色；给......着色" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="come" Mean="v. 来" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="comfortable" Mean="a. 舒服的，安逸的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="common" Mean="a. 普通的，一般的，共有的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="company" Mean="n. 公司，陪伴" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="complete" Mean="a./v. 全部的，完全的，完成的；完成，结束" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="competition" Mean="n. 比赛，竞赛" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="computer" Mean="n. 电脑" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="concert" Mean="n. 音乐会" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="condition" Mean="n. 条件，状况" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="confident" Mean="a. 有信心的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="consider" Mean="v. 考虑，照顾，认为" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="control" Mean="n./v. 控制，管理，抑制" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="correct" Mean="a./v. 正确的，对的；改正，纠正" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="count" Mean="v. 数，点数" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="country" Mean="n. 国家，农村，乡下" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="course" Mean="n. 课程，经过，过程" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="cover" Mean="n./v. 盖子；遮盖" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="create" Mean="v. 创造；造成" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="culture" Mean="n. 文化，文明" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="customer" Mean="n. 顾客，消费者" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="dance" Mean="n./v. 舞蹈；跳舞" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="dangerous" Mean="a. 危险的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="daughter" Mean="n. 女儿" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="decide" Mean="v. 决定，下决心" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="decision" Mean="n. 决定，决心" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="deep" Mean="a. 深的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="degree" Mean="n. 读，度数，地位，程度" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="describe" Mean="v. 描写，叙述" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="design" Mean="n./v. 图样，样式；设计，策划" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="develop" Mean="v. 发展，发达，开发" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="diary" Mean="n. 日记" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="different" Mean="a. 不同的，有差异的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="difficult" Mean="a. 困难的，不易相处的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="dinner" Mean="n. 正餐，宴会" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="direct" Mean="a./v. 直接的，直达的；指挥，指示" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="director" Mean="n. (戏剧，电影等的）导演，主管，首长，负责人" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="discover" Mean="v. 发现" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="discuss" Mean="v. 讨论，议论" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="divide" Mean="v. 分，划分，分开" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="doctor" Mean="n. 医生，博士" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="draw" Mean="v. 绘画，绘制，拖，提取（金钱)" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="dream" Mean="n./v. 梦，做梦" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="drink" Mean="v. 饮,喝" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="drive" Mean="v. 驾驶，驱赶" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="driver" Mean="n. 司机，驾驶员" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="dry" Mean="a./v. 干的，干燥的；使......干，弄干" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="early" Mean="a./ad. 早的，早期的；早地，在初期" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="east" Mean="a./ad./n. 东方的；在东方，向东方；东方，东部" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="easy" Mean="a. 容易的，舒适的，从容的" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="eat" Mean="v. 吃" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="education" Mean="n. 教育，培养" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="effect" Mean="n. 效果，作用，结果" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="effort" Mean="n. 努力，艰难的尝试" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="egg" Mean="n. 蛋" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="encourage" Mean="v. 鼓励" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="energy" Mean="n. 精力，活力，能量" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="enjoy" Mean="v. 欣赏，享受......乐趣，喜欢" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="enough" Mean="a./ad. 足够的，充分的；足够地，充分地" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="environment" Mean="n. 环境" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="event" Mean="n. 事件，大事，活动，竞赛" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="excited" Mean="a. 激动的，兴奋的" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="exercise" Mean="n./v. 锻炼，做操，练习；训练，锻炼" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="expect" Mean="v. 预计；盼望" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="expensive" Mean="a. 昂贵的" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="experience" Mean="n. 经验，经历" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="explain" Mean="v. 解释，说明" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="express" Mean="n./v. 快车，快递；表达，表示" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="face" Mean="n./v. 脸；面向，面对" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="fact" Mean="n. 事实，真相" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="factory" Mean="n. 工厂" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="fail" Mean="n./v. 不及格；失败" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="family" Mean="n. 家庭，家族" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="famous" Mean="a. 著名的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="fan" Mean="n. 扇子，狂热者" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="farm" Mean="n. 农场" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="fast" Mean="a./ad. 快的；迅速地" Sentence="I don't have an example of this word." Weight="10" Skip="true" />
-	<WordItem Word="fear" Mean="n. 恐惧，害怕" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="feed" Mean="v. 喂，饲养" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="feeling" Mean="n. 感情，感觉，情绪" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="festival" Mean="n. 节日，欢宴" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="fight" Mean="n./v. 打仗，对抗" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="fill" Mean="v. 填空，装满，充满" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="film" Mean="n. 电影，胶片" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="find" Mean="v. 找到，发现" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="fit" Mean="n./v. 健康的，适合的；适合，使适应" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="flower" Mean="n. 花卉" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="follow" Mean="v. 跟随，仿效" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="food" Mean="n. 食物" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="football" Mean="n. 足球" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="foreign" Mean="a. 外国的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="forest" Mean="n. 森林" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="forget" Mean="v. 忘记" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="form" Mean="n./v. 表格，形式；形成，构成" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="free" Mean="a. 自由的，空闲的，免费的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="fresh" Mean="a. 新鲜的，无经验的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="friend" Mean="n. 朋友" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="friendly" Mean="a. 友好的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="fruit" Mean="n. 水果，果实" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="future" Mean="n. 将来，前途，远景" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="game" Mean="n. 游戏，运动，比赛" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="garden" Mean="n. 花园，果园，菜园" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="gate" Mean="n. 大门" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="general" Mean="a./n. 总的，一般的；将军" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="gift" Mean="n. 礼物，赠品，天赋" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="glass" Mean="n. 玻璃" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="good" Mean="a. 优良的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="green" Mean="a./n. 绿色的；绿色" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="grey" Mean="a./n. 灰色的；灰色" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="ground" Mean="n. 地面，土地，场地" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="group" Mean="n. 组，群" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="grow" Mean="v. 生长，发育，种植，培育" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="guest" Mean="n. 客人，宾客" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="habit" Mean="n. 习惯，习性" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="hair" Mean="n. 头发，毛发" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="half" Mean="a./n. 一半的；一半，半个" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="hand" Mean="n/.v. 收，指针；递，交付" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="happy" Mean="a. 幸福的，快乐的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="hard" Mean="a./ad. 硬的，困难的，努力地" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="have" Mean="v. 有，吃，喝，进行，患有（疾病），使" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="head" Mean="n./v. 头，头脑；驶向，出发" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="health" Mean="n. 健康，卫生" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="healthy" Mean="a. 健康的，健壮的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="heart" Mean="n. 心脏，心形" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="heat" Mean="n. 热，热度" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="heavy" Mean="a. 重的，繁重的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="help" Mean="n./v. 帮助" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="hero" Mean="n. 英雄，勇士" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="high" Mean="a. 高的，高尚的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="hill" Mean="n. 小山，丘陵" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="history" Mean="n. 历史" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="hobby" Mean="n. 爱好" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="hole" Mean="n. 洞" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="holiday" Mean="n. 假日，假期" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="home" Mean="n. 家" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="honest" Mean="a. 诚实的，正直的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="hope" Mean="n./v. 希望" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="horse" Mean="n. 马" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="hospital" Mean="n. 医院" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="hot" Mean="a. 热的，热情的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="hotel" Mean="n. 旅馆，宾馆" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="hour" Mean="n. 小时" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="house" Mean="n. 房子，住宅" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="huge" Mean="a. 巨大的，庞大的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="hurt" Mean="v. 伤害" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="ice" Mean="n. 冰，冰冻食品" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="idea" Mean="n. 主意，意见，想法" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="ill" Mean="a. 有病的，不健康的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="imagine" Mean="v. 想象，设想" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="important" Mean="a. 重要的，有地位的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="impossible" Mean="a. 不可能的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="improve" Mean="v. 改进，更新" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="include" Mean="v. 包含，包括" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="increase" Mean="n./v. 增加，繁殖，增长" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="industry" Mean="n. 工业，产业，行业" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="influence" Mean="n./v. 影响；对...有作用" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="information" Mean="n. 信息，通知，报告，知识，资料" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="instruction" Mean="n. 说明，须知，指令" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="instrument" Mean="n. 乐器，仪器" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="interest" Mean="n. 兴趣，趣味" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="interesting" Mean="a. 有趣的，有意思的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="international" Mean="a. 国际的，世界的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="interview" Mean="n./v. 采访，接见，会见" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="introduce" Mean="v. 介绍，提出" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="invent" Mean="v. 发明，创造" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="invite" Mean="v. 邀请，招待" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="job" Mean="n. 工作，职位" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="join" Mean="v. 参加，加入" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="journey" Mean="n. 旅行，路程" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="judge" Mean="n./v. 裁判，审判员；判决，断定，作评价" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="juice" Mean="n. （水果）汁、液" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="jump" Mean="n./v. 跳跃，上涨" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="keep" Mean="v. 保持，保存" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="key" Mean="n. 钥匙，答案，关键" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="kick" Mean="n./v. 踢" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="kid" Mean="n. 小孩，年轻人" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="kill" Mean="v. 杀死，毁掉" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="kind" Mean="a./n. 善良的，友好的；种类" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="kitchen" Mean="n. 厨房" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="kite" Mean="n. 风筝" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="knee" Mean="n. 膝盖" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="knife" Mean="n. 小刀" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="knock" Mean="v. 敲，打，击" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="know" Mean="v. 指导，了解，认识，懂得" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="knowledge" Mean="n. 知识，学问" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="lake" Mean="n. 湖" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="land" Mean="n./v. 陆地，土地；降落，登岸" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="language" Mean="n. 语言" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="large" Mean="a. 巨大的，巨大的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="late" Mean="a./ad. 晚的，迟的；晚地，迟地" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="laugh" Mean="n./v. 笑，笑声；大笑，嘲笑" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="law" Mean="n. 法律，法令" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="lay" Mean="v. 放，铺设，提出，下蛋" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="lead" Mean="v. 领导，带领，引导" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="leader" Mean="n. 领袖，领导人" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="leaf" Mean="n. 叶" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="learn" Mean="v. 学习，学会" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="least" Mean="a. 最少的，最小的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="leave" Mean="v. 离开，把......留下，剩下，动身" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="left" Mean="a./ad./n. 左边的；向左；左边" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="letter" Mean="n. 信，字母，铅字" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="level" Mean="n. 水平线，水平，标准，级别" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="library" Mean="n. 图书馆" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="life" Mean="n. 生命，生活，人生" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="light" Mean="a./n./v. 明亮的，轻的；光，日光，灯；点燃，点亮" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="line" Mean="n./v. 线，线索，行；排成一排，使有线条" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="list" Mean="n./v. 一览表，清单；列出，列于表上" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="listen" Mean="v. 听，听从" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="little" Mean="a. 矮小的，很少的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="live" Mean="a./v. 活的，实况播送的；生活，居住" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="local" Mean="a. 当地的，地方的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="long" Mean="a./ad. 长的；长久" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="lose" Mean="v. 失去，丢失，失败" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="love" Mean="n./v. 爱，热爱" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="low" Mean="a./ad. 低的，消极的；低下地，低价地" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="lunch" Mean="n. 午餐，午饭" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="machine" Mean="n. 机器" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="magazine" Mean="n. 杂志，期刊" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="make" Mean="v. 制造，做，使得" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="manage" Mean="v. 管理，操纵，处理" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="manner" Mean="n. 方式，态度，举止" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="mark" Mean="n./v. 标记，分数，痕迹；做记号，打分数" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="market" Mean="n. 市场，集市" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="master" Mean="v. 精通，掌握，控制" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="match" Mean="n./v. 火柴，比赛；匹配，使成对" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="material" Mean="n. 材料，原料，素材" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="matter" Mean="n./v. 事情，问题；要紧，有重大关系" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="meal" Mean="n. 一餐，膳食" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="meat" Mean="n. 肉" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="medical" Mean="a. 医学的，医疗的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="medicine" Mean="n. 药，医学" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="meeting" Mean="n. 会，集会，会见" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="member" Mean="n. 成员，会员" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="memory" Mean="n. 回忆，记忆，内存" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="mention" Mean="n./v. 提及，说起" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="message" Mean="n. 消息，音信，通讯" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="method" Mean="n. 方法，办法" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="middle" Mean="n. 中间，当中" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="milk" Mean="n./v. 牛奶，乳；挤奶" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="mind" Mean="n./v. 思想，头脑；介意，注意" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="minute" Mean="n. 分钟" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="miss" Mean="v. 失去，错过，缺；思念" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="mistake" Mean="n./v. 错误；弄错" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="Monday" Mean=" 星期一" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="model" Mean="n. 模型，原形，范例" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="modern" Mean="a. 现代的，现代化的，时髦的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="money" Mean="n. 钱，货币" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="month" Mean="n. 月份" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="morning" Mean="n. 早晨，上午" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="mother" Mean="n. 母亲" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="mountain" Mean="n. 山，山脉" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="move" Mean="v. 移动，搬动，搬家" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="movie" Mean="n. 电影" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="museum" Mean="n. 博物馆" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="music" Mean="n. 音乐，乐曲" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="name" Mean="n./v. 名字；命名" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="nation" Mean="n. 民族，国家" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="national" Mean="a. 国家的，民族的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="natural" Mean="a. 自然地，天生的" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="nature" Mean="n. 自然，性质" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="necessary" Mean="a. 必须的，必要的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="nervous" Mean="a. 紧张不安的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="news" Mean="n. 新闻，消息" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="newspaper" Mean="n. 报纸" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="noise" Mean="n. 噪音，喧闹声" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="normal" Mean="a./n. 正常的，正规的；正规" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="north" Mean="a./ad./n. 北方的；向北方；北方" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="note" Mean="n./v. 短息，注释，纸笔，音符；记录，笔记" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="notice" Mean="n./v. 布告，通告，注意；注意" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="offer" Mean="n./v. 题意，建议；提供" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="office" Mean="n. 办公室，事务所" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="oil" Mean="n./v. 油，石油；给......供油" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="old" Mean="a. 老的，旧的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="open" Mean="a./v. 开着的，公开的；打开，公开" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="operate" Mean="v. 动手术，操作，开动，运转" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="order" Mean="n./v. 顺序，命令，订单；订购，命令，下令" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="paper" Mean="n. 纸，报纸，考卷" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="parent" Mean="n. 父（母）亲" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="park" Mean="n. 公园，停车场" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="part " Mean="n. 部分，局部" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="party" Mean="n. 聚会，晚会，党派" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="pass" Mean="v. 传递，经过，通过" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="patient" Mean="n./a. 病人；忍耐的，耐心的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="pay" Mean="v. 付钱" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="peace" Mean="n. 和平，安宁" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="pen" Mean="n. 钢笔" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="people" Mean="n. 人们，人民" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="perfect" Mean="a. 完美的，极好的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="perform" Mean="v. 表演，履行，行动" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="period" Mean="n. 时期，学时，周期" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="person" Mean="n. 人" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="personal" Mean="a. 个人的，私人的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="photo" Mean="n. 照片" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="pick" Mean="v. 拾起，采集，挑选" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="picture" Mean="n. 照片，图片" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="place" Mean="n./v. 地方，处所，地位；放置" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="plan" Mean="n./v. 计划" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="plane" Mean="n. 飞机" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="plant" Mean="n./v. 植物，庄稼，工厂；种植，播种，安置" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="play" Mean="n./v. 玩耍，戏剧；玩，扮演，播放" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="point" Mean="n./v. 点，分数，要点；指，指向" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="police" Mean="n. 警察，警务人员，公安部门" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="polite" Mean="a. 有礼貌的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="pollution" Mean="n. 污染" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="popular" Mean="a. 通俗的，流行的，受欢迎的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="population" Mean="n. 人口" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="possible" Mean="a. 可能的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="potato" Mean="n. 土豆，马铃薯" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="power" Mean="n. 力量，动力，电力" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="practice" Mean="n./v. 练习，训练" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="praise" Mean="n./v. 表扬，赞扬" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="prepare" Mean="v. 准备，预备" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="present" Mean="a./n./v. 出席的；呈现，介绍；礼物" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="president" Mean="n. 总统，校长" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="prevent" Mean="v. 防止，预防" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="price" Mean="n. 价格" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="print" Mean="v. 印刷，出版，打印" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="private" Mean="a. 私人的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="prize" Mean="n. 奖赏，奖品" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="problem" Mean="n. 问题" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="process" Mean="n./v. 过程，程序；加工，处理" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="produce" Mean="v. 生产，制作，提出" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="product" Mean="n. 产品，产物" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="programme" Mean="n. 节目，项目，程序" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="progress" Mean="n./v. 进步" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="project" Mean="n. 工程，规划，方案" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="promise" Mean="n.v. 答应，允诺" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="protect" Mean="v. 保护" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="proud" Mean="a. 自豪的，骄傲的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="prove" Mean="v. 证明，证实" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="provide" Mean="v. 提供，供给，供应；规定" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="public" Mean="a./n. 公共的； 公众" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="question" Mean="n./v. 问题，疑问；询问，怀疑" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="quick" Mean="a. 快的，敏捷的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="quiet" Mean="a. 安静的，寂静的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="race" Mean="n./v. 种族，竞赛，赛跑" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="radio" Mean="n. 无线电，收音机" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="rain" Mean="n./v. 雨，雨水；下雨" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="raise" Mean="v. 饲养，提高，募捐" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="reach" Mean="v. 到达，伸手够得着" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="read" Mean="v. 读，朗读" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="ready" Mean="a. 准备好的，现成的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="real" Mean="a. 真实的，确实的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="reason" Mean="n./v. 理由，原因，动机；评理" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="receive" Mean="v. 收到，接受" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="record" Mean="n./v. 记录，唱片，档案；记载，录音" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="red" Mean="a./n. 红色的；红色" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="refuse" Mean="v. 拒绝，不愿" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="relationship" Mean="n. 关系，关联，亲属" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="relax" Mean="v. 放松，休息，缓和，使松懈" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="remain" Mean="v. 保持，逗留，残余" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="remember" Mean="v. 记得，想起，铭记" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="repeat" Mean="v. 重说，重做，复制" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="reply" Mean="n. 回答，答复" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="report" Mean="v./n. 报告；报道" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="research" Mean="n. 研究，调查" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="respect" Mean="v./n. 尊敬，尊重，敬意" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="rest" Mean="v./n. 休息；其余的人或物" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="restaurant" Mean="n. 饭馆，饭店" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="result" Mean="v./n. 结果；导致，产生" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="return" Mean="v. 归还，会，归" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="review" Mean="v./n. 检查，复习；回顾" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="rich" Mean="a. 富有的，有钱的，充足的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="ride" Mean="v./n. 乘，骑；乘车旅行" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="right" Mean="a./ad./n. 右边的，正确的；在右边，正确地；右边，权利" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="ring" Mean="v./n. 响，打电话；铃声，环形物" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="rise" Mean="v. 上升，上涨" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="risk" Mean="n. 冒险，风险" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="river" Mean="n. 江，河，水道" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="road" Mean="n. 路，道路" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="rock" Mean="n. 岩石" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="role" Mean="n. 角色" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="room" Mean="n. 房间，室，空间" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="rubbish" Mean="n. 垃圾，废物" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="rule" Mean="n. 规则，规定，惯例" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="run" Mean="v. 跑" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sad" Mean="a. 悲伤的，忧愁的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="safe" Mean="a. 安全的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="safety" Mean="n. 安全，保险" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sale" Mean="n. 出售，销售额" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="same" Mean="a./ n. 同样的，同一的；同样的事物" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="save" Mean="v. 救，节省" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="say" Mean="v. 说，讲" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="school" Mean="n. 学校；学派" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="science" Mean="n. 科学" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="scientist" Mean="n. 科学家" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="score" Mean="v./n. 把...记下；得分，分数" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="screen" Mean="n. 幕，荧光屏" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sea" Mean="n. 海 ，海洋" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="search" Mean="v./n. 搜寻，搜查" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="season" Mean="n. 季节" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="seat" Mean="n. 座位" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="secret" Mean="n. 秘密，内情" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="secretary" Mean="n. 秘书，书记" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="see" Mean="v. 看见，看到，领会" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="seem" Mean="v. 似乎，好像，仿佛" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sell" Mean="v. 卖，售" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="send" Mean="v. 打发，派遣，送" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sense" Mean="n. 感觉，意识，判断力" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sentence" Mean="n. 句子，判决，宣判" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="separate" Mean="a./ v. 各自的；分离，分开" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="serious" Mean="a. 严肃的，严重的，认真的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="serve" Mean="v. 招待，服务" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="service" Mean="n. 服务，服役" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="set" Mean="v./n. 设置，提出，树立；装备，设备" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="shake" Mean="v. 摇动，震动" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="shape" Mean="v./n. 塑造；形状，外形，身段" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="share" Mean="v. 分享，共同使用" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="ship" Mean="n./v. 船，轮船；用船载运" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="shoe" Mean="n. 鞋" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="shop" Mean="n./v. 商店，买东西" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="short" Mean="a. 短的，矮的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="shoulder" Mean="n. 肩膀" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="show" Mean="n./v. 展示，展览；给......看，出示" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="shy" Mean="a. 害羞的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="side" Mean="n. 边，侧面" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="sight" Mean="n. 情景，风景，视力" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="similar" Mean="a. 相似的，像" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="simple" Mean="a. 简单的，简易的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sing" Mean="v. 唱" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="single" Mean="a. 单一的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sister" Mean="n. 姐，妹" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sit" Mean="v. 坐" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="situation" Mean="n. 形式，情况" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="size" Mean="n. 尺寸，大小" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="skate" Mean="v. 溜冰，滑冰" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="skill" Mean="n. 技能，技巧" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sleep" Mean="v. 睡眠，睡觉" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="slow" Mean="a. 慢的，迟钝的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="small" Mean="a. 小的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="smile" Mean="n./v. 微笑" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="smoke" Mean="n./v. 烟；冒烟；吸烟" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="social" Mean="a. 社会的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="society" Mean="n. 社会" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="soft" Mean="a. 软的，柔和的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="solve" Mean="v. 解决" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="son" Mean="n. 儿子" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="song" Mean="n. 歌曲" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sorry" Mean="a. 对不起，抱歉，难过" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sound" Mean="n./v. 声音；听起来，发出声音" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="south" Mean="n. 南方，南部" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="southern" Mean="a. 南方的，南部的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="space" Mean="n. 空间" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="speak" Mean="v. 说，讲，发言" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="special" Mean="a. 特别的，专门的" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="speech" Mean="n. 演讲，讲话" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="speed" Mean="n./v. 速度；使加速" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="spend" Mean="v. 度过，花费" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="spirit" Mean="n. 精神" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sport" Mean="n. 运动，锻炼" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="spread" Mean="v. 延伸，展开，传播" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="spring" Mean="n. 春天，春季，弹簧，泉" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="square" Mean="a./ n. 方形的；广场" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="stand" Mean="v. 站立，起立，经受" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="standard" Mean="n. 标准，规格" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="star" Mean="n. 星，恒星，明星" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="start" Mean="v. 开始，着手，出发" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="stamp" Mean="n. 邮票" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="station" Mean="n. 车站，所，电台" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="stay" Mean="n./v. 逗留，停留" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="steal" Mean="v. 偷窃" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="step" Mean="n./v. 脚步，台阶；移步，踏" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="stick" Mean="n./v. 木棒，枝条，手杖；粘住，刺" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="stone" Mean="n. 石头" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="stop" Mean="n./v. 停，站；停止，阻止" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="story" Mean="n. 故事" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="straight" Mean="a. 笔直的，直的" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="strange" Mean="a. 奇怪的，陌生的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="street" Mean="n. 街道" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="stress" Mean="n. 重压" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="strict" Mean="a. 严格的，严厉的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="strong" Mean="a. 强壮的，强烈的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="student" Mean="n. 学生" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="study" Mean="v. 学习，研究" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="subject" Mean="n. 题目，主题，学科" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="succeed" Mean="v. 成功" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="success" Mean="n. 成功" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="successful" Mean="a. 成功的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="suggest" Mean="v. 建议，提议" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="suggestion" Mean="n. 建议 ，意见" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="summer" Mean="n. 夏天，夏季" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sun" Mean="n. 太阳" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="supply" Mean="n./v. 补给，供给" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="support" Mean="n./v. 支撑，支持，支援" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="suppose" Mean="v. 猜想，假定" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="sure" Mean="a. 确定，肯定" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="surface" Mean="n. 表面，外面" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="surprise" Mean="n. 惊奇" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="system" Mean="n. 体系，系统，制度" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="table" Mean="n. 桌子，表格" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="take" Mean="v. 拿走，服用，乘坐，花费" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="talent" Mean="n. 天才，才干" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="talk" Mean="n./v. 谈话，讲话，交谈" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="tape" Mean="n. 磁带，录音带" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="task" Mean="n. 任务，工作" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="taste" Mean="n./v. 味道，味觉；品尝" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="tea" Mean="n. 茶" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="teach" Mean="v. 教书" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="teacher" Mean="n. 教师" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="team" Mean="n. 队，组" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="techonology" Mean="n. 技术，科技" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="teenager" Mean="n. 十几岁的青少年" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="telephone" Mean="n./v. 电话；打电话" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="tell" Mean="v. 告诉，吩咐" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="term" Mean="n. 学期，术语" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="terrible" Mean="a. 可怕的，糟糕的" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="test" Mean="n./v. 测试，考查" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="text" Mean="n. 文本，课文" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="thank" Mean="n./v. 感激，感谢" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="theatre" Mean="n. 剧场，电影院" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="thick" Mean="a. 厚的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="thin" Mean="a. 薄的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="think" Mean="v. 想，思考，打算，考虑" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="thirsty" Mean="a. 口渴的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="thought" Mean="n. 思考，思想" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="throw" Mean="v. 扔，投" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="ticket" Mean="n. 票，入场券" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="tidy" Mean="a./v. 整洁的，干净的；弄整洁" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="time" Mean="n./v. 时间，钟点；测......时间；次数" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="tired" Mean="a. 累的，疲劳的" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="tool" Mean="n. 工具，器具，手段" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="total" Mean="a./n./v. 总的，总数，合计" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="touch" Mean="v. 触摸，接触" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="tour" Mean="n. 参观，观光" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="tourist" Mean="n. 旅行者，观光者" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="tower" Mean="n. 塔" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="town" Mean="n. 城镇" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="toy" Mean="n. 玩具，玩物" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="trade" Mean="n./v. 贸易，交易" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="traditional" Mean="a. 传统的，惯例的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="traffic" Mean="n. 交通，运输" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="train" Mean="n./v. 火车；培训，训练" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="travel" Mean="n./v. 旅行" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="treat" Mean="v. 对待，看待" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="trouble" Mean="n./v. 问题，烦恼" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="true" Mean="a. 真的，真实的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="trust" Mean="v. 相信，信任" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="truth" Mean="n. 真理，真相" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="try " Mean="v. 试，试图，试做" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="turn" Mean="n./v. 轮流，顺序；转动，转变" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="TV" Mean="n. 电视" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="twice" Mean="ad. 两次，两倍" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="two" Mean="num. 二" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="umbrella" Mean="n. 雨伞" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="uncle" Mean="n. 叔叔，伯伯，舅，姑父，姨夫" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="understand" Mean="v. 懂得，理解，明白" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="unit" Mean="n. 单元，单位" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="university" Mean="n. 大学" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="upset" Mean="a. 苦恼的，心烦的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="use" Mean="n./v. 使用，运用" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="used" Mean="a. 用过的，二手的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="useful" Mean="a. 有用的，有益的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="usual" Mean="a. 通常的，平常的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="vacation" Mean="n. 假期，休假" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="valuable" Mean="a. 值钱的，有价值的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="value" Mean="n. 价值" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="various" Mean="a. 各种各样的，不同的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="vegetable" Mean="n. 蔬菜" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="victory" Mean="n. 胜利" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="video" Mean="n. 录像，视频" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="view" Mean="n. 风景，视野，观点" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="village" Mean="n. 村庄" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="visit" Mean="n./v. 参观，访问，拜访" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="visitor" Mean="n. 游客，访问者，参观者" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="voice" Mean="n. 声音 " Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="volleyball" Mean="n. 排球" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="volunteer" Mean="n. 志愿者" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wait" Mean="v. 等候" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wake" Mean="v. 醒来，叫醒" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="walk" Mean="n./v. 步行，散步" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wall" Mean="n. 墙" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="war" Mean="n. 战争" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="warm" Mean="a. 暖和的，温暖的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="warn" Mean="v. 警告" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wash" Mean="n./v. 洗，冲洗" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="waste" Mean="n./v. 浪费，废物；消耗" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="watch" Mean="n./v. 手表；观看，注视" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="water" Mean="n./v. 水，浇水" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="way" Mean="n. 路，路线，方式，手段" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="weak" Mean="a. 差的，弱的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wealth" Mean="n. 财产，财富" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wear" Mean="v. 穿；戴" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="weather" Mean="n. 天气，气候" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="website" Mean="n. 站点，网站" Sentence="I don't have an example of this word." Weight="9" Skip="false" />
-	<WordItem Word="week" Mean="n. 星期，周" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="weekend" Mean="n. 周末" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="weigh" Mean="v. 称重" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="weight" Mean="n. 重量" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="welcome" Mean="n./v. 欢迎" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="well" Mean="a./ad. 身体好的；好" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="west" Mean="n./ad. 西方；在西方" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="western" Mean="a. 西方的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wet" Mean="a. 湿的，潮的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="white" Mean="a./n.  白色的；白色" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="whole" Mean="a. 整个的，所有的" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="wide" Mean="a. 宽阔的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wife" Mean="n. 妻子" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wild" Mean="a. 野生的，未开发的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="win" Mean="v. 赢，获胜" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wind" Mean="n. 风" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="window" Mean="n. 窗户" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wing" Mean="n. 翅膀，机翼" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="winner" Mean="n. 获胜者，胜利者" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="winter" Mean="n. 冬季" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wise" Mean="a. 英明的，有见识的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wish" Mean="n./v. 愿望，祝愿" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="woman" Mean="n. 妇女" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wonder" Mean="n./v. 奇迹；对......疑惑" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wonderful" Mean="a. 美妙的，精彩的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wood" Mean="n. 木头，木材" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="word" Mean="n. 单词，话" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="work" Mean="v. 工作，劳动" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="worker" Mean="n. 工人" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="world" Mean="n. 世界" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="worry" Mean="v. 忧虑，担忧" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="worse" Mean="a. 较差的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="worst" Mean="a. 最差的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="worth" Mean="a. 值得的，值钱的" Sentence="I don't have an example of this word." Weight="11" Skip="false" />
-	<WordItem Word="wound" Mean="n./v. 伤口；受伤" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="write" Mean="v. 写，写作" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="writer" Mean="n. 作家，作者" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="wrong" Mean="a. 错误的，有毛病的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="yard" Mean="n. 院子" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="year" Mean="n. 年" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="yellow" Mean="a./n. 黄色的，黄色" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="young" Mean="a. 年轻的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="zoo" Mean="n. 动物园" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="concent" Mean="n. 协调，一致，和谐" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="custom" Mean="n. 风俗; 个人习惯; 惠顾" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="failed" Mean="adj. 失败了的，不成功的" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="easily" Mean="v. 容易地; 很可能; 频繁地" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
-	<WordItem Word="explore" Mean="v. 在…探险; 探讨; 勘探; 摸索" Sentence="I don't have an example of this word." Weight="10" Skip="false" />
+  <WordItem Word="ability" Mean="n. 能力，才能" Sentence="His ability is limited." Weight="9" Skip="true" />
+  <WordItem Word="accept" Mean="v. 接受，认可，承担" Sentence="If you accept, please let me know." Weight="10" Skip="true" />
+  <WordItem Word="accident" Mean="n. 事故，意外的事" Sentence="An awful accident has happened." Weight="10" Skip="true" />
+  <WordItem Word="achieve" Mean="v. 达到，取得" Sentence="They achieved some victories despite these setbacks." Weight="10" Skip="true" />
+  <WordItem Word="action" Mean="n. 行动" Sentence="The time has come for action." Weight="10" Skip="false" />
+  <WordItem Word="active" Mean="a. 积极地、主动的" Sentence="She is an active girl." Weight="10" Skip="true" />
+  <WordItem Word="activity" Mean="n. 活动" Sentence="The house has been full of activity all day." Weight="9" Skip="true" />
+  <WordItem Word="actor" Mean="n. 演员，男演员，行为者" Sentence="An actor must be able to memorize his lines." Weight="10" Skip="true" />
+  <WordItem Word="address" Mean="n. 地址" Sentence="The President gave an address to the nation over the radio." Weight="10" Skip="true" />
+  <WordItem Word="adult" Mean="n. 成人，成年人" Sentence="He is adult in behaviour." Weight="10" Skip="false" />
+  <WordItem Word="advantage" Mean="n. 优点，好处" Sentence="The photograph showed him to advantage." Weight="10" Skip="true" />
+  <WordItem Word="advice" Mean="n. 忠告，劝告，建议" Sentence="Good advice is beyond price." Weight="10" Skip="true" />
+  <WordItem Word="advise" Mean="v. 忠告，劝告，建议，商量" Sentence="It is easy for you to advise, but difficult to take advice from others." Weight="10" Skip="true" />
+  <WordItem Word="afternoon" Mean="n. 下午，午后" Sentence="We have no class this afternoon." Weight="9" Skip="false" />
+  <WordItem Word="age" Mean="n. 年龄， 时代" Sentence="They married at a late age." Weight="10" Skip="true" />
+  <WordItem Word="agree" Mean="v. 同意，应允" Sentence="I asked him to come with me and he agreed." Weight="10" Skip="true" />
+  <WordItem Word="air" Mean="n. 空气，大气" Sentence="We breathe air." Weight="10" Skip="true" />
+  <WordItem Word="airport" Mean="n. 航空站，飞机场" Sentence="The plane circled the airport before landing." Weight="10" Skip="true" />
+  <WordItem Word="allow" Mean="v. 允许，准许" Sentence="I don't think he would allow it." Weight="10" Skip="true" />
+  <WordItem Word="alone" Mean="a. 单独的，孤独的" Sentence="He was all alone." Weight="10" Skip="true" />
+  <WordItem Word="ancient" Mean="a. 古代的，古老的" Sentence="We should read ancient authors." Weight="9" Skip="true" />
+  <WordItem Word="angry" Mean="a. 生气的，愤怒的" Sentence="My friends' angry words hurt my feelings." Weight="10" Skip="true" />
+  <WordItem Word="animal" Mean="n. 动物" Sentence="An animal has senses but no reason." Weight="12" Skip="false" />
+  <WordItem Word="answer" Mean="n./v. 回答，答复；回信；（作出）答案" Sentence="I asked him a question but he would not answer." Weight="9" Skip="true" />
+  <WordItem Word="appear" Mean="v. 出现" Sentence="We expected him, but he never appeared." Weight="9" Skip="true" />
+  <WordItem Word="apple" Mean="n. 苹果" Sentence="Freshly baked apple pie makes a tasty dessert." Weight="10" Skip="true" />
+  <WordItem Word="area" Mean="n. 面积，地域，地方，区域，范围，领域" Sentence="What's the area of your garden?" Weight="10" Skip="true" />
+  <WordItem Word="argue" Mean="v. 争辩，争论，说服" Sentence="Why are they always arguing?" Weight="10" Skip="true" />
+  <WordItem Word="arm" Mean="n./v. 臂，武器；装备，武装" Sentence="He broke his arm in an accident." Weight="10" Skip="true" />
+  <WordItem Word="army" Mean="n. 军队" Sentence="The army were still fighting in spite of heavy casualties." Weight="10" Skip="true" />
+  <WordItem Word="arrive" Mean="v. 到达，达到" Sentence="to arrive at an agreement/a decision/a conclusion" Weight="11" Skip="false" />
+  <WordItem Word="art" Mean="n. 艺术，美术，技艺" Sentence="She loves art." Weight="10" Skip="true" />
+  <WordItem Word="article" Mean="n. 文章，物品" Sentence="We should buy several articles at the shop." Weight="12" Skip="false" />
+  <WordItem Word="artist" Mean="n. 艺术家" Sentence="Addis's no ordinary baker—he's an artist." Weight="9" Skip="false" />
+  <WordItem Word="Asian" Mean="a. 亚洲的，亚洲人的" Sentence="Dr Amid was assisted by a young Asian nurse." Weight="10" Skip="true" />
+  <WordItem Word="ask" Mean="v. 问；要求" Sentence="If you don't know, you must ask." Weight="10" Skip="true" />
+  <WordItem Word="attend" Mean="v. 出席，参加" Sentence="She does not attend often." Weight="10" Skip="true" />
+  <WordItem Word="attention" Mean="n. 注意，关心，（口令）立正" Sentence="Our attention was held throughout his long talk." Weight="10" Skip="false" />
+  <WordItem Word="attitude" Mean="n. 态度，看法" Sentence="They maintained an uncertain attitude." Weight="10" Skip="true" />
+  <WordItem Word="attract" Mean="v. 吸引，引起" Sentence="The panda attracted many children." Weight="10" Skip="false" />
+  <WordItem Word="aunt" Mean="n. 伯母，舅母，婶，姑，姨" Sentence="Copy your aunt and you won't go wrong." Weight="11" Skip="false" />
+  <WordItem Word="autumn" Mean="n. 秋天，秋季" Sentence="Winter comes after autumn." Weight="10" Skip="true" />
+  <WordItem Word="avoid" Mean="v. 避免，消除" Sentence="I avoided him as much as possible." Weight="11" Skip="true" />
+  <WordItem Word="bad" Mean="a. 坏的，有害的，不利的" Sentence="He speaks bad English." Weight="10" Skip="true" />
+  <WordItem Word="bank" Mean="n. （河、海、湖的）岸，堤，银行" Sentence="The farmers banked snowbreak in winter." Weight="10" Skip="true" />
+  <WordItem Word="baseball" Mean="n. 棒球" Sentence="I like to play baseball." Weight="10" Skip="true" />
+  <WordItem Word="basketball" Mean="n. 篮球" Sentence="I was hot on playing basketball when I was in college." Weight="10" Skip="true" />
+  <WordItem Word="beach" Mean="n. 海滨，海滩" Sentence="tourists sunbathing on the beach" Weight="10" Skip="false" />
+  <WordItem Word="beat" Mean="n./v. 节拍；敲打，跳动，打赢" Sentence="His heart was still beating." Weight="10" Skip="true" />
+  <WordItem Word="beautiful" Mean="a. 美丽的，美观的" Sentence="a beautiful woman/face/baby/voice/poem/smell/evening" Weight="10" Skip="false" />
+  <WordItem Word="bed" Mean="n. 床" Sentence="Joe sat on the bed while Martin was unpacking." Weight="10" Skip="true" />
+  <WordItem Word="begin" Mean="v. 开始，着手" Sentence="Let's begin." Weight="10" Skip="true" />
+  <WordItem Word="best" Mean="a. 最好的，最出色的" Sentence="Lucy is the best person to fill this secretary vacancy." Weight="10" Skip="true" />
+  <WordItem Word="better" Mean="a. 更好的，较好的" Sentence="He is no better yet." Weight="10" Skip="false" />
+  <WordItem Word="believe" Mean="v. 相信，认为" Sentence="I quite believe!" Weight="10" Skip="true" />
+  <WordItem Word="benefit" Mean="n./v. 利益，好处；有益于，受益于" Sentence="The bank suffers while its officers benefit." Weight="10" Skip="true" />
+  <WordItem Word="big" Mean="a. 大的" Sentence="There is a big bell in the room." Weight="10" Skip="true" />
+  <WordItem Word="bird" Mean="n. 鸟" Sentence="All birds lay eggs." Weight="10" Skip="true" />
+  <WordItem Word="birthday" Mean="n. 生日" Sentence="Happy Birthday!" Weight="10" Skip="true" />
+  <WordItem Word="black" Mean="a./n. 黑色的，黑色" Sentence="It was a cold, black night." Weight="10" Skip="true" />
+  <WordItem Word="blood" Mean="n. 血液" Sentence="Blood trickled down his face." Weight="10" Skip="true" />
+  <WordItem Word="blow" Mean="v. 吹，刮风，吹起" Sentence="He gave him a violent blow on the head." Weight="10" Skip="true" />
+  <WordItem Word="blue" Mean="a./n. 蓝色的，沮丧的，悲伤的；蓝色" Sentence="A clear atmosphere intensifies the blue of the sky." Weight="10" Skip="true" />
+  <WordItem Word="boat" Mean="n. 小船，小舟" Sentence="A boat is on the water." Weight="10" Skip="true" />
+  <WordItem Word="book" Mean="n./v. 书，本；预定" Sentence="I'm reading Book Ⅱ at the moment." Weight="10" Skip="true" />
+  <WordItem Word="bottle" Mean="n. 瓶子" Sentence="A hundred and fifty empty bottles tumbled onto the floor." Weight="10" Skip="true" />
+  <WordItem Word="brain" Mean="n. 脑，头脑" Sentence="The human brain is the centre of higher nervous activity." Weight="10" Skip="true" />
+  <WordItem Word="brave" Mean="a. 勇敢的" Sentence="He is a brave soldier." Weight="10" Skip="true" />
+  <WordItem Word="break" Mean="n.v. 间隙；打破，损坏，撕开" Sentence="Glass breaks easily." Weight="10" Skip="false" />
+  <WordItem Word="breakfast" Mean="n. 早餐" Sentence="They begin breakfast at seven." Weight="10" Skip="true" />
+  <WordItem Word="breathe" Mean="v. 呼吸" Sentence="He has gone; you can breathe again." Weight="10" Skip="true" />
+  <WordItem Word="bridge" Mean="n. 桥" Sentence="I am enthusiastic over a project for building a new bridge." Weight="10" Skip="false" />
+  <WordItem Word="bright" Mean="a. 明亮的，聪明的" Sentence="A bright boy learns quickly." Weight="10" Skip="true" />
+  <WordItem Word="bring" Mean="v. 拿来，带来，取来" Sentence="He brought me acquainted with her." Weight="10" Skip="true" />
+  <WordItem Word="brother" Mean="n. 兄，弟" Sentence="Both the twin brothers were born and bred in London." Weight="10" Skip="false" />
+  <WordItem Word="brown" Mean="a./n. 褐色的，棕色的；褐色，棕色" Sentence="They have brown hair." Weight="9" Skip="false" />
+  <WordItem Word="build" Mean="v. 建筑，造" Sentence="You can trust his word, he's been building for more than 20 years." Weight="11" Skip="true" />
+  <WordItem Word="business" Mean="n. 生意，交易，职责" Sentence="The company has done business with many countries." Weight="10" Skip="false" />
+  <WordItem Word="bus" Mean="n. 公共汽车" Sentence="When we first lived here there were no buses." Weight="10" Skip="true" />
+  <WordItem Word="busy" Mean="a. 忙碌的" Sentence="He is a very busy man." Weight="10" Skip="true" />
+  <WordItem Word="buy" Mean="v. 买" Sentence="Unable to find the book in this bookstore, he bought elsewhere." Weight="10" Skip="false" />
+  <WordItem Word="call" Mean="n./v. 喊叫，通话；称呼，呼唤" Sentence="Why doesn't the servant come when I call?" Weight="10" Skip="true" />
+  <WordItem Word="calm" Mean="a. 镇静的，沉着的，平静的" Sentence="The sea is now calm." Weight="10" Skip="true" />
+  <WordItem Word="camera" Mean="n. 照相机" Sentence="Just point the camera and press the button." Weight="10" Skip="true" />
+  <WordItem Word="camp" Mean="n./v. 露营地；露营，扎营" Sentence="The hunters camped themselves in the valley." Weight="10" Skip="true" />
+  <WordItem Word="cancel" Mean="v. 取消，废除" Sentence="We cancelled our appointment." Weight="10" Skip="true" />
+  <WordItem Word="capital" Mean="n. 首都，省会，大写，资本" Sentence="The capital is located on the river." Weight="10" Skip="true" />
+  <WordItem Word="car" Mean="n. 汽车，小卧车" Sentence="He was admiring my new car." Weight="10" Skip="true" />
+  <WordItem Word="card" Mean="n. 卡片，名片，纸牌" Sentence="The cards are arranged by author and subject." Weight="10" Skip="true" />
+  <WordItem Word="care" Mean="n./v. 照料，保护，小心；在乎，关心" Sentence="I couldn't care less." Weight="10" Skip="true" />
+  <WordItem Word="careful" Mean="a. 小心的，仔细的，谨慎的" Sentence="Be careful in money matters." Weight="10" Skip="true" />
+  <WordItem Word="carry" Mean="v. 拿，搬，带" Sentence="He was carrying a box on his shoulder." Weight="10" Skip="true" />
+  <WordItem Word="cartoon" Mean="n. 动画片，卡通" Sentence="a cartoon character" Weight="10" Skip="true" />
+  <WordItem Word="catch" Mean="v. 接住，抓住，赶上" Sentence="I threw the ball to him and he caught it." Weight="10" Skip="false" />
+  <WordItem Word="celebrate" Mean="v. 庆祝" Sentence="a movie celebrating the life and work of Martin Luther King" Weight="10" Skip="true" />
+  <WordItem Word="central" Mean="a. 中心的，中央的" Sentence="This is the central city of the whole area." Weight="9" Skip="false" />
+  <WordItem Word="centre" Mean="n. 中心，中央" Sentence="He is the centre of this event." Weight="11" Skip="false" />
+  <WordItem Word="century" Mean="n. 世纪，百年" Sentence="The 5th century saw the end of the Roman Empire in the West." Weight="11" Skip="true" />
+  <WordItem Word="chair" Mean="n. 椅子" Sentence="He pulled up a chair." Weight="10" Skip="true" />
+  <WordItem Word="challenge" Mean="n. 挑战" Sentence="I did not think he was right, so I challenged him." Weight="9" Skip="true" />
+  <WordItem Word="chance" Mean="n. 机会，可能性" Sentence="There will be a chance for parents to look around the school." Weight="10" Skip="false" />
+  <WordItem Word="change" Mean="n./v. 零钱，找头；变化，更换，兑换" Sentence="Flyovers have changed the face of the city." Weight="9" Skip="false" />
+  <WordItem Word="character" Mean="n. （汉）字，字体，特征，性格，任务" Sentence="The modern hotels here have no real character." Weight="10" Skip="true" />
+  <WordItem Word="cheap" Mean="a. 便宜的" Sentence="cheap perfume/jewellery/shoes" Weight="10" Skip="true" />
+  <WordItem Word="check" Mean="n./v. 检查，批改；核对，检查" Sentence="The accounts check." Weight="10" Skip="true" />
+  <WordItem Word="cheer" Mean="n./v. 喝彩，安慰；欢呼，感到振奋" Sentence="When they saw us, they waved and cheered." Weight="10" Skip="true" />
+  <WordItem Word="child（children）" Mean="n. 孩子，儿童" Sentence="" Weight="9" Skip="true" />
+  <WordItem Word="China" Mean="n. 中国" Sentence="a china vase" Weight="10" Skip="true" />
+  <WordItem Word="Chinese" Mean="a./n. 中国的；汉语" Sentence="Chinese waiters stood in a cluster, sharing a private joke." Weight="10" Skip="true" />
+  <WordItem Word="choice" Mean="n. 选择，抉择" Sentence="Of the two choices, I prefer the latter." Weight="10" Skip="true" />
+  <WordItem Word="choose" Mean="v. 选择，抉择" Sentence="I cannot choose but wait." Weight="10" Skip="true" />
+  <WordItem Word="cinema" Mean="n. 电影院" Sentence="In recent years, the cinema has fallen on lean times." Weight="10" Skip="true" />
+  <WordItem Word="circle" Mean="n./v. 圆圈；将......圈起来" Sentence="The moon circles the earth." Weight="10" Skip="true" />
+  <WordItem Word="city" Mean="n. 市，城市" Sentence="The whole city was discussing the news." Weight="10" Skip="true" />
+  <WordItem Word="class" Mean="n. 班，年级，课" Sentence="As actress Jane is not in the same class as Susan." Weight="10" Skip="true" />
+  <WordItem Word="classmate" Mean="n. 同班同学" Sentence="Most of my classmates accord in that opinion." Weight="10" Skip="true" />
+  <WordItem Word="clean" Mean="a./v. 清洁的，干净的；弄干净" Sentence="This is a clean cut." Weight="9" Skip="true" />
+  <WordItem Word="clever" Mean="a. 聪明的，伶俐的" Sentence="Jack is a clever student." Weight="8" Skip="false" />
+  <WordItem Word="climb" Mean="v. 爬，攀登" Sentence="The plane climbed steeply." Weight="10" Skip="true" />
+  <WordItem Word="close" Mean="a./ad./v. 亲密的，近的，封闭的；接近地；关闭，靠拢" Sentence="The door won't close." Weight="10" Skip="false" />
+  <WordItem Word="clothes" Mean="n. 衣服，各种衣物" Sentence="Your clothes are very beautiful." Weight="10" Skip="true" />
+  <WordItem Word="club" Mean="n. 俱乐部；纸牌中的梅花" Sentence="They clubbed a fund of money for poor children." Weight="10" Skip="false" />
+  <WordItem Word="coast" Mean="n.. 海岸" Sentence="The south coast is the warmest part of the country." Weight="9" Skip="true" />
+  <WordItem Word="coat" Mean="n. 外套" Sentence="He slipped on his coat." Weight="11" Skip="true" />
+  <WordItem Word="cold" Mean="a./n. 冷的；感冒，伤风" Sentence="I can't stand the cold." Weight="10" Skip="true" />
+  <WordItem Word="collect" Mean="v. 收集" Sentence="They are collecting this material at the points of origin." Weight="8" Skip="false" />
+  <WordItem Word="college" Mean="n. 学院，专科学校" Sentence="Our daughter is going to college in autumn." Weight="10" Skip="true" />
+  <WordItem Word="colour" Mean="n./v. 颜色；给......着色" Sentence="Some insects can change colour." Weight="10" Skip="true" />
+  <WordItem Word="come" Mean="v. 来" Sentence="Come here, please." Weight="10" Skip="true" />
+  <WordItem Word="comfortable" Mean="a. 舒服的，安逸的" Sentence="Tom gratefully took in the comfortable sitting room." Weight="10" Skip="true" />
+  <WordItem Word="common" Mean="a. 普通的，一般的，共有的" Sentence="It's a common word." Weight="10" Skip="true" />
+  <WordItem Word="company" Mean="n. 公司，陪伴" Sentence="the largest computer company in the world" Weight="10" Skip="true" />
+  <WordItem Word="complete" Mean="a./v. 全部的，完全的，完成的；完成，结束" Sentence="When will the work be complete?" Weight="12" Skip="false" />
+  <WordItem Word="competition" Mean="n. 比赛，竞赛" Sentence="There will be a chess competition next week." Weight="12" Skip="false" />
+  <WordItem Word="computer" Mean="n. 电脑" Sentence="A computer is a device for handling of processing information." Weight="10" Skip="false" />
+  <WordItem Word="concert" Mean="n. 音乐会" Sentence="a concert hall/pianist" Weight="8" Skip="false" />
+  <WordItem Word="condition" Mean="n. 条件，状况" Sentence="Ability and effort condition success." Weight="10" Skip="false" />
+  <WordItem Word="confident" Mean="a. 有信心的" Sentence="I feel confident that we will win." Weight="10" Skip="false" />
+  <WordItem Word="consider" Mean="v. 考虑，照顾，认为" Sentence="She paused a moment to consider." Weight="9" Skip="true" />
+  <WordItem Word="control" Mean="n./v. 控制，管理，抑制" Sentence="He tried to control me." Weight="10" Skip="true" />
+  <WordItem Word="correct" Mean="a./v. 正确的，对的；改正，纠正" Sentence="The thing turned out to be correct." Weight="10" Skip="true" />
+  <WordItem Word="count" Mean="v. 数，点数" Sentence="He can read, write and count." Weight="10" Skip="true" />
+  <WordItem Word="country" Mean="n. 国家，农村，乡下" Sentence="The country is having a great boom in industry." Weight="10" Skip="true" />
+  <WordItem Word="course" Mean="n. 课程，经过，过程" Sentence="The college course was then cut to three years." Weight="10" Skip="true" />
+  <WordItem Word="cover" Mean="n./v. 盖子；遮盖" Sentence="Snow covered the ground." Weight="10" Skip="true" />
+  <WordItem Word="create" Mean="v. 创造；造成" Sentence="God created the world." Weight="11" Skip="true" />
+  <WordItem Word="culture" Mean="n. 文化，文明" Sentence="Universities are centres of culture." Weight="10" Skip="true" />
+  <WordItem Word="customer" Mean="n. 顾客，消费者" Sentence="These goods enjoy growing favour among the customers." Weight="10" Skip="true" />
+  <WordItem Word="dance" Mean="n./v. 舞蹈；跳舞" Sentence="She did a little dance." Weight="10" Skip="true" />
+  <WordItem Word="dangerous" Mean="a. 危险的" Sentence="We argued him out of going on such a dangerous journey." Weight="10" Skip="true" />
+  <WordItem Word="daughter" Mean="n. 女儿" Sentence="Ruth was a daughter of Abraham." Weight="10" Skip="true" />
+  <WordItem Word="decide" Mean="v. 决定，下决心" Sentence="You are the one to decide." Weight="11" Skip="false" />
+  <WordItem Word="decision" Mean="n. 决定，决心" Sentence="Several unpopular decisions diminished the governor's popularity." Weight="10" Skip="true" />
+  <WordItem Word="deep" Mean="a. 深的" Sentence="The river is not deep;  we can walk through it." Weight="10" Skip="true" />
+  <WordItem Word="degree" Mean="n. 读，度数，地位，程度" Sentence="It's at 10 degrees centigrade." Weight="10" Skip="true" />
+  <WordItem Word="describe" Mean="v. 描写，叙述" Sentence="Can you describe your son?" Weight="11" Skip="true" />
+  <WordItem Word="design" Mean="n./v. 图样，样式；设计，策划" Sentence="He has designed all the scenes and costumes." Weight="10" Skip="false" />
+  <WordItem Word="develop" Mean="v. 发展，发达，开发" Sentence="This has made it necessary for agriculture and industry to develop very quickly." Weight="10" Skip="false" />
+  <WordItem Word="diary" Mean="n. 日记" Sentence="a desk diary" Weight="10" Skip="true" />
+  <WordItem Word="different" Mean="a. 不同的，有差异的" Sentence="Mary and Joan are quite different." Weight="10" Skip="false" />
+  <WordItem Word="difficult" Mean="a. 困难的，不易相处的" Sentence="Things become increasingly difficult." Weight="9" Skip="true" />
+  <WordItem Word="dinner" Mean="n. 正餐，宴会" Sentence="I haven't had dinner yet." Weight="9" Skip="true" />
+  <WordItem Word="direct" Mean="a./v. 直接的，直达的；指挥，指示" Sentence="This is the most direct road." Weight="9" Skip="true" />
+  <WordItem Word="director" Mean="n. (戏剧，电影等的）导演，主管，首长，负责人" Sentence="I am a member of the board of directors." Weight="10" Skip="true" />
+  <WordItem Word="discover" Mean="v. 发现" Sentence="Recently they have discovered a comet." Weight="10" Skip="false" />
+  <WordItem Word="discuss" Mean="v. 讨论，议论" Sentence="They are discussing freely." Weight="9" Skip="false" />
+  <WordItem Word="divide" Mean="v. 分，划分，分开" Sentence="They agree to divide evenly." Weight="10" Skip="false" />
+  <WordItem Word="doctor" Mean="n. 医生，博士" Sentence="He would not dream of becoming a doctor." Weight="10" Skip="true" />
+  <WordItem Word="draw" Mean="v. 绘画，绘制，拖，提取（金钱)" Sentence="He drew some pictures." Weight="11" Skip="true" />
+  <WordItem Word="dream" Mean="n./v. 梦，做梦" Sentence="I often return in dreams to my hometown." Weight="10" Skip="true" />
+  <WordItem Word="drink" Mean="v. 饮,喝" Sentence="I don't drink and I've never played cards." Weight="10" Skip="true" />
+  <WordItem Word="drive" Mean="v. 驾驶，驱赶" Sentence="He drove the ox hard." Weight="10" Skip="true" />
+  <WordItem Word="driver" Mean="n. 司机，驾驶员" Sentence="The driver whipped the horses on." Weight="10" Skip="true" />
+  <WordItem Word="dry" Mean="a./v. 干的，干燥的；使......干，弄干" Sentence="We were drying our clothes by squeezing." Weight="10" Skip="true" />
+  <WordItem Word="early" Mean="a./ad. 早的，早期的；早地，在初期" Sentence="He is an early riser." Weight="10" Skip="true" />
+  <WordItem Word="east" Mean="a./ad./n. 东方的；在东方，向东方；东方，东部" Sentence="The wind is blowing from the east." Weight="10" Skip="true" />
+  <WordItem Word="easy" Mean="a. 容易的，舒适的，从容的" Sentence="That is an easy question." Weight="10" Skip="true" />
+  <WordItem Word="eat" Mean="v. 吃" Sentence="He was too ill to eat." Weight="10" Skip="true" />
+  <WordItem Word="education" Mean="n. 教育，培养" Sentence="primary/elementary education" Weight="12" Skip="false" />
+  <WordItem Word="effect" Mean="n. 效果，作用，结果" Sentence="side effect" Weight="10" Skip="true" />
+  <WordItem Word="effort" Mean="n. 努力，艰难的尝试" Sentence="I decided to make one more effort." Weight="10" Skip="true" />
+  <WordItem Word="egg" Mean="n. 蛋" Sentence="The blackbird's nest contained four eggs." Weight="10" Skip="true" />
+  <WordItem Word="encourage" Mean="v. 鼓励" Sentence="Teachers often encourage class participation." Weight="10" Skip="true" />
+  <WordItem Word="energy" Mean="n. 精力，活力，能量" Sentence="He is full of energy." Weight="10" Skip="true" />
+  <WordItem Word="enjoy" Mean="v. 欣赏，享受......乐趣，喜欢" Sentence="They are entitled to enjoy many advantages and privileges." Weight="10" Skip="true" />
+  <WordItem Word="enough" Mean="a./ad. 足够的，充分的；足够地，充分地" Sentence="She plays well enough for a beginner." Weight="9" Skip="true" />
+  <WordItem Word="environment" Mean="n. 环境" Sentence="A bad home environment can affect a child's healthy growth." Weight="10" Skip="false" />
+  <WordItem Word="event" Mean="n. 事件，大事，活动，竞赛" Sentence="Next day the newspapers reported the event." Weight="10" Skip="false" />
+  <WordItem Word="excited" Mean="a. 激动的，兴奋的" Sentence="He was getting excited just thinking about the trip." Weight="9" Skip="true" />
+  <WordItem Word="exercise" Mean="n./v. 锻炼，做操，练习；训练，锻炼" Sentence="Moderate exercise will benefit you." Weight="11" Skip="true" />
+  <WordItem Word="expect" Mean="v. 预计；盼望" Sentence="She expects to fail the exam." Weight="10" Skip="true" />
+  <WordItem Word="expensive" Mean="a. 昂贵的" Sentence="There are other restaurants where you can eat less expensively." Weight="9" Skip="false" />
+  <WordItem Word="experience" Mean="n. 经验，经历" Sentence="Experience is the best teacher." Weight="10" Skip="false" />
+  <WordItem Word="explain" Mean="v. 解释，说明" Sentence="You needn't explain any more." Weight="9" Skip="true" />
+  <WordItem Word="express" Mean="n./v. 快车，快递；表达，表示" Sentence="He expressed his views at the meeting." Weight="10" Skip="false" />
+  <WordItem Word="face" Mean="n./v. 脸；面向，面对" Sentence="Their faces were pinched with grief." Weight="10" Skip="true" />
+  <WordItem Word="fact" Mean="n. 事实，真相" Sentence="Is the story fact or fiction?" Weight="10" Skip="false" />
+  <WordItem Word="factory" Mean="n. 工厂" Sentence="a car factory" Weight="9" Skip="true" />
+  <WordItem Word="fail" Mean="n./v. 不及格；失败" Sentence="He failed to pass the examination through carelessness." Weight="10" Skip="true" />
+  <WordItem Word="family" Mean="n. 家庭，家族" Sentence="He has a large family." Weight="10" Skip="true" />
+  <WordItem Word="famous" Mean="a. 著名的" Sentence="He is famous at fencing." Weight="10" Skip="false" />
+  <WordItem Word="fan" Mean="n. 扇子，狂热者" Sentence="She fanned her face with a newspaper." Weight="10" Skip="true" />
+  <WordItem Word="farm" Mean="n. 农场" Sentence="He lives on a farm." Weight="10" Skip="false" />
+  <WordItem Word="fast" Mean="a./ad. 快的；迅速地" Sentence="She was a fast weaver and the cloth was very good." Weight="10" Skip="true" />
+  <WordItem Word="fear" Mean="n. 恐惧，害怕" Sentence="He couldn't move for fear." Weight="11" Skip="false" />
+  <WordItem Word="feed" Mean="v. 喂，饲养" Sentence="I fed the birds yesterday." Weight="10" Skip="true" />
+  <WordItem Word="feeling" Mean="n. 感情，感觉，情绪" Sentence="I've lost all feeling in my hands." Weight="7" Skip="true" />
+  <WordItem Word="festival" Mean="n. 节日，欢宴" Sentence="We spent most of the Spring Festival at home." Weight="12" Skip="false" />
+  <WordItem Word="fight" Mean="n./v. 打仗，对抗" Sentence="He fought his bravest (war)." Weight="10" Skip="true" />
+  <WordItem Word="fill" Mean="v. 填空，装满，充满" Sentence="The hall soon filled." Weight="10" Skip="true" />
+  <WordItem Word="film" Mean="n. 电影，胶片" Sentence="The film reminded me of my school life." Weight="9" Skip="true" />
+  <WordItem Word="find" Mean="v. 找到，发现" Sentence="I have found the lost book." Weight="10" Skip="true" />
+  <WordItem Word="fit" Mean="n./v. 健康的，适合的；适合，使适应" Sentence="The hat fits perfectly." Weight="10" Skip="true" />
+  <WordItem Word="flower" Mean="n. 花卉" Sentence="This flower was drawn on the paper." Weight="10" Skip="true" />
+  <WordItem Word="follow" Mean="v. 跟随，仿效" Sentence="You go first, and I'll follow." Weight="10" Skip="true" />
+  <WordItem Word="food" Mean="n. 食物" Sentence="The food was both bad and insufficient." Weight="10" Skip="true" />
+  <WordItem Word="football" Mean="n. 足球" Sentence="to play football" Weight="10" Skip="true" />
+  <WordItem Word="foreign" Mean="a. 外国的" Sentence="At the banquet all the foreign guests wore evening dress." Weight="11" Skip="false" />
+  <WordItem Word="forest" Mean="n. 森林" Sentence="The traveler had to fight his way through the tropical forest with an axe." Weight="10" Skip="true" />
+  <WordItem Word="forget" Mean="v. 忘记" Sentence="Keep it in mind.Please don't forget." Weight="10" Skip="true" />
+  <WordItem Word="form" Mean="n./v. 表格，形式；形成，构成" Sentence="Ice, snow and steam are different forms of water." Weight="10" Skip="true" />
+  <WordItem Word="free" Mean="a. 自由的，空闲的，免费的" Sentence="Everyone is free to express himself." Weight="10" Skip="true" />
+  <WordItem Word="fresh" Mean="a. 新鲜的，无经验的" Sentence="You can buy fresh fruit and vegetables in the market." Weight="10" Skip="true" />
+  <WordItem Word="friend" Mean="n. 朋友" Sentence="He saluted his friends with a wave of the hand." Weight="10" Skip="true" />
+  <WordItem Word="friendly" Mean="a. 友好的" Sentence="We're always sure of a friendly welcome at this hotel." Weight="10" Skip="false" />
+  <WordItem Word="fruit" Mean="n. 水果，果实" Sentence="After years of hard work, his efforts finally bore fruit." Weight="10" Skip="false" />
+  <WordItem Word="future" Mean="n. 将来，前途，远景" Sentence="She introduced him as her future husband." Weight="10" Skip="true" />
+  <WordItem Word="game" Mean="n. 游戏，运动，比赛" Sentence="They are playing a game of cards." Weight="10" Skip="true" />
+  <WordItem Word="garden" Mean="n. 花园，果园，菜园" Sentence="Our garden affords us fresh vegetables." Weight="10" Skip="true" />
+  <WordItem Word="gate" Mean="n. 大门" Sentence="He commanded that all the gates be shut." Weight="10" Skip="true" />
+  <WordItem Word="general" Mean="a./n. 总的，一般的；将军" Sentence="The general opinion is in favour of us." Weight="11" Skip="true" />
+  <WordItem Word="gift" Mean="n. 礼物，赠品，天赋" Sentence="I neglected to bring a gift." Weight="10" Skip="true" />
+  <WordItem Word="glass" Mean="n. 玻璃" Sentence="Glass breaks easily." Weight="10" Skip="true" />
+  <WordItem Word="good" Mean="a. 优良的" Sentence="She was pleased to hear good news about him." Weight="10" Skip="false" />
+  <WordItem Word="green" Mean="a./n. 绿色的；绿色" Sentence="In front of the hill are green fields." Weight="10" Skip="true" />
+  <WordItem Word="grey" Mean="a./n. 灰色的；灰色" Sentence="This colour is grey." Weight="10" Skip="true" />
+  <WordItem Word="ground" Mean="n. 地面，土地，场地" Sentence="He slipped off the ladder and fell to the ground." Weight="10" Skip="true" />
+  <WordItem Word="group" Mean="n. 组，群" Sentence="The research group is ready to start its work." Weight="10" Skip="false" />
+  <WordItem Word="grow" Mean="v. 生长，发育，种植，培育" Sentence="This farm grows mainly flowers and vegetables." Weight="10" Skip="true" />
+  <WordItem Word="guest" Mean="n. 客人，宾客" Sentence="They are coming to the concert as my guests." Weight="10" Skip="true" />
+  <WordItem Word="habit" Mean="n. 习惯，习性" Sentence="I'm a creature of habit (= I have a fixed and regular way of doing things) ." Weight="11" Skip="true" />
+  <WordItem Word="hair" Mean="n. 头发，毛发" Sentence="long-haired" Weight="10" Skip="true" />
+  <WordItem Word="half" Mean="a./n. 一半的；一半，半个" Sentence="Half the apples are bad." Weight="10" Skip="true" />
+  <WordItem Word="hand" Mean="n/.v. 收，指针；递，交付" Sentence="The hour hand is smaller than the minute hand." Weight="10" Skip="true" />
+  <WordItem Word="happy" Mean="a. 幸福的，快乐的" Sentence="We had a happy reunion after many years." Weight="10" Skip="true" />
+  <WordItem Word="hard" Mean="a./ad. 硬的，困难的，努力地" Sentence="The stone is hard to the touch." Weight="11" Skip="true" />
+  <WordItem Word="have" Mean="v. 有，吃，喝，进行，患有（疾病），使" Sentence="I have a present" Weight="10" Skip="true" />
+  <WordItem Word="head" Mean="n./v. 头，头脑；驶向，出发" Sentence="Write your address at the head of this page." Weight="10" Skip="true" />
+  <WordItem Word="health" Mean="n. 健康，卫生" Sentence="His general state of health is fairly satisfactory." Weight="9" Skip="true" />
+  <WordItem Word="healthy" Mean="a. 健康的，健壮的" Sentence="That book is not healthy reading for a child." Weight="10" Skip="true" />
+  <WordItem Word="heart" Mean="n. 心脏，心形" Sentence="My heart aches." Weight="11" Skip="true" />
+  <WordItem Word="heat" Mean="n. 热，热度" Sentence="The heat from the fire will soon dry your coat." Weight="10" Skip="true" />
+  <WordItem Word="heavy" Mean="a. 重的，繁重的" Sentence="This box is the heaviest of the three." Weight="10" Skip="true" />
+  <WordItem Word="help" Mean="n./v. 帮助" Sentence="We'll be happy to help if you need us." Weight="10" Skip="true" />
+  <WordItem Word="hero" Mean="n. 英雄，勇士" Sentence="After all a hero is human." Weight="10" Skip="false" />
+  <WordItem Word="high" Mean="a. 高的，高尚的" Sentence="It's a high building." Weight="10" Skip="true" />
+  <WordItem Word="hill" Mean="n. 小山，丘陵" Sentence="We went for the hills last Sunday." Weight="10" Skip="true" />
+  <WordItem Word="history" Mean="n. 历史" Sentence="History is well taught in that school." Weight="10" Skip="true" />
+  <WordItem Word="hobby" Mean="n. 爱好" Sentence="He entered into politics as a hobby." Weight="11" Skip="true" />
+  <WordItem Word="hole" Mean="n. 洞" Sentence="He was found not guilty because of holes in the prosecution case." Weight="10" Skip="true" />
+  <WordItem Word="holiday" Mean="n. 假日，假期" Sentence="The Fourth of July is the national holiday of the US." Weight="11" Skip="false" />
+  <WordItem Word="home" Mean="n. 家" Sentence="This is the finest home in this city." Weight="10" Skip="true" />
+  <WordItem Word="honest" Mean="a. 诚实的，正直的" Sentence="An honest person has a lot of friends." Weight="12" Skip="true" />
+  <WordItem Word="hope" Mean="n./v. 希望" Sentence="Hopes of a peace settlement are now fading." Weight="10" Skip="true" />
+  <WordItem Word="horse" Mean="n. 马" Sentence="The old man likes raising rabbits, dogs and horses." Weight="10" Skip="true" />
+  <WordItem Word="hospital" Mean="n. 医院" Sentence="I see a hospital on my right hand." Weight="10" Skip="true" />
+  <WordItem Word="hot" Mean="a. 热的，热情的" Sentence="A blast of hot air blows in." Weight="10" Skip="true" />
+  <WordItem Word="hotel" Mean="n. 旅馆，宾馆" Sentence="The hotel is on your left side." Weight="9" Skip="true" />
+  <WordItem Word="hour" Mean="n. 小时" Sentence="It's fifteen thirty hours." Weight="10" Skip="true" />
+  <WordItem Word="house" Mean="n. 房子，住宅" Sentence="New houses are going up everywhere." Weight="10" Skip="true" />
+  <WordItem Word="huge" Mean="a. 巨大的，庞大的" Sentence="He stood tongue-tied before the huge audience." Weight="10" Skip="true" />
+  <WordItem Word="hurt" Mean="v. 伤害" Sentence="He hurt his leg while playing football." Weight="10" Skip="true" />
+  <WordItem Word="ice" Mean="n. 冰，冰冻食品" Sentence="He held a piece of ice and bit off a little." Weight="10" Skip="true" />
+  <WordItem Word="idea" Mean="n. 主意，意见，想法" Sentence="The firm's directors quickly approved the new idea." Weight="10" Skip="true" />
+  <WordItem Word="ill" Mean="a. 有病的，不健康的" Sentence="He was too ill to eat much." Weight="10" Skip="true" />
+  <WordItem Word="imagine" Mean="v. 想象，设想" Sentence="I can imagine the scene clearly in my mind." Weight="11" Skip="false" />
+  <WordItem Word="important" Mean="a. 重要的，有地位的" Sentence="He has just been called away to an important meeting." Weight="10" Skip="false" />
+  <WordItem Word="impossible" Mean="a. 不可能的" Sentence="They attempted the almost impossible thing." Weight="10" Skip="true" />
+  <WordItem Word="improve" Mean="v. 改进，更新" Sentence="If he can keep from smoking for a month or two his health will improve." Weight="10" Skip="true" />
+  <WordItem Word="include" Mean="v. 包含，包括" Sentence="Their course of study includes elementary hygiene and medical theory." Weight="10" Skip="true" />
+  <WordItem Word="increase" Mean="n./v. 增加，繁殖，增长" Sentence="Her family increased." Weight="10" Skip="true" />
+  <WordItem Word="industry" Mean="n. 工业，产业，行业" Sentence="The country's industry is assuming a new aspect." Weight="10" Skip="true" />
+  <WordItem Word="influence" Mean="n./v. 影响；对...有作用" Sentence="Her influence made me a better person." Weight="10" Skip="true" />
+  <WordItem Word="information" Mean="n. 信息，通知，报告，知识，资料" Sentence="A computer is a device for handling of processing information." Weight="10" Skip="true" />
+  <WordItem Word="instruction" Mean="n. 说明，须知，指令" Sentence="They had received instructions to watch him." Weight="10" Skip="true" />
+  <WordItem Word="instrument" Mean="n. 乐器，仪器" Sentence="surgical/optical/precision, etc. instruments" Weight="11" Skip="true" />
+  <WordItem Word="interest" Mean="n. 兴趣，趣味" Sentence="He lost interest in much of his research." Weight="10" Skip="true" />
+  <WordItem Word="interesting" Mean="a. 有趣的，有意思的" Sentence="Brewer is a very interesting man." Weight="10" Skip="false" />
+  <WordItem Word="international" Mean="a. 国际的，世界的" Sentence="International trade helps all nations." Weight="11" Skip="true" />
+  <WordItem Word="interview" Mean="n./v. 采访，接见，会见" Sentence="The matter can't be discussed except at a personal interview." Weight="10" Skip="true" />
+  <WordItem Word="introduce" Mean="v. 介绍，提出" Sentence="Allow me to introduce myself." Weight="10" Skip="true" />
+  <WordItem Word="invent" Mean="v. 发明，创造" Sentence="Edison invented the electric light." Weight="10" Skip="true" />
+  <WordItem Word="invite" Mean="v. 邀请，招待" Sentence="Did they invite you?" Weight="10" Skip="true" />
+  <WordItem Word="job" Mean="n. 工作，职位" Sentence="He has a job in the bank." Weight="10" Skip="true" />
+  <WordItem Word="join" Mean="v. 参加，加入" Sentence="The two estates join at this point." Weight="10" Skip="false" />
+  <WordItem Word="journey" Mean="n. 旅行，路程" Sentence="I don't envy your journey in this bad weather." Weight="10" Skip="true" />
+  <WordItem Word="judge" Mean="n./v. 裁判，审判员；判决，断定，作评价" Sentence="The powers of a judge are defined by law." Weight="10" Skip="false" />
+  <WordItem Word="juice" Mean="n. （水果）汁、液" Sentence="We'd better add in some lemon juice before mixing the flour with sugar." Weight="8" Skip="true" />
+  <WordItem Word="jump" Mean="n./v. 跳跃，上涨" Sentence="The red horse is jumping well." Weight="10" Skip="false" />
+  <WordItem Word="keep" Mean="v. 保持，保存" Sentence="Please keep quiet." Weight="10" Skip="true" />
+  <WordItem Word="key" Mean="n. 钥匙，答案，关键" Sentence="I've left my keys at home and can't get my books." Weight="10" Skip="true" />
+  <WordItem Word="kick" Mean="n./v. 踢" Sentence="The baby was kicking and screaming." Weight="10" Skip="false" />
+  <WordItem Word="kid" Mean="n. 小孩，年轻人" Sentence="Tell that kid to stop making so much noise." Weight="10" Skip="true" />
+  <WordItem Word="kill" Mean="v. 杀死，毁掉" Sentence="These flowers kill easily." Weight="10" Skip="true" />
+  <WordItem Word="kind" Mean="a./n. 善良的，友好的；种类" Sentence="The kind old man is accompanied all the time." Weight="10" Skip="true" />
+  <WordItem Word="kitchen" Mean="n. 厨房" Sentence="I was too awkward to help in kitchen." Weight="10" Skip="true" />
+  <WordItem Word="kite" Mean="n. 风筝" Sentence="The kites fly upwind.How beautiful the scene is!" Weight="10" Skip="true" />
+  <WordItem Word="knee" Mean="n. 膝盖" Sentence="She fell down and hurt her knee." Weight="10" Skip="true" />
+  <WordItem Word="knife" Mean="n. 小刀" Sentence="The knife is so dull that it will not cut." Weight="10" Skip="true" />
+  <WordItem Word="knock" Mean="v. 敲，打，击" Sentence="When he heard the knock, he ceased writing." Weight="10" Skip="false" />
+  <WordItem Word="know" Mean="v. 指导，了解，认识，懂得" Sentence="I honestly don't know." Weight="10" Skip="true" />
+  <WordItem Word="knowledge" Mean="n. 知识，学问" Sentence="He denied any knowledge of them." Weight="10" Skip="true" />
+  <WordItem Word="lake" Mean="n. 湖" Sentence="Lake Erie is filling with the heavy rain." Weight="10" Skip="true" />
+  <WordItem Word="land" Mean="n./v. 陆地，土地；降落，登岸" Sentence="The storm blew over land and sea." Weight="10" Skip="false" />
+  <WordItem Word="language" Mean="n. 语言" Sentence="The language this computer uses is BASIC." Weight="9" Skip="false" />
+  <WordItem Word="large" Mean="a. 巨大的，巨大的" Sentence="The houses of the rich are generally larger than those of the poor." Weight="10" Skip="true" />
+  <WordItem Word="late" Mean="a./ad. 晚的，迟的；晚地，迟地" Sentence="We had a late dinner last night." Weight="10" Skip="false" />
+  <WordItem Word="laugh" Mean="n./v. 笑，笑声；大笑，嘲笑" Sentence="We were all laughing when he came in." Weight="10" Skip="true" />
+  <WordItem Word="law" Mean="n. 法律，法令" Sentence="In some countries the police enforce the laws." Weight="10" Skip="false" />
+  <WordItem Word="lay" Mean="v. 放，铺设，提出，下蛋" Sentence="He laid his coat over a chair." Weight="10" Skip="true" />
+  <WordItem Word="lead" Mean="v. 领导，带领，引导" Sentence="I'll lead; you must follow me." Weight="10" Skip="true" />
+  <WordItem Word="leader" Mean="n. 领袖，领导人" Sentence="a political/spiritual, etc. leader" Weight="10" Skip="true" />
+  <WordItem Word="leaf" Mean="n. 叶" Sentence="Several leaves had been torn out of the novel." Weight="10" Skip="true" />
+  <WordItem Word="learn" Mean="v. 学习，学会" Sentence="It is never too late to learn." Weight="10" Skip="true" />
+  <WordItem Word="least" Mean="a. 最少的，最小的" Sentence="He did it well with the least money." Weight="10" Skip="true" />
+  <WordItem Word="leave" Mean="v. 离开，把......留下，剩下，动身" Sentence="I must go back, I've left my car keys." Weight="10" Skip="true" />
+  <WordItem Word="left" Mean="a./ad./n. 左边的；向左；左边" Sentence="Make a left at the corner." Weight="10" Skip="true" />
+  <WordItem Word="letter" Mean="n. 信，字母，铅字" Sentence="Your letter reached me this morning." Weight="9" Skip="false" />
+  <WordItem Word="level" Mean="n. 水平线，水平，标准，级别" Sentence="First we have to lift the level of instruction." Weight="10" Skip="true" />
+  <WordItem Word="library" Mean="n. 图书馆" Sentence="The library has many art treasures." Weight="10" Skip="false" />
+  <WordItem Word="life" Mean="n. 生命，生活，人生" Sentence="His work is his whole life." Weight="10" Skip="true" />
+  <WordItem Word="light" Mean="a./n./v. 明亮的，轻的；光，日光，灯；点燃，点亮" Sentence="A dim light came from afar." Weight="10" Skip="true" />
+  <WordItem Word="line" Mean="n./v. 线，线索，行；排成一排，使有线条" Sentence="She put the wet clothes on the line to dry." Weight="10" Skip="true" />
+  <WordItem Word="list" Mean="n./v. 一览表，清单；列出，列于表上" Sentence="Let's just list these factors." Weight="10" Skip="true" />
+  <WordItem Word="listen" Mean="v. 听，听从" Sentence="He listened, but could hear nothing." Weight="10" Skip="true" />
+  <WordItem Word="little" Mean="a. 矮小的，很少的" Sentence="What a pretty little house it is!" Weight="10" Skip="true" />
+  <WordItem Word="live" Mean="a./v. 活的，实况播送的；生活，居住" Sentence="Are your parents living?" Weight="10" Skip="true" />
+  <WordItem Word="local" Mean="a. 当地的，地方的" Sentence="a local farmer" Weight="10" Skip="true" />
+  <WordItem Word="long" Mean="a./ad. 长的；长久" Sentence="It's an hour long." Weight="10" Skip="true" />
+  <WordItem Word="lose" Mean="v. 失去，丢失，失败" Sentence="She lost her purse." Weight="10" Skip="true" />
+  <WordItem Word="love" Mean="n./v. 爱，热爱" Sentence="He can't love but hate." Weight="10" Skip="true" />
+  <WordItem Word="low" Mean="a./ad. 低的，消极的；低下地，低价地" Sentence="He is a man of low birth." Weight="10" Skip="true" />
+  <WordItem Word="lunch" Mean="n. 午餐，午饭" Sentence="I cannot always lunch you." Weight="10" Skip="true" />
+  <WordItem Word="machine" Mean="n. 机器" Sentence="The machine has been idled away for several minutes to get it warm." Weight="9" Skip="true" />
+  <WordItem Word="magazine" Mean="n. 杂志，期刊" Sentence="He escaped being killed when the magazine exploded because he had not gone to work." Weight="10" Skip="true" />
+  <WordItem Word="make" Mean="v. 制造，做，使得" Sentence="He'll make a kite for me." Weight="10" Skip="true" />
+  <WordItem Word="manage" Mean="v. 管理，操纵，处理" Sentence="She managed a clothes shop two years ago." Weight="10" Skip="true" />
+  <WordItem Word="manner" Mean="n. 方式，态度，举止" Sentence="She answered in a businesslike manner ." Weight="11" Skip="true" />
+  <WordItem Word="mark" Mean="n./v. 标记，分数，痕迹；做记号，打分数" Sentence="The spilt coffee has left a mark on the table cloth." Weight="10" Skip="true" />
+  <WordItem Word="market" Mean="n. 市场，集市" Sentence="She went to the market to sell what she had made." Weight="10" Skip="true" />
+  <WordItem Word="master" Mean="v. 精通，掌握，控制" Sentence="Is your master at home?" Weight="10" Skip="true" />
+  <WordItem Word="match" Mean="n./v. 火柴，比赛；匹配，使成对" Sentence="We had a friendly match with them." Weight="10" Skip="true" />
+  <WordItem Word="material" Mean="n. 材料，原料，素材" Sentence="Japan imports textile materials from Britain." Weight="9" Skip="false" />
+  <WordItem Word="matter" Mean="n./v. 事情，问题；要紧，有重大关系" Sentence="Matter is the opposite of mind." Weight="10" Skip="true" />
+  <WordItem Word="meal" Mean="n. 一餐，膳食" Sentence="The Bakers have invited us out for a meal tonight." Weight="10" Skip="true" />
+  <WordItem Word="meat" Mean="n. 肉" Sentence="Shall we have fish instead of meat today?" Weight="10" Skip="true" />
+  <WordItem Word="medical" Mean="a. 医学的，医疗的" Sentence="Penicillin was an extremely significant medical discovery." Weight="11" Skip="true" />
+  <WordItem Word="medicine" Mean="n. 药，医学" Sentence="I felt fairly easy after taking the medicine." Weight="11" Skip="true" />
+  <WordItem Word="meeting" Mean="n. 会，集会，会见" Sentence="It was an accidental meeting." Weight="10" Skip="true" />
+  <WordItem Word="member" Mean="n. 成员，会员" Sentence="Every member of the organization should be constant to its regulations." Weight="9" Skip="true" />
+  <WordItem Word="memory" Mean="n. 回忆，记忆，内存" Sentence="As one grows older one's memory declines." Weight="11" Skip="true" />
+  <WordItem Word="mention" Mean="n./v. 提及，说起" Sentence="He mentioned them by name." Weight="11" Skip="true" />
+  <WordItem Word="message" Mean="n. 消息，音信，通讯" Sentence="Let's leave her a message to meet us at the railway station." Weight="10" Skip="true" />
+  <WordItem Word="method" Mean="n. 方法，办法" Sentence="He invented a new method to make bread." Weight="11" Skip="false" />
+  <WordItem Word="middle" Mean="n. 中间，当中" Sentence="It's best to slice into a rich cake from the middle." Weight="9" Skip="true" />
+  <WordItem Word="milk" Mean="n./v. 牛奶，乳；挤奶" Sentence="You have to keep watching to prevent the milk from boiling over." Weight="10" Skip="true" />
+  <WordItem Word="mind" Mean="n./v. 思想，头脑；介意，注意" Sentence="You and I are of one mind on that matter." Weight="10" Skip="false" />
+  <WordItem Word="minute" Mean="n. 分钟" Sentence="It's only several minutes from here to the cinema." Weight="11" Skip="true" />
+  <WordItem Word="miss" Mean="v. 失去，错过，缺；思念" Sentence="A miss is as good as a mile." Weight="10" Skip="true" />
+  <WordItem Word="mistake" Mean="n./v. 错误；弄错" Sentence="Regardless of how often I correct him, he always makes the same mistake." Weight="10" Skip="true" />
+  <WordItem Word="Monday" Mean=" 星期一" Sentence="Wendy popped in for a quick bite to eat on Monday night." Weight="9" Skip="false" />
+  <WordItem Word="model" Mean="n. 模型，原形，范例" Sentence="This is the model of the proposed new airport." Weight="11" Skip="true" />
+  <WordItem Word="modern" Mean="a. 现代的，现代化的，时髦的" Sentence="He was steeped in modern history." Weight="10" Skip="true" />
+  <WordItem Word="money" Mean="n. 钱，货币" Sentence="His father makes a lot of money as a pilot." Weight="10" Skip="false" />
+  <WordItem Word="month" Mean="n. 月份" Sentence="I shall go there next month." Weight="10" Skip="false" />
+  <WordItem Word="morning" Mean="n. 早晨，上午" Sentence="At early morning I went up through the hillside woods." Weight="10" Skip="true" />
+  <WordItem Word="mother" Mean="n. 母亲" Sentence="Your mother wouldn't like it if you become too thick with each other." Weight="10" Skip="false" />
+  <WordItem Word="mountain" Mean="n. 山，山脉" Sentence="There is a high mountain at the back of the house." Weight="10" Skip="true" />
+  <WordItem Word="move" Mean="v. 移动，搬动，搬家" Sentence="Nobody moves." Weight="10" Skip="true" />
+  <WordItem Word="movie" Mean="n. 电影" Sentence="This movie really catches the flavour of New York." Weight="10" Skip="true" />
+  <WordItem Word="museum" Mean="n. 博物馆" Sentence="You won't see live animals in a museum." Weight="9" Skip="true" />
+  <WordItem Word="music" Mean="n. 音乐，乐曲" Sentence="He was a great deal interested in music." Weight="10" Skip="false" />
+  <WordItem Word="name" Mean="n./v. 名字；命名" Sentence="All the big names in the pop music world were at the party." Weight="10" Skip="true" />
+  <WordItem Word="nation" Mean="n. 民族，国家" Sentence="Some nations built their hopes for peace on the talks between big nations." Weight="10" Skip="true" />
+  <WordItem Word="national" Mean="a. 国家的，民族的" Sentence="These matters are vital to the national security." Weight="10" Skip="true" />
+  <WordItem Word="natural" Mean="a. 自然地，天生的" Sentence="Social problems cropped up in the wake of natural disasters." Weight="11" Skip="true" />
+  <WordItem Word="nature" Mean="n. 自然，性质" Sentence="Nature is at its best in spring." Weight="10" Skip="true" />
+  <WordItem Word="necessary" Mean="a. 必须的，必要的" Sentence="It took me a year to get the necessary materials together." Weight="10" Skip="false" />
+  <WordItem Word="nervous" Mean="a. 紧张不安的" Sentence="The brain is a part of the nervous system of the human body." Weight="11" Skip="true" />
+  <WordItem Word="news" Mean="n. 新闻，消息" Sentence="The news was announced as official." Weight="10" Skip="true" />
+  <WordItem Word="newspaper" Mean="n. 报纸" Sentence="The newspaper is proper for young people." Weight="10" Skip="true" />
+  <WordItem Word="noise" Mean="n. 噪音，喧闹声" Sentence="The noise awoke me from my sleep." Weight="9" Skip="true" />
+  <WordItem Word="normal" Mean="a./n. 正常的，正规的；正规" Sentence="She braced herself to lead a normal life." Weight="8" Skip="true" />
+  <WordItem Word="north" Mean="a./ad./n. 北方的；向北方；北方" Sentence="I still remember the mountains in the north, locked in snow and ice." Weight="10" Skip="true" />
+  <WordItem Word="note" Mean="n./v. 短息，注释，纸笔，音符；记录，笔记" Sentence="He takes[makes] notes in class." Weight="10" Skip="true" />
+  <WordItem Word="notice" Mean="n./v. 布告，通告，注意；注意" Sentence="These rules are subject to change without notice." Weight="10" Skip="false" />
+  <WordItem Word="offer" Mean="n./v. 题意，建议；提供" Sentence="The museum offers extensive facilities for study." Weight="10" Skip="true" />
+  <WordItem Word="office" Mean="n. 办公室，事务所" Sentence="Our office is open from Monday to Friday inclusive." Weight="10" Skip="true" />
+  <WordItem Word="oil" Mean="n./v. 油，石油；给......供油" Sentence="Oil and water do not mix." Weight="10" Skip="true" />
+  <WordItem Word="old" Mean="a. 老的，旧的" Sentence="He gets tax relief because he supports his old mother." Weight="10" Skip="true" />
+  <WordItem Word="open" Mean="a./v. 开着的，公开的；打开，公开" Sentence="The outer door was wide open but the inner one was locked." Weight="10" Skip="true" />
+  <WordItem Word="operate" Mean="v. 动手术，操作，开动，运转" Sentence="The machine is operating properly." Weight="10" Skip="true" />
+  <WordItem Word="order" Mean="n./v. 顺序，命令，订单；订购，命令，下令" Sentence="The items are listed in order of importance." Weight="10" Skip="false" />
+  <WordItem Word="paper" Mean="n. 纸，报纸，考卷" Sentence="The public are requested not to throw waste paper in the park." Weight="10" Skip="false" />
+  <WordItem Word="parent" Mean="n. 父（母）亲" Sentence="As an only child he was the idol of his parents." Weight="10" Skip="true" />
+  <WordItem Word="park" Mean="n. 公园，停车场" Sentence="Jane was willing to accompany you to the park to go out for a walk." Weight="10" Skip="true" />
+  <WordItem Word="part " Mean="n. 部分，局部" Sentence="A whole consists of parts, the parts constitute the whole." Weight="9" Skip="false" />
+  <WordItem Word="party" Mean="n. 聚会，晚会，党派" Sentence="The party was fresh in her memory." Weight="10" Skip="true" />
+  <WordItem Word="pass" Mean="v. 传递，经过，通过" Sentence="The parade passed." Weight="10" Skip="true" />
+  <WordItem Word="patient" Mean="n./a. 病人；忍耐的，耐心的" Sentence="The young cashier gave a patient sigh." Weight="10" Skip="false" />
+  <WordItem Word="pay" Mean="v. 付钱" Sentence="This job pays well." Weight="10" Skip="true" />
+  <WordItem Word="peace" Mean="n. 和平，安宁" Sentence="The people desire peace, security and happiness." Weight="10" Skip="true" />
+  <WordItem Word="pen" Mean="n. 钢笔" Sentence="There are two pens on the desk." Weight="10" Skip="true" />
+  <WordItem Word="people" Mean="n. 人们，人民" Sentence="The doorman allowed the people in one by one." Weight="10" Skip="true" />
+  <WordItem Word="perfect" Mean="a. 完美的，极好的" Sentence="The shoes are a perfect fit." Weight="10" Skip="true" />
+  <WordItem Word="perform" Mean="v. 表演，履行，行动" Sentence="He not only promised, but performed." Weight="10" Skip="false" />
+  <WordItem Word="period" Mean="n. 时期，学时，周期" Sentence="Mary was restored to health after a period of medical treatment." Weight="11" Skip="false" />
+  <WordItem Word="person" Mean="n. 人" Sentence="He is a person to be shunned." Weight="9" Skip="true" />
+  <WordItem Word="personal" Mean="a. 个人的，私人的" Sentence="On his release the police returned all his personal effects." Weight="10" Skip="true" />
+  <WordItem Word="photo" Mean="n. 照片" Sentence="a colour/black-and-white photo" Weight="10" Skip="true" />
+  <WordItem Word="pick" Mean="v. 拾起，采集，挑选" Sentence="Ripe apples pick easily." Weight="10" Skip="false" />
+  <WordItem Word="picture" Mean="n. 照片，图片" Sentence="All the pictures should be faced forward." Weight="10" Skip="false" />
+  <WordItem Word="place" Mean="n./v. 地方，处所，地位；放置" Sentence="This is the place where the storm hit." Weight="11" Skip="false" />
+  <WordItem Word="plan" Mean="n./v. 计划" Sentence="Your plan sounds fine in theory, but will it work?" Weight="10" Skip="true" />
+  <WordItem Word="plane" Mean="n. 飞机" Sentence="They painted the underside of their planes with a black varnish." Weight="10" Skip="false" />
+  <WordItem Word="plant" Mean="n./v. 植物，庄稼，工厂；种植，播种，安置" Sentence="Hot climate and plentiful rainfall favour the growth of plants." Weight="10" Skip="true" />
+  <WordItem Word="play" Mean="n./v. 玩耍，戏剧；玩，扮演，播放" Sentence="All work and no play isn't a good thing." Weight="10" Skip="true" />
+  <WordItem Word="point" Mean="n./v. 点，分数，要点；指，指向" Sentence="Some of these points will have to be further elaborated as we go along." Weight="10" Skip="true" />
+  <WordItem Word="police" Mean="n. 警察，警务人员，公安部门" Sentence="Several police hurried out in their police car." Weight="11" Skip="true" />
+  <WordItem Word="polite" Mean="a. 有礼貌的" Sentence="I've never seen such a polite clerk." Weight="11" Skip="true" />
+  <WordItem Word="pollution" Mean="n. 污染" Sentence="The new law will reduce pollution of the rivers." Weight="10" Skip="false" />
+  <WordItem Word="popular" Mean="a. 通俗的，流行的，受欢迎的" Sentence="Bob is playing the piano again, banging out the latest popular tunes." Weight="9" Skip="true" />
+  <WordItem Word="population" Mean="n. 人口" Sentence="The population of this city is in the neighbourhood of three million." Weight="10" Skip="false" />
+  <WordItem Word="possible" Mean="a. 可能的" Sentence="He will get the great possible assistance." Weight="9" Skip="true" />
+  <WordItem Word="potato" Mean="n. 土豆，马铃薯" Sentence="My brother likes potatoes very much, but I don't care for them." Weight="10" Skip="true" />
+  <WordItem Word="power" Mean="n. 力量，动力，电力" Sentence="This country extends its power and influence into neighbouring countries." Weight="10" Skip="false" />
+  <WordItem Word="practice" Mean="n./v. 练习，训练" Sentence="We have three football practices a week." Weight="10" Skip="false" />
+  <WordItem Word="praise" Mean="n./v. 表扬，赞扬" Sentence="They have been praising you all the time." Weight="10" Skip="true" />
+  <WordItem Word="prepare" Mean="v. 准备，预备" Sentence="You shouldn't have troubled yourself to prepare such a feast!" Weight="9" Skip="true" />
+  <WordItem Word="present" Mean="a./n./v. 出席的；呈现，介绍；礼物" Sentence="How many of the group are present today?" Weight="10" Skip="true" />
+  <WordItem Word="president" Mean="n. 总统，校长" Sentence="The President fastened on the idea at once." Weight="11" Skip="true" />
+  <WordItem Word="prevent" Mean="v. 防止，预防" Sentence="Vitamin C is supposed to prevent colds." Weight="10" Skip="true" />
+  <WordItem Word="price" Mean="n. 价格" Sentence="It is rather cheap at this price." Weight="10" Skip="true" />
+  <WordItem Word="print" Mean="v. 印刷，出版，打印" Sentence="This book has clear print." Weight="9" Skip="true" />
+  <WordItem Word="private" Mean="a. 私人的" Sentence="The President is paying a private visit to Europe." Weight="10" Skip="true" />
+  <WordItem Word="prize" Mean="n. 奖赏，奖品" Sentence="He was awarded the Nobel Prize for literature." Weight="10" Skip="false" />
+  <WordItem Word="problem" Mean="n. 问题" Sentence="These problems are the result of years of bad management." Weight="10" Skip="true" />
+  <WordItem Word="process" Mean="n./v. 过程，程序；加工，处理" Sentence="Adolescence is the process of going from childhood to maturity." Weight="9" Skip="false" />
+  <WordItem Word="produce" Mean="v. 生产，制作，提出" Sentence="That is an oil well that no longer produces." Weight="11" Skip="true" />
+  <WordItem Word="product" Mean="n. 产品，产物" Sentence="My bike is a home product." Weight="10" Skip="true" />
+  <WordItem Word="programme" Mean="n. 节目，项目，程序" Sentence="The television programme is designed to educate and not merely to entertain." Weight="10" Skip="true" />
+  <WordItem Word="progress" Mean="n./v. 进步" Sentence="Our progress was embarrassed by lots of baggage." Weight="10" Skip="true" />
+  <WordItem Word="project" Mean="n. 工程，规划，方案" Sentence="Can you project a new working scheme for us?" Weight="10" Skip="true" />
+  <WordItem Word="promise" Mean="n.v. 答应，允诺" Sentence="I can't promise." Weight="10" Skip="true" />
+  <WordItem Word="protect" Mean="v. 保护" Sentence="The troops were there to protect the townspeople." Weight="10" Skip="true" />
+  <WordItem Word="proud" Mean="a. 自豪的，骄傲的" Sentence="She had been too proud to ask for help." Weight="10" Skip="true" />
+  <WordItem Word="prove" Mean="v. 证明，证实" Sentence="They were not able to prove these suspicions." Weight="10" Skip="false" />
+  <WordItem Word="provide" Mean="v. 提供，供给，供应；规定" Sentence="On Sundays his landlady provided dinner as well as breakfast." Weight="12" Skip="true" />
+  <WordItem Word="public" Mean="a./n. 公共的； 公众" Sentence="It is a matter of great public interest." Weight="10" Skip="false" />
+  <WordItem Word="question" Mean="n./v. 问题，疑问；询问，怀疑" Sentence="I asked you a question and you didn't answer." Weight="10" Skip="true" />
+  <WordItem Word="quick" Mean="a. 快的，敏捷的" Sentence="They took a quick train." Weight="10" Skip="true" />
+  <WordItem Word="quiet" Mean="a. 安静的，寂静的" Sentence="This medicine quieted her headache." Weight="10" Skip="true" />
+  <WordItem Word="race" Mean="n./v. 种族，竞赛，赛跑" Sentence="He's a very good swimmer and often races." Weight="10" Skip="true" />
+  <WordItem Word="radio" Mean="n. 无线电，收音机" Sentence="The radio receiver cut out." Weight="10" Skip="false" />
+  <WordItem Word="rain" Mean="n./v. 雨，雨水；下雨" Sentence="It's raining." Weight="10" Skip="true" />
+  <WordItem Word="raise" Mean="v. 饲养，提高，募捐" Sentence="When he saw the principal, he raised his hand in salutation." Weight="10" Skip="true" />
+  <WordItem Word="reach" Mean="v. 到达，伸手够得着" Sentence="They reached Paris by plane on March 8." Weight="10" Skip="true" />
+  <WordItem Word="read" Mean="v. 读，朗读" Sentence="The little boy can read quite well now." Weight="10" Skip="true" />
+  <WordItem Word="ready" Mean="a. 准备好的，现成的" Sentence="He bade us keep in a ready posture." Weight="10" Skip="false" />
+  <WordItem Word="real" Mean="a. 真实的，确实的" Sentence="This is a real pearl, not an imitation." Weight="10" Skip="true" />
+  <WordItem Word="reason" Mean="n./v. 理由，原因，动机；评理" Sentence="I can only guess the reason." Weight="11" Skip="true" />
+  <WordItem Word="receive" Mean="v. 收到，接受" Sentence="Our TV receives well since we had a new antenna put on." Weight="11" Skip="true" />
+  <WordItem Word="record" Mean="n./v. 记录，唱片，档案；记载，录音" Sentence="His voice does not record well." Weight="10" Skip="false" />
+  <WordItem Word="red" Mean="a./n. 红色的；红色" Sentence="She has a red hat." Weight="10" Skip="true" />
+  <WordItem Word="refuse" Mean="v. 拒绝，不愿" Sentence="We asked him to come, but he refused." Weight="10" Skip="true" />
+  <WordItem Word="relationship" Mean="n. 关系，关联，亲属" Sentence="There are certain things that are absolutely basic to the maintenance of a good relationship." Weight="10" Skip="true" />
+  <WordItem Word="relax" Mean="v. 放松，休息，缓和，使松懈" Sentence="Relax when you dance." Weight="10" Skip="true" />
+  <WordItem Word="remain" Mean="v. 保持，逗留，残余" Sentence="The remains of the meal were[was]fed to the dog." Weight="10" Skip="true" />
+  <WordItem Word="remember" Mean="v. 记得，想起，铭记" Sentence="She was from Henan, if I remember correctly." Weight="10" Skip="true" />
+  <WordItem Word="repeat" Mean="v. 重说，重做，复制" Sentence="Don't repeat, please." Weight="10" Skip="false" />
+  <WordItem Word="reply" Mean="n. 回答，答复" Sentence="My reply may not have been polite, but he asked for it." Weight="10" Skip="false" />
+  <WordItem Word="report" Mean="v./n. 报告；报道" Sentence="All reports must be sent in by the end of this week." Weight="9" Skip="true" />
+  <WordItem Word="research" Mean="n. 研究，调查" Sentence="Research has shown that women live longer than men." Weight="10" Skip="false" />
+  <WordItem Word="respect" Mean="v./n. 尊敬，尊重，敬意" Sentence="Please respect yourself." Weight="10" Skip="true" />
+  <WordItem Word="rest" Mean="v./n. 休息；其余的人或物" Sentence="You need enough rest." Weight="10" Skip="true" />
+  <WordItem Word="restaurant" Mean="n. 饭馆，饭店" Sentence="The service in that restaurant was very poor." Weight="9" Skip="true" />
+  <WordItem Word="result" Mean="v./n. 结果；导致，产生" Sentence="The result was quite opposite to what we had expected." Weight="10" Skip="true" />
+  <WordItem Word="return" Mean="v. 归还，会，归" Sentence="I'll return at 10 this evening." Weight="8" Skip="false" />
+  <WordItem Word="review" Mean="v./n. 检查，复习；回顾" Sentence="These arrangements are subject to periodic reviews." Weight="9" Skip="false" />
+  <WordItem Word="rich" Mean="a. 富有的，有钱的，充足的" Sentence="He came from a rich family." Weight="10" Skip="true" />
+  <WordItem Word="ride" Mean="v./n. 乘，骑；乘车旅行" Sentence="His horse rides well." Weight="10" Skip="true" />
+  <WordItem Word="right" Mean="a./ad./n. 右边的，正确的；在右边，正确地；右边，权利" Sentence="I'll try to do whatever is right." Weight="10" Skip="true" />
+  <WordItem Word="ring" Mean="v./n. 响，打电话；铃声，环形物" Sentence="He has a gold ring on his finger." Weight="10" Skip="true" />
+  <WordItem Word="rise" Mean="v. 上升，上涨" Sentence="The ground rises steadily." Weight="10" Skip="true" />
+  <WordItem Word="risk" Mean="n. 冒险，风险" Sentence="You are taking a big risk driving so fast." Weight="10" Skip="true" />
+  <WordItem Word="river" Mean="n. 江，河，水道" Sentence="The river is rising after the rain." Weight="10" Skip="true" />
+  <WordItem Word="road" Mean="n. 路，道路" Sentence="There was a big heap of stones in the road." Weight="10" Skip="true" />
+  <WordItem Word="rock" Mean="n. 岩石" Sentence="To build this tunnel we had to cut through the solid rock." Weight="10" Skip="true" />
+  <WordItem Word="role" Mean="n. 角色" Sentence="The success of her business made it difficult for her to fulfil her role as wife and mother." Weight="10" Skip="true" />
+  <WordItem Word="room" Mean="n. 房间，室，空间" Sentence="They blasted her into a black room." Weight="10" Skip="true" />
+  <WordItem Word="rubbish" Mean="n. 垃圾，废物" Sentence="There is a pile of rubbish in the corner of the street." Weight="10" Skip="true" />
+  <WordItem Word="rule" Mean="n. 规则，规定，惯例" Sentence="You should be observant of the traffic rules." Weight="10" Skip="true" />
+  <WordItem Word="run" Mean="v. 跑" Sentence="The dog ran across the road." Weight="10" Skip="true" />
+  <WordItem Word="sad" Mean="a. 悲伤的，忧愁的" Sentence="When I am sad, I take refuge in remembering happier times." Weight="9" Skip="true" />
+  <WordItem Word="safe" Mean="a. 安全的" Sentence="The building was locked, and all of us within felt safe." Weight="11" Skip="false" />
+  <WordItem Word="safety" Mean="n. 安全，保险" Sentence="The safety of the ship is the captain's responsibility." Weight="10" Skip="true" />
+  <WordItem Word="sale" Mean="n. 出售，销售额" Sentence="He got 100 from the sale of his bike." Weight="10" Skip="true" />
+  <WordItem Word="same" Mean="a./ n. 同样的，同一的；同样的事物" Sentence="I live in the same house as he." Weight="10" Skip="true" />
+  <WordItem Word="save" Mean="v. 救，节省" Sentence="He saved her life ever." Weight="10" Skip="false" />
+  <WordItem Word="say" Mean="v. 说，讲" Sentence="You may well say so." Weight="10" Skip="true" />
+  <WordItem Word="school" Mean="n. 学校；学派" Sentence="The students in middle schools should build up a solid foundation in English." Weight="10" Skip="true" />
+  <WordItem Word="science" Mean="n. 科学" Sentence="This discovery is highly appreciated in the circle of science." Weight="10" Skip="false" />
+  <WordItem Word="scientist" Mean="n. 科学家" Sentence="He approached the question as a scientist." Weight="9" Skip="true" />
+  <WordItem Word="score" Mean="v./n. 把...记下；得分，分数" Sentence="I walked a score of miles." Weight="10" Skip="true" />
+  <WordItem Word="screen" Mean="n. 幕，荧光屏" Sentence="The picture on this screen is a good artistic work." Weight="10" Skip="true" />
+  <WordItem Word="sea" Mean="n. 海 ，海洋" Sentence="The lake communicates with the sea by means of a canal." Weight="10" Skip="true" />
+  <WordItem Word="search" Mean="v./n. 搜寻，搜查" Sentence="The lost book came to light after a long search." Weight="10" Skip="false" />
+  <WordItem Word="season" Mean="n. 季节" Sentence="The seasons change, independent of anyone's wishes." Weight="10" Skip="true" />
+  <WordItem Word="seat" Mean="n. 座位" Sentence="We were using crates as seats." Weight="10" Skip="false" />
+  <WordItem Word="secret" Mean="n. 秘密，内情" Sentence="I will pledge myself to a top secret." Weight="10" Skip="true" />
+  <WordItem Word="secretary" Mean="n. 秘书，书记" Sentence="It takes a new secretary one month to break in." Weight="11" Skip="false" />
+  <WordItem Word="see" Mean="v. 看见，看到，领会" Sentence="It's so dark; I can't see." Weight="10" Skip="true" />
+  <WordItem Word="seem" Mean="v. 似乎，好像，仿佛" Sentence="He certainly didn't seem to be a fool." Weight="9" Skip="true" />
+  <WordItem Word="sell" Mean="v. 卖，售" Sentence="Merchants buy and sell." Weight="11" Skip="true" />
+  <WordItem Word="send" Mean="v. 打发，派遣，送" Sentence="I have thought about it; I'll send you." Weight="10" Skip="true" />
+  <WordItem Word="sense" Mean="n. 感觉，意识，判断力" Sentence="I'm afraid I haven't got a very good sense of direction, so I easily get lost." Weight="12" Skip="true" />
+  <WordItem Word="sentence" Mean="n. 句子，判决，宣判" Sentence="We can sum up the main point of the lesson in three sentences." Weight="10" Skip="false" />
+  <WordItem Word="separate" Mean="a./ v. 各自的；分离，分开" Sentence="When did they separate last night?" Weight="10" Skip="true" />
+  <WordItem Word="serious" Mean="a. 严肃的，严重的，认真的" Sentence="Her daughter was mute after a serious illness." Weight="10" Skip="true" />
+  <WordItem Word="serve" Mean="v. 招待，服务" Sentence="The manager of the restaurant has trained the waitress to serve correctly at table." Weight="10" Skip="true" />
+  <WordItem Word="service" Mean="n. 服务，服役" Sentence="We flatter ourselves that we provide the best service in town." Weight="12" Skip="false" />
+  <WordItem Word="set" Mean="v./n. 设置，提出，树立；装备，设备" Sentence="He set a cup on the table." Weight="9" Skip="true" />
+  <WordItem Word="shake" Mean="v. 摇动，震动" Sentence="Give the bottle a couple of shakes before pouring the juice." Weight="10" Skip="true" />
+  <WordItem Word="shape" Mean="v./n. 塑造；形状，外形，身段" Sentence="They are uniform in size and shape." Weight="10" Skip="true" />
+  <WordItem Word="share" Mean="v. 分享，共同使用" Sentence="I gave him a minor share of my wealth." Weight="10" Skip="true" />
+  <WordItem Word="ship" Mean="n./v. 船，轮船；用船载运" Sentence="A ship sank at the junction of the two rivers last month." Weight="10" Skip="true" />
+  <WordItem Word="shoe" Mean="n. 鞋" Sentence="She took off her left shoe." Weight="10" Skip="true" />
+  <WordItem Word="shop" Mean="n./v. 商店，买东西" Sentence="That shop deals in men's clothing." Weight="10" Skip="true" />
+  <WordItem Word="short" Mean="a. 短的，矮的" Sentence="A straight line is the shortest distance between two points." Weight="10" Skip="false" />
+  <WordItem Word="shoulder" Mean="n. 肩膀" Sentence="I feel a dull ache in the shoulder." Weight="10" Skip="true" />
+  <WordItem Word="show" Mean="n./v. 展示，展览；给......看，出示" Sentence="The sky began to show red in the early morning." Weight="10" Skip="true" />
+  <WordItem Word="shy" Mean="a. 害羞的" Sentence="Mary is a shy girl." Weight="10" Skip="true" />
+  <WordItem Word="side" Mean="n. 边，侧面" Sentence="A box has a top, a bottom and four sides." Weight="11" Skip="false" />
+  <WordItem Word="sight" Mean="n. 情景，风景，视力" Sentence="He had his sight tested by a doctor." Weight="11" Skip="true" />
+  <WordItem Word="similar" Mean="a. 相似的，像" Sentence="The two boys look very similar." Weight="9" Skip="true" />
+  <WordItem Word="simple" Mean="a. 简单的，简易的" Sentence="He wrote a story in simple English." Weight="10" Skip="true" />
+  <WordItem Word="sing" Mean="v. 唱" Sentence="How beautifully you sing!" Weight="10" Skip="false" />
+  <WordItem Word="single" Mean="a. 单一的" Sentence="She remained single all the life." Weight="9" Skip="false" />
+  <WordItem Word="sister" Mean="n. 姐，妹" Sentence="I believe my sister to be honest." Weight="10" Skip="true" />
+  <WordItem Word="sit" Mean="v. 坐" Sentence="I'd rather stand than sit." Weight="10" Skip="true" />
+  <WordItem Word="situation" Mean="n. 形式，情况" Sentence="The situation will soon come clear." Weight="10" Skip="false" />
+  <WordItem Word="size" Mean="n. 尺寸，大小" Sentence="The bottles are both of a size." Weight="10" Skip="true" />
+  <WordItem Word="skate" Mean="v. 溜冰，滑冰" Sentence="She skates beautifully." Weight="11" Skip="true" />
+  <WordItem Word="skill" Mean="n. 技能，技巧" Sentence="He is fertile of skills." Weight="10" Skip="true" />
+  <WordItem Word="sleep" Mean="v. 睡眠，睡觉" Sentence="He had only a brief sleep that night." Weight="10" Skip="true" />
+  <WordItem Word="slow" Mean="a. 慢的，迟钝的" Sentence="This is the slow lane of a motorway." Weight="10" Skip="true" />
+  <WordItem Word="small" Mean="a. 小的" Sentence="The pitch is too small to play football on." Weight="10" Skip="true" />
+  <WordItem Word="smile" Mean="n./v. 微笑" Sentence="A smile of pleasure passed across his face." Weight="10" Skip="true" />
+  <WordItem Word="smoke" Mean="n./v. 烟；冒烟；吸烟" Sentence="The house is full of smoke." Weight="10" Skip="true" />
+  <WordItem Word="social" Mean="a. 社会的" Sentence="Please tell me some opinions on various social questions." Weight="10" Skip="true" />
+  <WordItem Word="society" Mean="n. 社会" Sentence="Science benefits society." Weight="11" Skip="true" />
+  <WordItem Word="soft" Mean="a. 软的，柔和的" Sentence="Snail is a small plant-eating creature with a soft body." Weight="10" Skip="false" />
+  <WordItem Word="solve" Mean="v. 解决" Sentence="He finally solved the difficulty of transportation." Weight="11" Skip="false" />
+  <WordItem Word="son" Mean="n. 儿子" Sentence="We have two sons and a daughter." Weight="10" Skip="true" />
+  <WordItem Word="song" Mean="n. 歌曲" Sentence="Sing us a song." Weight="10" Skip="true" />
+  <WordItem Word="sorry" Mean="a. 对不起，抱歉，难过" Sentence="I am sorry about your father's illness." Weight="10" Skip="true" />
+  <WordItem Word="sound" Mean="n./v. 声音；听起来，发出声音" Sentence="Sound travels slower than light." Weight="10" Skip="false" />
+  <WordItem Word="south" Mean="n. 南方，南部" Sentence="I'm lost, which direction is South?" Weight="10" Skip="true" />
+  <WordItem Word="southern" Mean="a. 南方的，南部的" Sentence="He has traveled in southern cities." Weight="10" Skip="false" />
+  <WordItem Word="space" Mean="n. 空间" Sentence="Keep some space between you and the car ahead." Weight="10" Skip="true" />
+  <WordItem Word="speak" Mean="v. 说，讲，发言" Sentence="The baby is learning to speak." Weight="10" Skip="true" />
+  <WordItem Word="special" Mean="a. 特别的，专门的" Sentence="The best students are awarded special scholarships." Weight="11" Skip="true" />
+  <WordItem Word="speech" Mean="n. 演讲，讲话" Sentence="He lost his power of speech." Weight="12" Skip="false" />
+  <WordItem Word="speed" Mean="n./v. 速度；使加速" Sentence="Our speed averaged out at 50 km an hour." Weight="10" Skip="true" />
+  <WordItem Word="spend" Mean="v. 度过，花费" Sentence="She would rather spend than save." Weight="10" Skip="true" />
+  <WordItem Word="spirit" Mean="n. 精神" Sentence="Cancer destroyed her body but not her spirit." Weight="10" Skip="false" />
+  <WordItem Word="sport" Mean="n. 运动，锻炼" Sentence="All over the world men and women, boys and girls enjoy sports." Weight="10" Skip="true" />
+  <WordItem Word="spread" Mean="v. 延伸，展开，传播" Sentence="Its branches spread far and wide." Weight="10" Skip="false" />
+  <WordItem Word="spring" Mean="n. 春天，春季，弹簧，泉" Sentence="Trees put forth buds and leaves in spring." Weight="10" Skip="false" />
+  <WordItem Word="square" Mean="a./ n. 方形的；广场" Sentence="Let's construct a square on this line." Weight="10" Skip="true" />
+  <WordItem Word="stand" Mean="v. 站立，起立，经受" Sentence="He made a sudden stand." Weight="10" Skip="false" />
+  <WordItem Word="standard" Mean="n. 标准，规格" Sentence="The standard of length in France is the metre." Weight="11" Skip="true" />
+  <WordItem Word="star" Mean="n. 星，恒星，明星" Sentence="The innumerable stars in the sky are too far from us." Weight="11" Skip="false" />
+  <WordItem Word="start" Mean="v. 开始，着手，出发" Sentence="The new system was confronted with great difficulties at the start." Weight="10" Skip="true" />
+  <WordItem Word="stamp" Mean="n. 邮票" Sentence="Will you oblige me with a stamp?" Weight="10" Skip="true" />
+  <WordItem Word="station" Mean="n. 车站，所，电台" Sentence="The railway station is some distance from the village." Weight="10" Skip="true" />
+  <WordItem Word="stay" Mean="n./v. 逗留，停留" Sentence="I'm in a hurry; I've no time to stay." Weight="10" Skip="true" />
+  <WordItem Word="steal" Mean="v. 偷窃" Sentence="Anyhow I must insist that you cannot steal." Weight="10" Skip="true" />
+  <WordItem Word="step" Mean="n./v. 脚步，台阶；移步，踏" Sentence="I won't venture a step farther." Weight="10" Skip="true" />
+  <WordItem Word="stick" Mean="n./v. 木棒，枝条，手杖；粘住，刺" Sentence="What's wrong with this stamp?It won't stick." Weight="11" Skip="false" />
+  <WordItem Word="stone" Mean="n. 石头" Sentence="Marble is a precious stone." Weight="10" Skip="true" />
+  <WordItem Word="stop" Mean="n./v. 停，站；停止，阻止" Sentence="The car stopped." Weight="10" Skip="true" />
+  <WordItem Word="story" Mean="n. 故事" Sentence="He likes to listen to fairy stories." Weight="10" Skip="true" />
+  <WordItem Word="straight" Mean="a. 笔直的，直的" Sentence="There is a straight line under the sentence." Weight="10" Skip="true" />
+  <WordItem Word="strange" Mean="a. 奇怪的，陌生的" Sentence="He stood in a strange street." Weight="10" Skip="true" />
+  <WordItem Word="street" Mean="n. 街道" Sentence="The street runs through the town." Weight="10" Skip="true" />
+  <WordItem Word="stress" Mean="n. 重压" Sentence="The roof couldn't bear the stress of the snow." Weight="10" Skip="true" />
+  <WordItem Word="strict" Mean="a. 严格的，严厉的" Sentence="She is a strict teacher." Weight="10" Skip="true" />
+  <WordItem Word="strong" Mean="a. 强壮的，强烈的" Sentence="He is as strong as oxen." Weight="10" Skip="true" />
+  <WordItem Word="student" Mean="n. 学生" Sentence="The students put up a poster on the bulletin board." Weight="10" Skip="true" />
+  <WordItem Word="study" Mean="v. 学习，研究" Sentence="He had studied diligently at college." Weight="10" Skip="true" />
+  <WordItem Word="subject" Mean="n. 题目，主题，学科" Sentence="This is a book on the subject of love." Weight="10" Skip="false" />
+  <WordItem Word="succeed" Mean="v. 成功" Sentence="The experiment has succeeded." Weight="11" Skip="true" />
+  <WordItem Word="success" Mean="n. 成功" Sentence="Success at last!" Weight="10" Skip="true" />
+  <WordItem Word="successful" Mean="a. 成功的" Sentence="She is a successful businesswoman." Weight="10" Skip="true" />
+  <WordItem Word="suggest" Mean="v. 建议，提议" Sentence="They accepted the paper and suggested only one change." Weight="10" Skip="false" />
+  <WordItem Word="suggestion" Mean="n. 建议 ，意见" Sentence="Your suggestions are unworkable." Weight="10" Skip="false" />
+  <WordItem Word="summer" Mean="n. 夏天，夏季" Sentence="Summer is my favourite season." Weight="10" Skip="true" />
+  <WordItem Word="sun" Mean="n. 太阳" Sentence="At last the sun broke through the clouds." Weight="10" Skip="true" />
+  <WordItem Word="supply" Mean="n./v. 补给，供给" Sentence="Our task is to supply vegetables all the year round." Weight="10" Skip="true" />
+  <WordItem Word="support" Mean="n./v. 支撑，支持，支援" Sentence="Walls support the roof." Weight="11" Skip="true" />
+  <WordItem Word="suppose" Mean="v. 猜想，假定" Sentence="You are only supposing this on hearsay, you have no proof." Weight="9" Skip="false" />
+  <WordItem Word="sure" Mean="a. 确定，肯定" Sentence="I shall certainly be present at the meeting, but I am not sure about my wife." Weight="11" Skip="true" />
+  <WordItem Word="surface" Mean="n. 表面，外面" Sentence="A cube has six surfaces." Weight="11" Skip="true" />
+  <WordItem Word="surprise" Mean="n. 惊奇" Sentence="He may surprise us all yet." Weight="10" Skip="true" />
+  <WordItem Word="system" Mean="n. 体系，系统，制度" Sentence="He created a new system of teaching foreign languages." Weight="10" Skip="true" />
+  <WordItem Word="table" Mean="n. 桌子，表格" Sentence="A throng of shoppers pushed against one another to the display tables of the department store." Weight="10" Skip="true" />
+  <WordItem Word="take" Mean="v. 拿走，服用，乘坐，花费" Sentence="She went out of the room, taking the flowers with her." Weight="10" Skip="false" />
+  <WordItem Word="talent" Mean="n. 天才，才干" Sentence="He was a man of many talents." Weight="10" Skip="false" />
+  <WordItem Word="talk" Mean="n./v. 谈话，讲话，交谈" Sentence="I hate the man who enjoys talking big." Weight="10" Skip="false" />
+  <WordItem Word="tape" Mean="n. 磁带，录音带" Sentence="I used tape to tie up the box." Weight="9" Skip="true" />
+  <WordItem Word="task" Mean="n. 任务，工作" Sentence="He delegated me to perform a task." Weight="11" Skip="false" />
+  <WordItem Word="taste" Mean="n./v. 味道，味觉；品尝" Sentence="The food has an attractive taste." Weight="10" Skip="false" />
+  <WordItem Word="tea" Mean="n. 茶" Sentence="He poured me a cup of tea." Weight="10" Skip="true" />
+  <WordItem Word="teach" Mean="v. 教书" Sentence="This course teaches easily." Weight="10" Skip="false" />
+  <WordItem Word="teacher" Mean="n. 教师" Sentence="The teacher dismissed the class ten minutes early." Weight="10" Skip="true" />
+  <WordItem Word="team" Mean="n. 队，组" Sentence="A team which is full of enthusiasm is more likely to win." Weight="10" Skip="true" />
+  <WordItem Word="techonology" Mean="n. 技术，科技" Sentence="" Weight="10" Skip="false" />
+  <WordItem Word="teenager" Mean="n. 十几岁的青少年" Sentence="He is managing a club for teenagers." Weight="11" Skip="true" />
+  <WordItem Word="telephone" Mean="n./v. 电话；打电话" Sentence="The doctor was in touch by telephone with his patients." Weight="9" Skip="true" />
+  <WordItem Word="tell" Mean="v. 告诉，吩咐" Sentence="I have something to tell you." Weight="10" Skip="true" />
+  <WordItem Word="term" Mean="n. 学期，术语" Sentence="An American President's term of office is four years." Weight="10" Skip="true" />
+  <WordItem Word="terrible" Mean="a. 可怕的，糟糕的" Sentence="The little boy is playing the terrible game." Weight="11" Skip="true" />
+  <WordItem Word="test" Mean="n./v. 测试，考查" Sentence="The candidate has passed all the tests." Weight="9" Skip="true" />
+  <WordItem Word="text" Mean="n. 文本，课文" Sentence="The text stands on page 23." Weight="10" Skip="true" />
+  <WordItem Word="thank" Mean="n./v. 感激，感谢" Sentence="Thank you very much!" Weight="10" Skip="true" />
+  <WordItem Word="theatre" Mean="n. 剧场，电影院" Sentence="Her mother never went to the theatre." Weight="10" Skip="false" />
+  <WordItem Word="thick" Mean="a. 厚的" Sentence="She was still wearing her thick coat." Weight="10" Skip="true" />
+  <WordItem Word="thin" Mean="a. 薄的" Sentence="She should wear a thinner shirt in summer." Weight="9" Skip="true" />
+  <WordItem Word="think" Mean="v. 想，思考，打算，考虑" Sentence="It is so noisy here that I can't think." Weight="10" Skip="true" />
+  <WordItem Word="thirsty" Mean="a. 口渴的" Sentence="They watered the thirsty fields." Weight="10" Skip="false" />
+  <WordItem Word="thought" Mean="n. 思考，思想" Sentence="After some thought he hit on a plan to route the enemy." Weight="10" Skip="false" />
+  <WordItem Word="throw" Mean="v. 扔，投" Sentence="It's my turn to throw." Weight="10" Skip="false" />
+  <WordItem Word="ticket" Mean="n. 票，入场券" Sentence="" Weight="10" Skip="false" />
+  <WordItem Word="tidy" Mean="a./v. 整洁的，干净的；弄整洁" Sentence="I was shown into a tidy living room." Weight="10" Skip="true" />
+  <WordItem Word="time" Mean="n./v. 时间，钟点；测......时间；次数" Sentence="The philosopher speculated about time and space." Weight="10" Skip="true" />
+  <WordItem Word="tired" Mean="a. 累的，疲劳的" Sentence="John was a tired man when he got back from the long journey." Weight="9" Skip="true" />
+  <WordItem Word="tool" Mean="n. 工具，器具，手段" Sentence="I have a complete set of carpenter's tools." Weight="10" Skip="true" />
+  <WordItem Word="total" Mean="a./n./v. 总的，总数，合计" Sentence="Please figure out the total cost." Weight="10" Skip="true" />
+  <WordItem Word="touch" Mean="v. 触摸，接触" Sentence="Their shoulders touched." Weight="10" Skip="true" />
+  <WordItem Word="tour" Mean="n. 参观，观光" Sentence="My tour lasted two months." Weight="10" Skip="true" />
+  <WordItem Word="tourist" Mean="n. 旅行者，观光者" Sentence="The tourists went sightseeing in the suburbs of the city." Weight="8" Skip="true" />
+  <WordItem Word="tower" Mean="n. 塔" Sentence="The tower is fifty feet in height." Weight="10" Skip="true" />
+  <WordItem Word="town" Mean="n. 城镇" Sentence="The town is a residential suburb." Weight="11" Skip="true" />
+  <WordItem Word="toy" Mean="n. 玩具，玩物" Sentence="The children fastened their eyes on the toys." Weight="10" Skip="true" />
+  <WordItem Word="trade" Mean="n./v. 贸易，交易" Sentence="Transport has always been the key to developing trade." Weight="10" Skip="true" />
+  <WordItem Word="traditional" Mean="a. 传统的，惯例的" Sentence="It’s traditional to eat turkey at Thanksgiving." Weight="8" Skip="false" />
+  <WordItem Word="traffic" Mean="n. 交通，运输" Sentence="The newcomer is not used to the heavy traffic in big cities." Weight="9" Skip="true" />
+  <WordItem Word="train" Mean="n./v. 火车；培训，训练" Sentence="The old man went to Beijing by train." Weight="10" Skip="false" />
+  <WordItem Word="travel" Mean="n./v. 旅行" Sentence="Travel broadens the mind." Weight="10" Skip="true" />
+  <WordItem Word="treat" Mean="v. 对待，看待" Sentence="She was cooking fish as a treat." Weight="10" Skip="true" />
+  <WordItem Word="trouble" Mean="n./v. 问题，烦恼" Sentence="The old lady told me all her troubles." Weight="9" Skip="true" />
+  <WordItem Word="true" Mean="a. 真的，真实的" Sentence="It is a true story." Weight="10" Skip="true" />
+  <WordItem Word="trust" Mean="v. 相信，信任" Sentence="You've betrayed my trust." Weight="10" Skip="true" />
+  <WordItem Word="truth" Mean="n. 真理，真相" Sentence="I'm going to ascertain the truth." Weight="11" Skip="true" />
+  <WordItem Word="try " Mean="v. 试，试图，试做" Sentence="If you can't do it the first time, try again." Weight="10" Skip="true" />
+  <WordItem Word="turn" Mean="n./v. 轮流，顺序；转动，转变" Sentence="The wheels were turning swiftly." Weight="10" Skip="false" />
+  <WordItem Word="TV" Mean="n. 电视" Sentence="She had heard the news-flash on a TV channel's news update." Weight="10" Skip="true" />
+  <WordItem Word="twice" Mean="ad. 两次，两倍" Sentence="Bob phoned twice today." Weight="10" Skip="false" />
+  <WordItem Word="two" Mean="num. 二" Sentence="A coin has two sides,a head and a tail." Weight="10" Skip="true" />
+  <WordItem Word="umbrella" Mean="n. 雨伞" Sentence="Umbrella and raincoats are what people need in rainy days." Weight="11" Skip="false" />
+  <WordItem Word="uncle" Mean="n. 叔叔，伯伯，舅，姑父，姨夫" Sentence="I'll go to see your uncle presently." Weight="10" Skip="false" />
+  <WordItem Word="understand" Mean="v. 懂得，理解，明白" Sentence="I didn't understand." Weight="9" Skip="false" />
+  <WordItem Word="unit" Mean="n. 单元，单位" Sentence="a unit of flat/apartment" Weight="10" Skip="true" />
+  <WordItem Word="university" Mean="n. 大学" Sentence="The boy scared up enough money to go to university." Weight="10" Skip="true" />
+  <WordItem Word="upset" Mean="a. 苦恼的，心烦的" Sentence="A tall bottle upsets easily." Weight="10" Skip="false" />
+  <WordItem Word="use" Mean="n./v. 使用，运用" Sentence="May I use your knife for a while?" Weight="10" Skip="true" />
+  <WordItem Word="used" Mean="a. 用过的，二手的" Sentence="He doesn't want a used car." Weight="10" Skip="true" />
+  <WordItem Word="useful" Mean="a. 有用的，有益的" Sentence="He's a useful person to know." Weight="10" Skip="true" />
+  <WordItem Word="usual" Mean="a. 通常的，平常的" Sentence="The plane did not fly the usual commercial route." Weight="11" Skip="false" />
+  <WordItem Word="vacation" Mean="n. 假期，休假" Sentence="The children wait impatiently for the vacation." Weight="10" Skip="false" />
+  <WordItem Word="valuable" Mean="a. 值钱的，有价值的" Sentence="He has a valuable collection of stamps." Weight="9" Skip="true" />
+  <WordItem Word="value" Mean="n. 价值" Sentence="The expert set a value of 10, 000 dollars on the painting." Weight="10" Skip="true" />
+  <WordItem Word="various" Mean="a. 各种各样的，不同的" Sentence="The subject may be viewed in various ways." Weight="10" Skip="true" />
+  <WordItem Word="vegetable" Mean="n. 蔬菜" Sentence="They planned to visit a vegetable garden." Weight="10" Skip="true" />
+  <WordItem Word="victory" Mean="n. 胜利" Sentence="At last they experienced the joy of victory." Weight="10" Skip="false" />
+  <WordItem Word="video" Mean="n. 录像，视频" Sentence="We use video for teaching." Weight="10" Skip="true" />
+  <WordItem Word="view" Mean="n. 风景，视野，观点" Sentence="The speaker stood in full view of the crowd." Weight="11" Skip="false" />
+  <WordItem Word="village" Mean="n. 村庄" Sentence="The hurricane destroyed the whole village." Weight="12" Skip="false" />
+  <WordItem Word="visit" Mean="n./v. 参观，访问，拜访" Sentence="They are visiting in that city." Weight="10" Skip="true" />
+  <WordItem Word="visitor" Mean="n. 游客，访问者，参观者" Sentence="There was such a crowd round the distinguished visitor that I could not get to speak to him." Weight="10" Skip="true" />
+  <WordItem Word="voice" Mean="n. 声音 " Sentence="Our voices echoed in the empty house." Weight="10" Skip="true" />
+  <WordItem Word="volleyball" Mean="n. 排球" Sentence="They are fond of playing volleyball." Weight="10" Skip="true" />
+  <WordItem Word="volunteer" Mean="n. 志愿者" Sentence="How many of them volunteered?" Weight="10" Skip="true" />
+  <WordItem Word="wait" Mean="v. 等候" Sentence="We shan't wait long." Weight="10" Skip="true" />
+  <WordItem Word="wake" Mean="v. 醒来，叫醒" Sentence="When I woke the sun was three poles high." Weight="10" Skip="false" />
+  <WordItem Word="walk" Mean="n./v. 步行，散步" Sentence="The baby can't walk yet." Weight="10" Skip="true" />
+  <WordItem Word="wall" Mean="n. 墙" Sentence="They glided along the wall until they were out of sight." Weight="10" Skip="true" />
+  <WordItem Word="war" Mean="n. 战争" Sentence="They were fighting a just war." Weight="10" Skip="true" />
+  <WordItem Word="warm" Mean="a. 暖和的，温暖的" Sentence="She submerged her hands in warm water." Weight="10" Skip="true" />
+  <WordItem Word="warn" Mean="v. 警告" Sentence="Once again I warned her." Weight="10" Skip="true" />
+  <WordItem Word="wash" Mean="n./v. 洗，冲洗" Sentence="I must wash before dinner." Weight="10" Skip="true" />
+  <WordItem Word="waste" Mean="n./v. 浪费，废物；消耗" Sentence="We must combat extravagance and waste." Weight="10" Skip="true" />
+  <WordItem Word="watch" Mean="n./v. 手表；观看，注视" Sentence="She sat there watching, but said nothing." Weight="10" Skip="false" />
+  <WordItem Word="water" Mean="n./v. 水，浇水" Sentence="Flowers will die without water." Weight="10" Skip="false" />
+  <WordItem Word="way" Mean="n. 路，路线，方式，手段" Sentence="Is this the way out?" Weight="10" Skip="true" />
+  <WordItem Word="weak" Mean="a. 差的，弱的" Sentence="Don't stand on that chair, it's got a weak leg." Weight="10" Skip="false" />
+  <WordItem Word="wealth" Mean="n. 财产，财富" Sentence="Health is above wealth." Weight="10" Skip="true" />
+  <WordItem Word="wear" Mean="v. 穿；戴" Sentence="This suit has been in constant wear for two years." Weight="10" Skip="true" />
+  <WordItem Word="weather" Mean="n. 天气，气候" Sentence="The weather changed overnight." Weight="11" Skip="false" />
+  <WordItem Word="website" Mean="n. 站点，网站" Sentence="I found this information on their website ." Weight="9" Skip="true" />
+  <WordItem Word="week" Mean="n. 星期，周" Sentence="I shall be away from home all this week." Weight="10" Skip="true" />
+  <WordItem Word="weekend" Mean="n. 周末" Sentence="I was wondering where to spend the weekend." Weight="10" Skip="true" />
+  <WordItem Word="weigh" Mean="v. 称重" Sentence="When did you weigh last?" Weight="10" Skip="false" />
+  <WordItem Word="weight" Mean="n. 重量" Sentence="The pillars couldn't support the weight of the roof." Weight="10" Skip="true" />
+  <WordItem Word="welcome" Mean="n./v. 欢迎" Sentence="He welcomed you to enjoy his hospitality." Weight="10" Skip="true" />
+  <WordItem Word="well" Mean="a./ad. 身体好的；好" Sentence="Do you eat well at school?" Weight="10" Skip="true" />
+  <WordItem Word="west" Mean="n./ad. 西方；在西方" Sentence="The city is in the west of London." Weight="10" Skip="true" />
+  <WordItem Word="western" Mean="a. 西方的" Sentence="He is wearing a western style suit." Weight="10" Skip="true" />
+  <WordItem Word="wet" Mean="a. 湿的，潮的" Sentence="If this wet land was drained, it would be good farmland." Weight="10" Skip="true" />
+  <WordItem Word="white" Mean="a./n.  白色的；白色" Sentence="She wore white trousers." Weight="10" Skip="true" />
+  <WordItem Word="whole" Mean="a. 整个的，所有的" Sentence="The whole village was attacked with influenza." Weight="11" Skip="true" />
+  <WordItem Word="wide" Mean="a. 宽阔的" Sentence="He admired the city's wide streets." Weight="10" Skip="false" />
+  <WordItem Word="wife" Mean="n. 妻子" Sentence="Some people think that husband and wife should never work together." Weight="10" Skip="true" />
+  <WordItem Word="wild" Mean="a. 野生的，未开发的" Sentence="They hunted wild animals for food." Weight="9" Skip="false" />
+  <WordItem Word="win" Mean="v. 赢，获胜" Sentence="Which side won?" Weight="10" Skip="true" />
+  <WordItem Word="wind" Mean="n. 风" Sentence="A gentle wind disturbed the surface of the water." Weight="10" Skip="true" />
+  <WordItem Word="window" Mean="n. 窗户" Sentence="She heard a few taps on the window." Weight="10" Skip="true" />
+  <WordItem Word="wing" Mean="n. 翅膀，机翼" Sentence="Butterflies' wings are very beautiful." Weight="10" Skip="false" />
+  <WordItem Word="winner" Mean="n. 获胜者，胜利者" Sentence="a deserving winner" Weight="10" Skip="true" />
+  <WordItem Word="winter" Mean="n. 冬季" Sentence="Dusk sets early in winter." Weight="10" Skip="true" />
+  <WordItem Word="wise" Mean="a. 英明的，有见识的" Sentence="Wise men learn by other men's mistakes." Weight="10" Skip="true" />
+  <WordItem Word="wish" Mean="n./v. 愿望，祝愿" Sentence="We can get to work now if you wish." Weight="10" Skip="true" />
+  <WordItem Word="woman" Mean="n. 妇女" Sentence="She is a woman of great insight." Weight="10" Skip="true" />
+  <WordItem Word="wonder" Mean="n./v. 奇迹；对......疑惑" Sentence="Jacelin says he didn't do it, but I still wonder." Weight="10" Skip="true" />
+  <WordItem Word="wonderful" Mean="a. 美妙的，精彩的" Sentence="He told me a wonderful story." Weight="10" Skip="true" />
+  <WordItem Word="wood" Mean="n. 木头，木材" Sentence="The chairs are made of wood." Weight="10" Skip="true" />
+  <WordItem Word="word" Mean="n. 单词，话" Sentence="How many letters are there in the word “struggle”?" Weight="10" Skip="true" />
+  <WordItem Word="work" Mean="v. 工作，劳动" Sentence="He's been working hard all day." Weight="10" Skip="true" />
+  <WordItem Word="worker" Mean="n. 工人" Sentence="His parents are scientific and technological workers." Weight="10" Skip="true" />
+  <WordItem Word="world" Mean="n. 世界" Sentence="She has sailed round the world." Weight="10" Skip="true" />
+  <WordItem Word="worry" Mean="v. 忧虑，担忧" Sentence="Too much worry had made him look an old man." Weight="9" Skip="true" />
+  <WordItem Word="worse" Mean="a. 较差的" Sentence="I have even worse news for you." Weight="11" Skip="true" />
+  <WordItem Word="worst" Mean="a. 最差的" Sentence="She is the worst singer I know." Weight="10" Skip="false" />
+  <WordItem Word="worth" Mean="a. 值得的，值钱的" Sentence="The picture is worth at least twenty pounds." Weight="11" Skip="true" />
+  <WordItem Word="wound" Mean="n./v. 伤口；受伤" Sentence="Apply some medicine to his wound." Weight="10" Skip="true" />
+  <WordItem Word="write" Mean="v. 写，写作" Sentence="When he was very young, he began to learn to read and write." Weight="10" Skip="true" />
+  <WordItem Word="writer" Mean="n. 作家，作者" Sentence="He was the writer of the letter." Weight="10" Skip="true" />
+  <WordItem Word="wrong" Mean="a. 错误的，有毛病的" Sentence="Cheating is always wrong." Weight="10" Skip="true" />
+  <WordItem Word="yard" Mean="n. 院子" Sentence="You can play outside, but you must not leave the yard." Weight="10" Skip="true" />
+  <WordItem Word="year" Mean="n. 年" Sentence="A leap year has 366 days." Weight="10" Skip="true" />
+  <WordItem Word="yellow" Mean="a./n. 黄色的，黄色" Sentence="She wore a yellow dress." Weight="10" Skip="true" />
+  <WordItem Word="young" Mean="a. 年轻的" Sentence="The young man graduated from a prestigious university." Weight="10" Skip="false" />
+  <WordItem Word="zoo" Mean="n. 动物园" Sentence="A zoo is a place where live animals are kept in captivity for the public to see." Weight="10" Skip="false" />
+  <WordItem Word="concent" Mean="n. 协调，一致，和谐" Sentence="The concent of free Gin and Ala - Gin in Biocom are 21.1 % and 2.65 % respectively." Weight="8" Skip="true" />
+  <WordItem Word="custom" Mean="n. 风俗; 个人习惯; 惠顾" Sentence="It is the custom of foreigners to do so." Weight="10" Skip="true" />
+  <WordItem Word="failed" Mean="adj. 失败了的，不成功的" Sentence="a failed writer" Weight="10" Skip="false" />
+  <WordItem Word="easily" Mean="v. 容易地; 很可能; 频繁地" Sentence="This kind of material absorbs water easily." Weight="10" Skip="true" />
+  <WordItem Word="explore" Mean="v. 在…探险; 探讨; 勘探; 摸索" Sentence="As soon as they arrived in the town they went out to explore." Weight="12" Skip="true" />
 </Words>

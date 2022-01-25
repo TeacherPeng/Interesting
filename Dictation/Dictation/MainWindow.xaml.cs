@@ -54,7 +54,7 @@ namespace Dictation
 
         private void OnLook_Click(object sender, RoutedEventArgs e)
         {
-            txtWord.Text = $"{Model?.CurrentWord?.Word}\n\n{Model?.CurrentWord?.Mean}";
+            txtWord.Text = $"{Model?.CurrentWord?.Word}\n\n{Model?.CurrentWord?.Mean}\n\n{Model?.CurrentWord?.Sentence}";
             cmdLook.Visibility = Visibility.Hidden;
             cmdJudges.Visibility = Visibility.Visible;
         }
