@@ -759,4 +759,182 @@
   <WordItem Word="failed" Mean="adj. 失败了的，不成功的" Sentence="a failed writer" Weight="10" Skip="false" />
   <WordItem Word="easily" Mean="v. 容易地; 很可能; 频繁地" Sentence="This kind of material absorbs water easily." Weight="10" Skip="true" />
   <WordItem Word="explore" Mean="v. 在…探险; 探讨; 勘探; 摸索" Sentence="As soon as they arrived in the town they went out to explore." Weight="12" Skip="true" />
+	<WordItem Word="after all" Mean="毕竟，终究" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="according to" Mean="根据，按照，据......所说" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="because of" Mean="因为，由于" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="as for" Mean="至于" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="by mistake" Mean="错误地" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="by accident" Mean="偶然地，意外地" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="for example" Mean="例如" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="for instance" Mean="例如" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="instead of" Mean="代替，而不是" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="thanks to" Mean="幸亏，由于，因为" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="to be honest" Mean="老实说，说实在的" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="to one's surprised" Mean="令某人惊奇的是......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="to start with" Mean="首先" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="thanks for" Mean="为......而感谢......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="both...and" Mean="两个都，既......又......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="either...or" Mean="或者......或者......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="neither...nor" Mean="既不......也不......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="not only...but also" Mean="不但......而且......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="not...until" Mean="直到......才......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="so...that" Mean="如此......以至于......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="as soon as" Mean="一......就......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="even though" Mean="即使，尽管" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="would rather...than..." Mean="宁愿......而不......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="what if" Mean="如果......将会怎么样" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="too...to" Mean="太......而不能" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="so that" Mean="以便，结果，目的是" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="teach oneself" Mean="自学" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="enjoy oneself" Mean="玩得开心" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="by oneself" Mean="独自" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="help oneself to" Mean="随便吃......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="learn...by oneself" Mean="自学" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="hurt oneself" Mean="伤害自己" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="by the way" Mean="顺便说，顺便问一下" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="in the way" Mean="碍事的，挡道的" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="on one's way" Mean="在去—的路上" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="in this way" Mean="这样" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="in some ways" Mean="在某种程度上，在某些方面" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="the way to" Mean="去某地的路" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="pay attention to" Mean="注意" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="look forward to" Mean="期盼，期待" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="hold on to" Mean="继续，坚持" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="be/get used to" Mean="习惯于" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="make a contribution to" Mean="为......做贡献" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="prefer...to..." Mean="与......相比更喜欢......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="a few" Mean="一些， 很少" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="a little" Mean="稍微，一点儿" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="a bit" Mean="一点儿" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="across from" Mean="在......对面" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="all the time" Mean="始终，一直" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="all year round" Mean="一年到头" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="all over" Mean="遍及，整个" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="around the world" Mean="全世界" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="as...as possible" Mean="尽可能" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="as...as" Mean="和......一样" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="add...to" Mean="把......加到—上" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="be afraid to" Mean="害怕做某事" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="be in agreement" Mean="与...意见一致" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="be willing to" Mean="愿意做某事" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="just now" Mean="刚才" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="break down" Mean="停止运转，出故障" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="break off" Mean="突然中止，中断" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="break the rule" Mean="违反规则" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="break out" Mean="爆发" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="be able to" Mean="能，会" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="be supposed to" Mean="被期望或被要求......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="between...and" Mean="在......之间" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="belong to" Mean="属于" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="cut in line" Mean="插队" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="can't stop doing" Mean="情不自禁做某事" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="next to" Mean="紧接着，相邻" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="day off" Mean="休息日，不工作" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="do chores" Mean="做家务" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="do the dishes" Mean="洗盘子" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="do the laundry" Mean="洗衣服" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="do some reading" Mean="看书" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="do homework" Mean="做作业" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="dream of/about" Mean="梦想，向往" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="drop by" Mean="顺便或偶然拜访" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="divide...into" Mean="把......分成......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="each other" Mean="互相，彼此" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="excuse me" Mean="请原谅" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="go by" Mean="（指时间） 过去，消逝" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="knock into" Mean="与......相撞" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="feel like doing" Mean="想要做某事" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="family name" Mean="姓氏" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="first name" Mean="名字" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="fall asleep" Mean="入睡" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="fall in love with" Mean="爱上......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="fall into" Mean="落入，陷入" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="fall ill" Mean="病倒，患病" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="first of all" Mean="首先" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="fill...with" Mean="用......装满......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="go to sleep" Mean="入睡" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="go home" Mean="回家" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="go to school" Mean="去上学" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="go to a movie" Mean="去看电影" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="go to bed" Mean="去睡觉" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="go to work" Mean="去上班" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="go shopping" Mean="去购物" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="go hiking" Mean="去远足" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="have a headache" Mean="头痛" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="have a look" Mean="看一看" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="have a talk" Mean="谈一谈" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="have a cold" Mean="感冒" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="have a great time" Mean="玩得开心" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="have fun" Mean="玩得开心" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="have/get sth done" Mean="请别人做某事" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="have to" Mean="不得不" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="hardly ever" Mean="几乎不" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="have trouble in doing sth" Mean="做某事有困难" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="how/what about...? ......" Mean="怎么样?" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="had better do sth" Mean="最好做某事" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="hear of" Mean="听说" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="hear about" Mean="听说关于......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="hear from" Mean="收到某人的来信" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="hold on to" Mean="继续，坚持" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="here you are" Mean="给你" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="happy birthday" Mean="生日快乐" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="host family" Mean="寄宿家庭" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="how far" Mean="多远" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="how long" Mean="多长时间" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="how soon" Mean="多久以后" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="how often" Mean="多久一次" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="how many" Mean="多少" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="how much" Mean="多少钱，多少" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="how old" Mean="多大" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="it doesn't matter" Mean="没关系" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="keep healthy/fit" Mean="保持健康" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="later on" Mean="以后，过后" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="learn from" Mean="向---学习" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="let sb down" Mean="使某人失望或沮丧" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="from time to time" Mean="偶尔，不时" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="leave for" Mean="动身去某地" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="less than" Mean="不到，少于" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="listen to" Mean="听......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="next to" Mean="紧接着，靠近" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="not...any more" Mean="不再，再也不" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="no talking" Mean="禁止谈话" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="more than" Mean="多于，超过" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="not at all" Mean="一点也不" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="no longer" Mean="不再，已不" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="not...in the slightest" Mean="一点也不，根本不" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="out of style" Mean="过时" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="play football" Mean="踢足球" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="of course" Mean="当然" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="places of interest" Mean="名胜古迹" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="pretty well" Mean="相当好" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="watch TV" Mean="看电视" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="play sports" Mean="做运动" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="phone number" Mean="电话号码" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="prevent sb from doing sth" Mean="阻止某人做某事" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="such as" Mean="例如" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="quite a few" Mean="相当多，不少" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="shake hands" Mean="握手" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="rather than" Mean="而不，非" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="right away/now" Mean="立刻，马上" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="run away" Mean="逃走" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="be in agreement" Mean="意见一致" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="regard...as..." Mean="把......看作......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="ride a bike" Mean="骑自行车" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="sleep late" Mean="睡过头，起得晚" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="Why not...?" Mean="为什么不......?" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="so far" Mean="到目前为止" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="suit sb fine" Mean="合某人的意，对某人合适" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="talk show" Mean="访谈节目" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="translate...into" Mean="把......翻译成......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="try one's best" Mean="尽力做......" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="used to" Mean="过去常常" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="stressed out" Mean="紧张的" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="the same as" Mean="与...一样" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="three quarters" Mean="四分之三" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="the day after tomorrow" Mean="后天" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="wait in line" Mean="排队等候" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="what about...? ......" Mean="怎么样?" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="What's the matter?" Mean="怎么了?" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="What's the problem?" Mean="怎么了?" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="What's wrong?" Mean="怎么了?" Sentence="" Weight="15" Skip="false" />
+	<WordItem Word="have two days off" Mean="休息两天" Sentence="" Weight="15" Skip="false" />
 </Words>
