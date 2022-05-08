@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -49,7 +50,7 @@ namespace Dictation
         public WordItem? CurrentWord { get => _CurrentWord; set { if (_CurrentWord == value) return; _CurrentWord = value; OnPropertyChanged(nameof(CurrentWord)); } }
         private WordItem? _CurrentWord;
 
-        public List<WordItem> Words { get; } = new List<WordItem>();
+        public ObservableCollection<WordItem> Words { get; } = new();
 
         private readonly Random _Random = new();
 

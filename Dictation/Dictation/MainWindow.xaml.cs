@@ -12,11 +12,11 @@ namespace Dictation
         public MainWindow()
         {
             InitializeComponent();
-            Model?.LoadWords();
+            Model.LoadWords();
             StartQuestion();
         }
 
-        private WordsModel? Model => DataContext as WordsModel;
+        private WordsModel Model => DataContext as WordsModel;
 
         protected override void OnClosed(EventArgs e)
         {

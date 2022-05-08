@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:Dictation"
         mc:Ignorable="d" d:DataContext="{d:DesignInstance Type=local:WordsModel, IsDesignTimeCreatable=True}"
         Title="编辑" Height="450" Width="800">
-    <Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="导入" Click="OnImport_Click" />
+        </Menu>
         <DataGrid ItemsSource="{Binding Words}" />
-    </Grid>
+    </DockPanel>
 </Window>

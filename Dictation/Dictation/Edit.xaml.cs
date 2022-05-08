@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using Microsoft.Win32;
 
 namespace Dictation
 {
@@ -11,6 +12,18 @@ namespace Dictation
         {
             InitializeComponent();
             DataContext = aModel;
+        }
+
+        private WordsModel Model => DataContext as WordsModel;
+
+        private void OnImport_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog aDlg = new OpenFileDialog()
+            {
+                Filter = "Excel|*.xls*",
+            };
+            if (aDlg.ShowDialog() != true) return;
+
         }
     }
 }
