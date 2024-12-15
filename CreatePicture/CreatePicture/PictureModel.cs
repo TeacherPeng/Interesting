@@ -52,7 +52,7 @@ private double acos(double x) {return Math.Acos(x); }";
         {
             // 编译代码
             Dictionary<string, string> aProviderOptions = new Dictionary<string, string>();
-            aProviderOptions.Add("CompilerVersion", "v3.5");
+            aProviderOptions.Add("CompilerVersion", "v4.0");
             CSharpCodeProvider aCodeDomProvider = new CSharpCodeProvider(aProviderOptions);
             CompilerParameters aCompilerParameters = new CompilerParameters();
             aCompilerParameters.ReferencedAssemblies.Add("System.dll");
