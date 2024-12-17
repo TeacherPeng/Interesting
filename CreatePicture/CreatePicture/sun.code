@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Code Width="1024" Height="1024">
+  <C><![CDATA[private const int C = 256;
+private Random _random = new Random();
+private int rand() { return _random.Next(); }
+private int rand(int n) { return _random.Next(n); }
+private int rand(int s, int t) {return _random.Next(s, t); }
+private double randdbl() { return _random.NextDouble(); }
+private double _sq(double x) { return x * x; }
+private double _cb(double x) { return Math.Abs(x * x * x); }
+private double _cr(double x) { return Math.Pow(x, 1.0/3.0); }
+private double sin(double x) { return Math.Sin(x); }
+private double cos(double x) { return Math.Cos(x); }
+private double atan2(double x, double y) { return Math.Atan2(x, y); }
+private double acos(double x) {return Math.Acos(x); }]]></C>
+  <R><![CDATA[return (int)(Math.Sqrt(_sq(x-512)+_sq(y-512)));]]></R>
+  <G><![CDATA[return (int)(_sq(x-512)+_sq(y-512));]]></G>
+  <B><![CDATA[return (int)(_sq(x-512)+_sq(y-512));]]></B>
+</Code>
