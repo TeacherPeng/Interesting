@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Code Width="1024" Height="1024">
+  <C><![CDATA[private const int C = 256;
+private Random _random = new Random();
+private double _sq(double x) { return x * x; }
+private double _sin(double x) { return Math.Sin(x); }
+private double _cos(double x) { return Math.Cos(x); }
+private double _atan2(double x, double y) { return Math.Atan2(x, y); }]]></C>
+  <R><![CDATA[
+double cx = x - 512, cy = y - 512;
+double r = Math.Sqrt(_sq(cx) + _sq(cy));
+double theta = _atan2(cy, cx);
+
+// 中心光晕
+double center = Math.Exp(-r * r / 100000);
+
+// 放射状图案
+double radial = _sin(r/30) * _cos(theta * 5) * Math.Exp(-r * r / 250000);
+
+// 外围装饰
+double pattern = Math.Exp(-_sq(cx + 200) / 1000 - _sq(cy + 100) / 10000);
+
+return (int)(255 * (center + radial + pattern * 0.5));
+]]></R>
+
+  <G><![CDATA[
+double cx = x - 512, cy = y - 512;
+double r = Math.Sqrt(_sq(cx) + _sq(cy));
+double theta = _atan2(cy, cx);
+
+// 中心光晕
+double center = Math.Exp(-r * r / 120000);
+
+// 旋转花纹
+double spiral = _cos(r/25) * _sin(theta * 4) * Math.Exp(-r * r / 200000);
+
+return (int)(200 * (center + spiral * 0.7));
+]]></G>
+
+  <B><![CDATA[
+double cx = x - 512, cy = y - 512;
+double r = Math.Sqrt(_sq(cx) + _sq(cy));
+double theta = _atan2(cy, cx);
+
+// 中心光晕
+double center = Math.Exp(-r * r / 150000);
+
+// 几何图案
+double geometric = _sin(r/20) * _sin(theta * 3) * Math.Exp(-r * r / 150000);
+
+return (int)(150 * (center + geometric * 0.5));
+]]></B>
+</Code>
