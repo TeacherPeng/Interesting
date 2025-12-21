@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AutoSwipe.csproj">
+    <Deploy />
+  </Project>
+</Solution>

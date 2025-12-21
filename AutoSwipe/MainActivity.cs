@@ -38,7 +38,7 @@ public class MainActivity : Activity
 
         _btnStop?.Click += (s, e) =>
         {
-            var intent = new Intent(PackageInfo.ActionStartSwipe);
+            var intent = new Intent(PackageInfo.ActionStopSwipe);
             intent.SetPackage(PackageName); // 限定只发给本 App
             SendBroadcast(intent);
             Toast.MakeText(this, "停止划屏指令已发送", ToastLength.Short)?.Show();
