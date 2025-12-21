@@ -1,5 +1,4 @@
 # Interesting
-纯粹是写着好玩儿的。
 
 CreatePicture项目是用三个函数生成图片的C#(.NetFramework 4.8)版本，可以在界面上编辑三个颜色函数，并即时生成图片。
 
