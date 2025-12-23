@@ -8,3 +8,4 @@ Dictation项目是为了孩子中考而写的一个C#(.NetFramework 4.8)版本�
 
 AutoSwipe是为了在抖音极速版上完成打卡任务而编写的一个C#(.Net 10.0)版本的Android自动划屏程序。
 
+AutoSwipe中附有基于adb的PowerShell脚本，也可以通过电脑运行PowerShell脚本，完成Android手机的屏幕自动划屏。
