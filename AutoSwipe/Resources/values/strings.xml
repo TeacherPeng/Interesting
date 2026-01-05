@@ -3,5 +3,5 @@
     <string name="app_text">Auto Swipe</string>
 	<string name="service_start">开始</string>
 	<string name="service_stop">停止</string>
-	<string name="accessibility_service_description">自动滑动服务，用于演示目的</string>
+	<string name="accessibility_service_description">pengsw automation for android</string>
 </resources>

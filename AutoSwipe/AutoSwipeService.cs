@@ -6,7 +6,7 @@ using Java.Lang;
 
 namespace AutoSwipe;
 
-[Service(Name = PackageInfo.ServiceName, Permission = "android.permission.BIND_ACCESSIBILITY_SERVICE", Exported = false)]
+[Service(Name = PackageInfo.ServiceName, Permission = "android.permission.BIND_ACCESSIBILITY_SERVICE", Exported = true)]
 [IntentFilter(["android.accessibilityservice.AccessibilityService"])]
 [MetaData("android.accessibilityservice", Resource = "@xml/accessibility_service_config")]
 public class AutoSwipeService : AccessibilityService
