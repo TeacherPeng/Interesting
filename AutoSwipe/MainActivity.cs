@@ -26,26 +26,25 @@ public class MainActivity : Activity
 
         _btnStart?.Click += (s, e) =>
         {
-            var intent = new Intent(PackageInfo.ActionStartSwipe);
-            intent.SetPackage(PackageName); // 👈 仅发送给本应用的组件（安全！）
-            SendBroadcast(intent);
-            Toast.MakeText(this, "启动划屏指令已发送", ToastLength.Short)?.Show();
-
-            // 尝试切换/启动目标 App(抖音极速版)
-            var targetPackage = "com.ss.android.ugc.aweme.lite";
-            LaunchApp(targetPackage);
+            CallService(PackageInfo.ActionStartSwipe, "开始自动划屏");
+            LaunchApp("com.ss.android.ugc.aweme.lite"); // 尝试切换/启动目标 App(抖音极速版)
         };
 
         _btnStop?.Click += (s, e) =>
         {
-            var intent = new Intent(PackageInfo.ActionStopSwipe);
-            intent.SetPackage(PackageName); // 限定只发给本 App
-            SendBroadcast(intent);
-            Toast.MakeText(this, "停止划屏指令已发送", ToastLength.Short)?.Show();
+            CallService(PackageInfo.ActionStopSwipe, "停止自动划屏");
         };
 
         // 提示用户开启无障碍服务（可选）
         CheckAccessibilityPermission();
+    }
+
+    private void CallService(string action, string tooltip)
+    {
+        var intent = new Intent(action);
+        intent.SetPackage(PackageName); // 👈 仅发送给本应用的组件（安全！）
+        SendBroadcast(intent);
+        Toast.MakeText(this, tooltip, ToastLength.Short)?.Show();
     }
 
     private void LaunchApp(string packageName)
