@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11408.102 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessing", "ImageProcessing\ImageProcessing.csproj", "{D06B58B9-13A7-4B5C-9C13-DCB93A16DDE6}"
 EndProject
@@ -27,28 +27,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emgu.CV.World", "Emgu.CV.Wo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emgu.CV.UI", "Emgu.CV.UI\Emgu.CV.UI.csproj", "{90E78BBF-C7FE-4D8E-ADE1-75448E866FDB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessing.net", "ImageProcessing.net\ImageProcessing.net.csproj", "{452FFC50-B739-48F1-898F-DA5BDB1211DE}"
+EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Emgu.CV.Shape\Emgu.CV.Shape.projitems*{1c41f1cc-b8a8-4e72-8167-0e1a42edf843}*SharedItemsImports = 13
-		Emgu.Util\Emgu.Util.projitems*{98561642-5ec3-4244-baf9-6876d9ba5527}*SharedItemsImports = 13
-		Emgu.CV\Emgu.CV.projitems*{12d024ee-d0a5-4bbc-b7c0-7b18cf1ab262}*SharedItemsImports = 13
-		Emgu.CV.Cuda\Emgu.CV.Cuda.projitems*{7b22bb32-c867-45a7-ac53-5bda820db91c}*SharedItemsImports = 13
-		Emgu.CV.Stitching\Emgu.CV.Stitching.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
-		Emgu.Util\Emgu.Util.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
-		Emgu.CV\Emgu.CV.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
-		Emgu.CV.ML\Emgu.CV.ML.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
-		Emgu.CV.Shape\Emgu.CV.Shape.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
-		Emgu.CV.OCR\Emgu.CV.OCR.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
-		Emgu.CV.Cuda\Emgu.CV.Cuda.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
-		Emgu.CV.VideoStab\Emgu.CV.VideoStab.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
-		Emgu.CV.Superres\Emgu.CV.Superres.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
-		Emgu.CV.Contrib\Emgu.CV.Contrib.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
-		Emgu.CV.Contrib\Emgu.CV.Contrib.projitems*{11e54a7e-778d-466c-a176-71e150976ac1}*SharedItemsImports = 13
-		Emgu.CV.OCR\Emgu.CV.OCR.projitems*{7bc723cb-1678-415f-a65f-4027f8758a6f}*SharedItemsImports = 13
-		Emgu.CV.VideoStab\Emgu.CV.VideoStab.projitems*{31227f37-5594-4c29-92a2-4ae729d3878d}*SharedItemsImports = 13
-		Emgu.CV.Stitching\Emgu.CV.Stitching.projitems*{0d0c868d-23d6-46f7-a3e0-5f595c84939c}*SharedItemsImports = 13
-		Emgu.CV.ML\Emgu.CV.ML.projitems*{3f3bc3e1-3b59-48ab-959a-71844b9ad9be}*SharedItemsImports = 13
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|iPhone = Debug|iPhone
@@ -94,8 +75,41 @@ Global
 		{90E78BBF-C7FE-4D8E-ADE1-75448E866FDB}.Release|iPhone.Build.0 = Release|Any CPU
 		{90E78BBF-C7FE-4D8E-ADE1-75448E866FDB}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{90E78BBF-C7FE-4D8E-ADE1-75448E866FDB}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{452FFC50-B739-48F1-898F-DA5BDB1211DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{452FFC50-B739-48F1-898F-DA5BDB1211DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{452FFC50-B739-48F1-898F-DA5BDB1211DE}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{452FFC50-B739-48F1-898F-DA5BDB1211DE}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{452FFC50-B739-48F1-898F-DA5BDB1211DE}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{452FFC50-B739-48F1-898F-DA5BDB1211DE}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{452FFC50-B739-48F1-898F-DA5BDB1211DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{452FFC50-B739-48F1-898F-DA5BDB1211DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{452FFC50-B739-48F1-898F-DA5BDB1211DE}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{452FFC50-B739-48F1-898F-DA5BDB1211DE}.Release|iPhone.Build.0 = Release|Any CPU
+		{452FFC50-B739-48F1-898F-DA5BDB1211DE}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{452FFC50-B739-48F1-898F-DA5BDB1211DE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Emgu.CV.Stitching\Emgu.CV.Stitching.projitems*{0d0c868d-23d6-46f7-a3e0-5f595c84939c}*SharedItemsImports = 13
+		Emgu.CV.Contrib\Emgu.CV.Contrib.projitems*{11e54a7e-778d-466c-a176-71e150976ac1}*SharedItemsImports = 13
+		Emgu.CV\Emgu.CV.projitems*{12d024ee-d0a5-4bbc-b7c0-7b18cf1ab262}*SharedItemsImports = 13
+		Emgu.CV.Shape\Emgu.CV.Shape.projitems*{1c41f1cc-b8a8-4e72-8167-0e1a42edf843}*SharedItemsImports = 13
+		Emgu.CV.VideoStab\Emgu.CV.VideoStab.projitems*{31227f37-5594-4c29-92a2-4ae729d3878d}*SharedItemsImports = 13
+		Emgu.CV.ML\Emgu.CV.ML.projitems*{3f3bc3e1-3b59-48ab-959a-71844b9ad9be}*SharedItemsImports = 13
+		Emgu.CV.Contrib\Emgu.CV.Contrib.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
+		Emgu.CV.Cuda\Emgu.CV.Cuda.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
+		Emgu.CV.ML\Emgu.CV.ML.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
+		Emgu.CV.OCR\Emgu.CV.OCR.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
+		Emgu.CV.Shape\Emgu.CV.Shape.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
+		Emgu.CV.Stitching\Emgu.CV.Stitching.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
+		Emgu.CV.Superres\Emgu.CV.Superres.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
+		Emgu.CV.VideoStab\Emgu.CV.VideoStab.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
+		Emgu.CV\Emgu.CV.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
+		Emgu.Util\Emgu.Util.projitems*{3f5d7c08-96ba-4037-bb24-afa2c336e260}*SharedItemsImports = 4
+		Emgu.CV.Cuda\Emgu.CV.Cuda.projitems*{7b22bb32-c867-45a7-ac53-5bda820db91c}*SharedItemsImports = 13
+		Emgu.CV.OCR\Emgu.CV.OCR.projitems*{7bc723cb-1678-415f-a65f-4027f8758a6f}*SharedItemsImports = 13
+		Emgu.Util\Emgu.Util.projitems*{98561642-5ec3-4244-baf9-6876d9ba5527}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

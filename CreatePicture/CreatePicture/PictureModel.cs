@@ -1,13 +1,15 @@
 ﻿using Microsoft.CSharp;
-using System;
 using System.CodeDom.Compiler;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Xml.Linq;
-using static System.Math;
+using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using System.Linq;
+using System.Reflection;
 
 namespace CreatePicture
 {
@@ -50,20 +52,7 @@ private double acos(double x) {return Math.Acos(x); }";
 
         public void Exec()
         {
-            // 编译代码
-            Dictionary<string, string> aProviderOptions = new Dictionary<string, string>();
-            aProviderOptions.Add("CompilerVersion", "v4.0");
-            CSharpCodeProvider aCodeDomProvider = new CSharpCodeProvider(aProviderOptions);
-            CompilerParameters aCompilerParameters = new CompilerParameters();
-            aCompilerParameters.ReferencedAssemblies.Add("System.dll");
-            aCompilerParameters.ReferencedAssemblies.Add("System.Core.dll");
-            aCompilerParameters.ReferencedAssemblies.Add("System.Data.dll");
-            aCompilerParameters.ReferencedAssemblies.Add("System.Xml.dll");
-            aCompilerParameters.ReferencedAssemblies.Add(System.Reflection.Assembly.GetAssembly(typeof(ICreator)).ManifestModule.Name);
-            aCompilerParameters.ReferencedAssemblies.Add(System.Reflection.Assembly.GetEntryAssembly().ManifestModule.Name);
-            aCompilerParameters.GenerateExecutable = false;
-            aCompilerParameters.GenerateInMemory = true;
-
+            // 先构造要编译的源代码（和原来相同）
             string Code = $@"using System;
 namespace CreatePicture
 {{
@@ -89,27 +78,70 @@ namespace CreatePicture
     }}
 }}
 ";
-            CompilerResults aCompilerResults = aCodeDomProvider.CompileAssemblyFromSource(aCompilerParameters, Code);
-            ICreator aCreator;
-            if (aCompilerResults.Errors.Count > 0)
+
+            // 使用 Roslyn 在内存中编译
+            var syntaxTree = CSharpSyntaxTree.ParseText(Code);
+
+            // 准备引用：至少需要核心库、定义 ICreator 的程序集、以及入口程序集
+            var references = new List<MetadataReference>
             {
+                MetadataReference.CreateFromFile(typeof(object).Assembly.Location),
+                MetadataReference.CreateFromFile(typeof(System.Linq.Enumerable).Assembly.Location),
+                MetadataReference.CreateFromFile(typeof(ICreator).Assembly.Location),
+            };
+
+            // 如果需要其它系统库（例如 System.Xml、System.Data），可以按需添加：
+            // MetadataReference.CreateFromFile(typeof(System.Xml.XmlDocument).Assembly.Location)
+
+            var compilation = CSharpCompilation.Create(
+                assemblyName: $"InMemory_{Guid.NewGuid():N}",
+                syntaxTrees: new[] { syntaxTree },
+                references: references,
+                options: new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary)
+            );
+
+            using var ms = new MemoryStream();
+            var emitResult = compilation.Emit(ms);
+
+            ICreator aCreator;
+
+            if (!emitResult.Success)
+            {
+                // 收集错误并抛出，保持原有行为（包含源代码上下文）
                 string[] aLines = Code.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.None);
-                System.Text.StringBuilder aErrorTextBuilder = new System.Text.StringBuilder();
-                aErrorTextBuilder.AppendLine(Code);
-                foreach (CompilerError aCompilerError in aCompilerResults.Errors)
+                var sb = new System.Text.StringBuilder();
+                sb.AppendLine(Code);
+
+                foreach (var diag in emitResult.Diagnostics.Where(d => d.Severity == DiagnosticSeverity.Error))
                 {
-                    aErrorTextBuilder.AppendLine($"【{aLines[aCompilerError.Line - 1]}】：{aCompilerError.ErrorText}");
+                    var loc = diag.Location;
+                    int line = 0;
+                    if (loc.IsInSource)
+                    {
+                        var lineSpan = loc.GetLineSpan();
+                        line = lineSpan.StartLinePosition.Line + 1;
+                        if (line >= 1 && line <= aLines.Length)
+                            sb.AppendLine($"【{aLines[line - 1]}】：{diag.GetMessage()}");
+                        else
+                            sb.AppendLine($"【line {line}】:{diag.GetMessage()}");
+                    }
+                    else
+                    {
+                        sb.AppendLine(diag.ToString());
+                    }
                 }
-                throw new ApplicationException(aErrorTextBuilder.ToString());
+                throw new ApplicationException(sb.ToString());
             }
             else
             {
-                Type[] aTypes = aCompilerResults.CompiledAssembly.GetExportedTypes();
-                Type aType = aTypes[0];
-                aCreator = aCompilerResults.CompiledAssembly.CreateInstance(aType.FullName) as ICreator;
+                ms.Seek(0, SeekOrigin.Begin);
+                var assembly = Assembly.Load(ms.ToArray());
+                // 找到第一个导出的类型并创建实例（保持与原实现一致）
+                Type aType = assembly.GetExportedTypes().First();
+                aCreator = assembly.CreateInstance(aType.FullName) as ICreator;
             }
 
-            // 生成图像
+            // 生成图像（原有代码保持不变）
             int aStride = (_Format.BitsPerPixel * Width + 7) / 8;
             byte[] aPixels = new byte[aStride * Height];
             int aRowIndex = 0;
@@ -165,6 +197,6 @@ namespace CreatePicture
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(aPropertyName));
         }
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
     }
 }
