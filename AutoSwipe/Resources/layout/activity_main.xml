@@ -10,11 +10,82 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_text" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最小延时(毫秒)" />
+            <EditText
+                android:id="@+id/editMinDelay"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="2000"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最大延时(毫秒)" />
+            <EditText
+                android:id="@+id/editMaxDelay"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="10000"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 预设按钮：默认 2000-10000、长延时 5000-30000、短区间 4000-5000 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/cmdPreset1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2s~10s" />
+        <Button
+            android:id="@+id/cmdPreset2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5s~30s" />
+        <Button
+            android:id="@+id/cmdPreset3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4s~5s" />
+    </LinearLayout>
+
     <Button
         android:id="@+id/cmdStart"
         android:text="@string/service_start"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
     <Button
         android:id="@+id/cmdStop"
         android:text="@string/service_stop"

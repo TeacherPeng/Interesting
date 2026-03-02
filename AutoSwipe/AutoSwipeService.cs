@@ -17,6 +17,8 @@ public class AutoSwipeService : AccessibilityService
     private bool _isSwiping = false;
     private BroadcastReceiver? _broadcastReceiver;
     private readonly Random _random = new();
+    private int _minDelay = 2000;
+    private int _maxDelay = 10000;
 
     public override void OnCreate()
     {
@@ -28,7 +30,6 @@ public class AutoSwipeService : AccessibilityService
             if (_isSwiping)
             {
                 PerformSwipe();
-                _handler.PostDelayed(_swipeRunnable, _random.Next(2000, 10001)); // 每2~10秒滑动一次
             }
         });
 
@@ -70,12 +71,14 @@ public class AutoSwipeService : AccessibilityService
 
     public override void OnInterrupt() { }
 
-    public void StartAutoSwipe()
+    public void StartAutoSwipe(int minDelay, int maxDelay)
     {
+        _minDelay = minDelay;
+        _maxDelay = maxDelay;
         if (!_isSwiping)
         {
             _isSwiping = true;
-            _handler?.PostDelayed(_swipeRunnable, 1000); // 1秒后开始
+            _handler?.PostDelayed(_swipeRunnable, 1000);
         }
     }
 
@@ -91,7 +94,6 @@ public class AutoSwipeService : AccessibilityService
 
         try
         {
-            // 偷懒：直接使用固定范围的随机坐标
             var gestureBuilder = new GestureDescription.Builder();
             int startX = _random.Next(450, 551);
             int startY = _random.Next(1400, 1501);
@@ -104,6 +106,8 @@ public class AutoSwipeService : AccessibilityService
             var stroke = new GestureDescription.StrokeDescription(path, 0, 300);
             gestureBuilder.AddStroke(stroke);
             DispatchGesture(gestureBuilder.Build(), null, null);
+
+            _handler?.PostDelayed(_swipeRunnable, _random.Next(_minDelay, _maxDelay + 1));
         }
         catch (System.Exception ex)
         {
@@ -170,7 +174,9 @@ public class AutoSwipeService : AccessibilityService
         {
             if (intent?.Action == PackageInfo.ActionStartSwipe)
             {
-                _service.StartAutoSwipe();
+                int minDelay = intent.GetIntExtra(PackageInfo.ExtraMinDelay, 2000);
+                int maxDelay = intent.GetIntExtra(PackageInfo.ExtraMaxDelay, 10000);
+                _service.StartAutoSwipe(minDelay, maxDelay);
             }
             else if (intent?.Action == PackageInfo.ActionStopSwipe)
             {

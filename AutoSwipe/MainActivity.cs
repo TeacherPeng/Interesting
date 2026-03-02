@@ -1,6 +1,7 @@
-﻿using Android.Content;
+using Android.Content;
 using Android.Content.PM;
 using Android.Provider;
+using Android.Widget;
 
 namespace AutoSwipe;
 
@@ -10,6 +11,8 @@ public static class PackageInfo
     public const string ServiceName = $"{PackageName}.AutoSwipeService";
     public const string ActionStartSwipe = $"{PackageName}.START_SWIPE";
     public const string ActionStopSwipe = $"{PackageName}.STOP_SWIPE";
+    public const string ExtraMinDelay = "min_delay";
+    public const string ExtraMaxDelay = "max_delay";
 }
 
 [Activity(Label = "Auto Swipe", MainLauncher = true, LaunchMode = LaunchMode.SingleTop)]
@@ -23,26 +26,61 @@ public class MainActivity : Activity
 
         var _btnStart = FindViewById<Button>(Resource.Id.cmdStart);
         var _btnStop = FindViewById<Button>(Resource.Id.cmdStop);
+        var _btnPreset1 = FindViewById<Button>(Resource.Id.cmdPreset1);
+        var _btnPreset2 = FindViewById<Button>(Resource.Id.cmdPreset2);
+        var _btnPreset3 = FindViewById<Button>(Resource.Id.cmdPreset3);
+        var _editMinDelay = FindViewById<EditText>(Resource.Id.editMinDelay);
+        var _editMaxDelay = FindViewById<EditText>(Resource.Id.editMaxDelay);
+
+        // 预设按钮：设置编辑框的值
+        _btnPreset1?.Click += (s, e) =>
+        {
+            _editMinDelay!.Text = "2000";
+            _editMaxDelay!.Text = "10000";
+            Toast.MakeText(this, "已设置预设：2000 - 10000 毫秒", ToastLength.Short)?.Show();
+        };
+
+        _btnPreset2?.Click += (s, e) =>
+        {
+            _editMinDelay!.Text = "5000";
+            _editMaxDelay!.Text = "30000";
+            Toast.MakeText(this, "已设置预设：5000 - 30000 毫秒", ToastLength.Short)?.Show();
+        };
+        _btnPreset3?.Click += (s, e) =>
+        {
+            _editMinDelay!.Text = "4000";
+            _editMaxDelay!.Text = "5000";
+            Toast.MakeText(this, "已设置预设：4000 - 5000 毫秒", ToastLength.Short)?.Show();
+        };
 
         _btnStart?.Click += (s, e) =>
         {
-            CallService(PackageInfo.ActionStartSwipe, "开始自动划屏");
-            LaunchApp("com.ss.android.ugc.aweme.lite"); // 尝试切换/启动目标 App(抖音极速版)
+            int minDelay = int.TryParse(_editMinDelay?.Text, out var m) ? m : 2000;
+            int maxDelay = int.TryParse(_editMaxDelay?.Text, out var x) ? x : 10000;
+            if (minDelay >= maxDelay)
+            {
+                Toast.MakeText(this, "最小延时必须小于最大延时", ToastLength.Short)?.Show();
+                return;
+            }
+            CallService(PackageInfo.ActionStartSwipe, "开始自动划屏", minDelay, maxDelay);
+            LaunchApp("com.ss.android.ugc.aweme.lite");
         };
 
         _btnStop?.Click += (s, e) =>
         {
-            CallService(PackageInfo.ActionStopSwipe, "停止自动划屏");
+            CallService(PackageInfo.ActionStopSwipe, "停止自动划屏", 0, 0);
         };
 
         // 提示用户开启无障碍服务（可选）
         CheckAccessibilityPermission();
     }
 
-    private void CallService(string action, string tooltip)
+    private void CallService(string action, string tooltip, int minDelay, int maxDelay)
     {
         var intent = new Intent(action);
-        intent.SetPackage(PackageName); // 👈 仅发送给本应用的组件（安全！）
+        intent.SetPackage(PackageName);
+        intent.PutExtra(PackageInfo.ExtraMinDelay, minDelay);
+        intent.PutExtra(PackageInfo.ExtraMaxDelay, maxDelay);
         SendBroadcast(intent);
         Toast.MakeText(this, tooltip, ToastLength.Short)?.Show();
     }
