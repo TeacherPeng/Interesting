@@ -1,0 +1,51 @@
+﻿<Window x:Class="ImageProcessing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageProcessing"
+        mc:Ignorable="d" 
+        Title="MainWindow" Height="450" Width="800" Icon="/resources/logo.ico">
+    <Window.Resources>
+        <RoutedCommand x:Key="Process" />
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="Open" Executed="OnOpen_Executed" CanExecute="OnOpen_CanExecute" />
+        <CommandBinding Command="Save" Executed="OnSave_Executed" CanExecute="OnSave_CanExecute" />
+        <CommandBinding Command="Close" Executed="OnClose_Executed" CanExecute="OnClose_CanExecute" />
+        <CommandBinding Command="{StaticResource Process}" Executed="OnProcess_Executed" CanExecute="OnProcess_CanExecute" />
+    </Window.CommandBindings>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+            <MenuItem Header="文件(_F)">
+                <MenuItem Header="加载源图片(_O)..." Command="Open" />
+                <MenuItem Header="保存结果图片(_S)..." Command="Save" />
+                <Separator />
+                <MenuItem Header="退出(_X)" Command="Close" />
+            </MenuItem>
+            <MenuItem Header="图片处理" ItemsSource="{Binding Processings}">
+                <MenuItem.ItemTemplate>
+                    <DataTemplate>
+                        <MenuItem Header="{Binding Name}" Command="{StaticResource Process}" CommandParameter="{Binding}" />
+                    </DataTemplate>
+                </MenuItem.ItemTemplate>
+            </MenuItem>
+        </Menu>
+        <GroupBox Grid.Row="1" Grid.Column="1"  Header="{Binding CurrentProcessing.Name}" Content="{Binding CurrentProcessing.Control}"  />
+        <GroupBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Header="源图片" Margin="5" >
+            <Image Source="{Binding SourceImage}" Margin="5" Stretch="Uniform" />
+        </GroupBox>
+        <GroupBox Grid.Row="2" Grid.Column="1" Header="处理结果" Margin="5" >
+            <Image Source="{Binding ResultImage}" Margin="5" Stretch="Uniform" />
+        </GroupBox>
+    </Grid>
+</Window>

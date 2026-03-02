@@ -4,8 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CreatePicture"
-        mc:Ignorable="d"
-        Title="Create Picture 1.0.0.0" Height="600" Width="800" Icon="logo.ico">
+        mc:Ignorable="d" Title="Create Picture 1.0.0.0" Width="800" Height="600">
     <Window.Resources>
         <RoutedCommand x:Key="SavePicture" />
     </Window.Resources>
