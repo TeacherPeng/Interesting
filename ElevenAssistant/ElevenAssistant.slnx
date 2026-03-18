@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="AutoSwipe.csproj">
+  <Project Path="ElevenAssistant.csproj">
     <Deploy />
   </Project>
 </Solution>

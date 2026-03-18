@@ -3,19 +3,19 @@ using Android.Content.PM;
 using Android.Provider;
 using Android.Widget;
 
-namespace AutoSwipe;
+namespace ElevenAssistant;
 
 public static class PackageInfo
 {
-    public const string PackageName = "com.pengsw.autoswipe";
-    public const string ServiceName = $"{PackageName}.AutoSwipeService";
-    public const string ActionStartSwipe = $"{PackageName}.START_SWIPE";
-    public const string ActionStopSwipe = $"{PackageName}.STOP_SWIPE";
+    public const string PackageName = "com.pengsw.elevenassistant";
+    public const string ServiceName = $"{PackageName}.elevenassistantService";
+    public const string ActionStart = $"{PackageName}.START_ACTION";
+    public const string ActionStop = $"{PackageName}.STOP_ACTION";
     public const string ExtraMinDelay = "min_delay";
     public const string ExtraMaxDelay = "max_delay";
 }
 
-[Activity(Label = "Auto Swipe", MainLauncher = true, LaunchMode = LaunchMode.SingleTop)]
+[Activity(Label = "Eleven Assistant", MainLauncher = true, LaunchMode = LaunchMode.SingleTop)]
 public class MainActivity : Activity
 {
     protected override void OnCreate(Bundle? savedInstanceState)
@@ -62,13 +62,13 @@ public class MainActivity : Activity
                 Toast.MakeText(this, "最小延时必须小于最大延时", ToastLength.Short)?.Show();
                 return;
             }
-            CallService(PackageInfo.ActionStartSwipe, "开始自动划屏", minDelay, maxDelay);
+            CallService(PackageInfo.ActionStart, "开始", minDelay, maxDelay);
             LaunchApp("com.ss.android.ugc.aweme.lite");
         };
 
         _btnStop?.Click += (s, e) =>
         {
-            CallService(PackageInfo.ActionStopSwipe, "停止自动划屏", 0, 0);
+            CallService(PackageInfo.ActionStop, "停止", 0, 0);
         };
 
         // 提示用户开启无障碍服务（可选）

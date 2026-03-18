@@ -1181,7 +1181,7 @@
                                                     , , android.widget.FrameLayout, com.ss.android.ugc.aweme.lite:id/wf
                                                     , , android.widget.FrameLayout, com.ss.android.ugc.aweme.lite:id/kfq
                                                       , , android.widget.FrameLayout, com.ss.android.ugc.aweme.lite:id/kfr
-01-07 15:56:41.408 I/engsw.autoswipe(23057): Explicit concurrent copying GC freed 1036KB AllocSpace bytes, 0(0B) LOS objects, 24% free, 2432KB/3243KB, paused 73us,23us total 15.672ms
+01-07 15:56:41.408 I/engsw.elevenassistant(23057): Explicit concurrent copying GC freed 1036KB AllocSpace bytes, 0(0B) LOS objects, 24% free, 2432KB/3243KB, paused 73us,23us total 15.672ms
                                                       , , android.widget.FrameLayout, com.ss.android.ugc.aweme.lite:id/kfy
                                                     , , android.widget.FrameLayout, com.ss.android.ugc.aweme.lite:id/d1v
                                                     , , android.widget.FrameLayout, com.ss.android.ugc.aweme.lite:id/g3b
@@ -2505,7 +2505,7 @@
                                         , 我, android.widget.TextView, com.ss.android.ugc.aweme.lite:id/l5c
                                         , at (971, 2279)
                   , , android.widget.LinearLayout, 
-01-07 15:57:09.490 I/engsw.autoswipe(23057): Explicit concurrent copying GC freed 1114KB AllocSpace bytes, 0(0B) LOS objects, 24% free, 2704KB/3606KB, paused 32us,18us total 10.393ms
+01-07 15:57:09.490 I/engsw.elevenassistant(23057): Explicit concurrent copying GC freed 1114KB AllocSpace bytes, 0(0B) LOS objects, 24% free, 2704KB/3606KB, paused 32us,18us total 10.393ms
                     , , android.widget.FrameLayout, android:id/tabcontent
                       , , android.view.View, 
                     , , android.widget.FrameLayout, com.ss.android.ugc.aweme.lite:id/l3=

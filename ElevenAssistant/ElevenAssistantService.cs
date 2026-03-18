@@ -5,16 +5,16 @@ using Android.OS;
 using Android.Views.Accessibility;
 using Java.Lang;
 
-namespace AutoSwipe;
+namespace ElevenAssistant;
 
 [Service(Name = PackageInfo.ServiceName, Permission = "android.permission.BIND_ACCESSIBILITY_SERVICE", Exported = true)]
 [IntentFilter(["android.accessibilityservice.AccessibilityService"])]
 [MetaData("android.accessibilityservice", Resource = "@xml/accessibility_service_config")]
-public class AutoSwipeService : AccessibilityService
+public class ElevenAssistantService : AccessibilityService
 {
     private Handler? _handler;
-    private Runnable? _swipeRunnable;
-    private bool _isSwiping = false;
+    private Runnable? _actionRunnable;
+    private bool _isActing = false;
     private BroadcastReceiver? _broadcastReceiver;
     private readonly Random _random = new();
     private int _minDelay = 2000;
@@ -25,24 +25,24 @@ public class AutoSwipeService : AccessibilityService
         base.OnCreate();
 
         _handler = new Handler(Looper.MainLooper);
-        _swipeRunnable = new Runnable(() =>
+        _actionRunnable = new Runnable(() =>
         {
-            if (_isSwiping)
+            if (_isActing)
             {
-                PerformSwipe();
+                PerformAction();
             }
         });
 
         // 注册广播接收器，MainActivity通过广播控制开始和停止
-        _broadcastReceiver = new SwipeControlReceiver(this);
+        _broadcastReceiver = new ActionControlReceiver(this);
         var filter = new IntentFilter();
-        filter.AddAction(PackageInfo.ActionStartSwipe);
-        filter.AddAction(PackageInfo.ActionStopSwipe);
+        filter.AddAction(PackageInfo.ActionStart);
+        filter.AddAction(PackageInfo.ActionStop);
         RegisterReceiver(_broadcastReceiver, filter, ReceiverFlags.NotExported);
     }
     public override void OnDestroy()
     {
-        StopAutoSwipe();
+        StopElevenAssistant();
         if (_broadcastReceiver != null)
         {
             UnregisterReceiver(_broadcastReceiver);
@@ -71,24 +71,24 @@ public class AutoSwipeService : AccessibilityService
 
     public override void OnInterrupt() { }
 
-    public void StartAutoSwipe(int minDelay, int maxDelay)
+    public void StartElevenAssistant(int minDelay, int maxDelay)
     {
         _minDelay = minDelay;
         _maxDelay = maxDelay;
-        if (!_isSwiping)
+        if (!_isActing)
         {
-            _isSwiping = true;
-            _handler?.PostDelayed(_swipeRunnable, 1000);
+            _isActing = true;
+            _handler?.PostDelayed(_actionRunnable, 1000);
         }
     }
 
-    public void StopAutoSwipe()
+    public void StopElevenAssistant()
     {
-        _isSwiping = false;
-        _handler?.RemoveCallbacks(_swipeRunnable);
+        _isActing = false;
+        _handler?.RemoveCallbacks(_actionRunnable);
     }
 
-    private void PerformSwipe()
+    private void PerformAction()
     {
         if (Build.VERSION.SdkInt < BuildVersionCodes.N) return;
 
@@ -107,11 +107,11 @@ public class AutoSwipeService : AccessibilityService
             gestureBuilder.AddStroke(stroke);
             DispatchGesture(gestureBuilder.Build(), null, null);
 
-            _handler?.PostDelayed(_swipeRunnable, _random.Next(_minDelay, _maxDelay + 1));
+            _handler?.PostDelayed(_actionRunnable, _random.Next(_minDelay, _maxDelay + 1));
         }
         catch (System.Exception ex)
         {
-            Android.Util.Log.Error("AutoSwipe", "Swipe failed: " + ex.Message);
+            Android.Util.Log.Error("Eleven Assistant", "Action failed: " + ex.Message);
         }
     }
 
@@ -166,21 +166,21 @@ public class AutoSwipeService : AccessibilityService
     }
 
     // 内部广播接收器
-    private class SwipeControlReceiver(AutoSwipeService service) : BroadcastReceiver
+    private class ActionControlReceiver(ElevenAssistantService service) : BroadcastReceiver
     {
-        private readonly AutoSwipeService _service = service;
+        private readonly ElevenAssistantService _service = service;
 
         public override void OnReceive(Context? context, Intent? intent)
         {
-            if (intent?.Action == PackageInfo.ActionStartSwipe)
+            if (intent?.Action == PackageInfo.ActionStart)
             {
                 int minDelay = intent.GetIntExtra(PackageInfo.ExtraMinDelay, 2000);
                 int maxDelay = intent.GetIntExtra(PackageInfo.ExtraMaxDelay, 10000);
-                _service.StartAutoSwipe(minDelay, maxDelay);
+                _service.StartElevenAssistant(minDelay, maxDelay);
             }
-            else if (intent?.Action == PackageInfo.ActionStopSwipe)
+            else if (intent?.Action == PackageInfo.ActionStop)
             {
-                _service.StopAutoSwipe();
+                _service.StopElevenAssistant();
             }
         }
     }
