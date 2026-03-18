@@ -95,15 +95,42 @@ public class ElevenAssistantService : AccessibilityService
         try
         {
             var gestureBuilder = new GestureDescription.Builder();
+
+            // base points for the gesture
             int startX = _random.Next(450, 551);
-            int startY = _random.Next(1400, 1501);
+            int startY = _random.Next(1300, 1601);
             int endX = _random.Next(450, 551);
-            int endY = _random.Next(150, 251);
+            int endY = _random.Next(800, 1100);
+
+            // build a noisy sine-wave path to simulate hand tremor
             var path = new Android.Graphics.Path();
             path.MoveTo(startX, startY);
-            path.LineTo(endX, endY);
 
-            var stroke = new GestureDescription.StrokeDescription(path, 0, 300);
+            int steps = _random.Next(18, 32); // number of sampled points along the gesture
+            double freq = _random.NextDouble() * 2.0 + 2.0; // 2..4 oscillations
+            float amplitude = _random.Next(6, 16); // horizontal tremor amplitude in px
+
+            for (int i = 1; i <= steps; i++)
+            {   
+                float t = (float)i / steps; // 0..1
+
+                // linear interpolation between start and end
+                float baseX = startX + (endX - startX) * t;
+                float baseY = startY + (endY - startY) * t;
+
+                // sine wave on X to simulate tremor, plus small random noise on both axes
+                double sine = System.Math.Sin(t * freq * 2.0 * System.Math.PI);
+                float jitterX = (float)(sine * amplitude + (_random.NextDouble() * 4.0 - 2.0));
+                float jitterY = (float)(_random.NextDouble() * 4.0 - 2.0);
+
+                float px = baseX + jitterX;
+                float py = baseY + jitterY;
+
+                path.LineTo(px, py);
+            }
+
+            long duration = _random.Next(300, 501);
+            var stroke = new GestureDescription.StrokeDescription(path, 0, duration);
             gestureBuilder.AddStroke(stroke);
             DispatchGesture(gestureBuilder.Build(), null, null);
 
