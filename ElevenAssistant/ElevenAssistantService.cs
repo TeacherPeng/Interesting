@@ -96,19 +96,19 @@ public class ElevenAssistantService : AccessibilityService
         {
             var gestureBuilder = new GestureDescription.Builder();
 
-            // base points for the gesture
+            // 在指定范围内随机生成手势的起点和终点坐标
             int startX = _random.Next(450, 551);
             int startY = _random.Next(1500, 1601);
             int endX = _random.Next(450, 551);
             int endY = _random.Next(800, 1000);
 
-            // build a noisy sine-wave path to simulate hand tremor
+            // 生成手势轨迹
             var path = new Android.Graphics.Path();
             path.MoveTo(startX, startY);
 
-            int steps = _random.Next(18, 32); // number of sampled points along the gesture
-            double freq = _random.NextDouble() * 2.0 + 2.0; // 2..4 oscillations
-            float amplitude = _random.Next(6, 16); // horizontal tremor amplitude in px
+            int steps = _random.Next(18, 32);
+            double freq = _random.NextDouble() * 2.0 + 2.0;
+            float amplitude = _random.Next(6, 16);
 
             for (int i = 1; i <= steps; i++)
             {   
@@ -129,7 +129,7 @@ public class ElevenAssistantService : AccessibilityService
                 path.LineTo(px, py);
             }
 
-            long duration = _random.Next(300, 501);
+            long duration = _random.Next(250, 401);
             var stroke = new GestureDescription.StrokeDescription(path, 0, duration);
             gestureBuilder.AddStroke(stroke);
             DispatchGesture(gestureBuilder.Build(), null, null);
