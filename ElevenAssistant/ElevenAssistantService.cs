@@ -98,9 +98,9 @@ public class ElevenAssistantService : AccessibilityService
 
             // base points for the gesture
             int startX = _random.Next(450, 551);
-            int startY = _random.Next(1300, 1601);
+            int startY = _random.Next(1500, 1601);
             int endX = _random.Next(450, 551);
-            int endY = _random.Next(800, 1100);
+            int endY = _random.Next(800, 1000);
 
             // build a noisy sine-wave path to simulate hand tremor
             var path = new Android.Graphics.Path();
