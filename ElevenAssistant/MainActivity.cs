@@ -35,22 +35,22 @@ public class MainActivity : Activity
         // 预设按钮：设置编辑框的值
         _btnPreset1?.Click += (s, e) =>
         {
-            _editMinDelay!.Text = "2000";
-            _editMaxDelay!.Text = "10000";
-            Toast.MakeText(this, "已设置预设：2000 - 10000 毫秒", ToastLength.Short)?.Show();
+            _editMinDelay!.Text = "4000";
+            _editMaxDelay!.Text = "20000";
+            Toast.MakeText(this, "已设置预设：4 - 20秒", ToastLength.Short)?.Show();
         };
 
         _btnPreset2?.Click += (s, e) =>
         {
-            _editMinDelay!.Text = "5000";
+            _editMinDelay!.Text = "10000";
             _editMaxDelay!.Text = "30000";
-            Toast.MakeText(this, "已设置预设：5000 - 30000 毫秒", ToastLength.Short)?.Show();
+            Toast.MakeText(this, "已设置预设：10 - 30秒", ToastLength.Short)?.Show();
         };
         _btnPreset3?.Click += (s, e) =>
         {
             _editMinDelay!.Text = "4000";
             _editMaxDelay!.Text = "5000";
-            Toast.MakeText(this, "已设置预设：4000 - 5000 毫秒", ToastLength.Short)?.Show();
+            Toast.MakeText(this, "已设置预设：4 - 5秒", ToastLength.Short)?.Show();
         };
 
         _btnStart?.Click += (s, e) =>

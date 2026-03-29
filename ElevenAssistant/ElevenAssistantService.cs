@@ -17,7 +17,7 @@ public class ElevenAssistantService : AccessibilityService
     private bool _isActing = false;
     private BroadcastReceiver? _broadcastReceiver;
     private readonly Random _random = new();
-    private int _minDelay = 2000;
+    private int _minDelay = 4000;
     private int _maxDelay = 10000;
 
     public override void OnCreate()
@@ -201,7 +201,7 @@ public class ElevenAssistantService : AccessibilityService
         {
             if (intent?.Action == PackageInfo.ActionStart)
             {
-                int minDelay = intent.GetIntExtra(PackageInfo.ExtraMinDelay, 2000);
+                int minDelay = intent.GetIntExtra(PackageInfo.ExtraMinDelay, 4000);
                 int maxDelay = intent.GetIntExtra(PackageInfo.ExtraMaxDelay, 10000);
                 _service.StartElevenAssistant(minDelay, maxDelay);
             }

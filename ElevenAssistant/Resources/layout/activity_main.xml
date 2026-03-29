@@ -48,7 +48,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:text="30000"
+                android:text="20000"
                 android:gravity="center" />
         </LinearLayout>
     </LinearLayout>
@@ -65,13 +65,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="2s~10s" />
+            android:text="4s~20s" />
         <Button
             android:id="@+id/cmdPreset2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5s~30s" />
+            android:text="10s~30s" />
         <Button
             android:id="@+id/cmdPreset3"
             android:layout_width="0dp"
