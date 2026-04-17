@@ -4,6 +4,7 @@ using Android.Graphics;
 using Android.OS;
 using Android.Views.Accessibility;
 using Java.Lang;
+using System;
 
 namespace ElevenAssistant;
 
@@ -19,6 +20,17 @@ public class ElevenAssistantService : AccessibilityService
     private readonly Random _random = new();
     private int _minDelay = 4000;
     private int _maxDelay = 10000;
+
+    // 预定执行时间（小时:分钟）
+    private static readonly TimeOnly[] ScheduledTimes =
+    [
+        new TimeOnly(10, 0),
+        new TimeOnly(12, 0),
+        new TimeOnly(14, 0),
+        new TimeOnly(16, 0),
+        new TimeOnly(18, 0),
+    ];
+    private DateTime _nextClockInTime = DateTime.MaxValue;
 
     public override void OnCreate()
     {
@@ -78,6 +90,7 @@ public class ElevenAssistantService : AccessibilityService
         if (!_isActing)
         {
             _isActing = true;
+            SelectClockInTime();
             _handler?.PostDelayed(_actionRunnable, 1000);
         }
     }
@@ -88,53 +101,130 @@ public class ElevenAssistantService : AccessibilityService
         _handler?.RemoveCallbacks(_actionRunnable);
     }
 
+    private long Swipe()
+    {
+        var gestureBuilder = new GestureDescription.Builder();
+
+        // 在指定范围内随机生成手势的起点和终点坐标
+        int startX = _random.Next(450, 551);
+        int startY = _random.Next(1500, 1601);
+        int endX = _random.Next(450, 551);
+        int endY = _random.Next(800, 1000);
+
+        // 生成手势轨迹
+        var path = new Android.Graphics.Path();
+        path.MoveTo(startX, startY);
+
+        int steps = _random.Next(18, 32);
+        double freq = _random.NextDouble() * 2.0 + 2.0;
+        float amplitude = _random.Next(6, 16);
+
+        for (int i = 1; i <= steps; i++)
+        {
+            float t = (float)i / steps; // 0..1
+
+            // linear interpolation between start and end
+            float baseX = startX + (endX - startX) * t;
+            float baseY = startY + (endY - startY) * t;
+
+            // sine wave on X to simulate tremor, plus small random noise on both axes
+            double sine = System.Math.Sin(t * freq * 2.0 * System.Math.PI);
+            float jitterX = (float)(sine * amplitude + (_random.NextDouble() * 4.0 - 2.0));
+            float jitterY = (float)(_random.NextDouble() * 4.0 - 2.0);
+
+            float px = baseX + jitterX;
+            float py = baseY + jitterY;
+
+            path.LineTo(px, py);
+        }
+
+        long duration = _random.Next(250, 401);
+        var stroke = new GestureDescription.StrokeDescription(path, 0, duration);
+        gestureBuilder.AddStroke(stroke);
+        DispatchGesture(gestureBuilder.Build(), null, null);
+
+        return _random.Next(_minDelay, _maxDelay + 1);
+    }
+
+    private void Click(string prompt, int x, int y)
+    {
+        // simple tap gesture at the specified coordinates
+        var gestureBuilder = new GestureDescription.Builder();
+        var path = new Android.Graphics.Path();
+        path.MoveTo(x, y);
+        path.LineTo(x, y);
+        var stroke = new GestureDescription.StrokeDescription(path, 0, 50);
+        gestureBuilder.AddStroke(stroke);
+        DispatchGesture(gestureBuilder.Build(), null, null);
+        Toast.MakeText(this, prompt, ToastLength.Long)?.Show();
+    }
+
+    private void ClockIn()
+    {
+        // perform a sequence of taps with 2 seconds interval
+        int interval = 4000; // ms
+
+        // 1. 赚钱： (540, 2265)
+        Click("赚钱", 540, 2265);
+
+        // 2. 去打卡：(928, 1571)
+        _handler?.PostDelayed(new Runnable(() => Click("去打卡", 928, 1571)), interval);
+
+        // 3. 打卡：(554,2165)
+        interval += 4000;
+        _handler?.PostDelayed(new Runnable(() => Click("打卡", 554, 2165)), interval);
+
+        // 4. 指定页面打卡：(888, 1476)
+        interval += 4000;
+        _handler?.PostDelayed(new Runnable(() => Click("指定页面打卡", 888, 1476)), interval);
+
+        // 执行完指定页面打卡后，连续执行4次回退操作（间隔500ms）
+        int backStartDelay = interval + 4000;
+        _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
+        backStartDelay += 500;
+        _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
+        backStartDelay += 500;
+        _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
+        backStartDelay += 500;
+        _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
+
+        // 继续_actionRunnable的执行
+        backStartDelay += 500;
+        _handler?.PostDelayed(_actionRunnable, backStartDelay);
+    }
+
+    private void SelectClockInTime()
+    {
+        var now = TimeOnly.FromDateTime(DateTime.Now);
+        foreach (var time in ScheduledTimes)
+        {
+            if (now < time)
+            {
+                _nextClockInTime = DateTime.Today.Add(time.ToTimeSpan());
+                Toast.MakeText(this, $"下次打卡时间: {time:hh\\:mm}", ToastLength.Long)?.Show();
+                return;
+            }
+        }
+        Toast.MakeText(this, "今日打卡已完成，等待明天", ToastLength.Long)?.Show();
+        _nextClockInTime = DateTime.MaxValue; // 不再执行，直到第二天重启服务
+    }
+
     private void PerformAction()
     {
         if (Build.VERSION.SdkInt < BuildVersionCodes.N) return;
 
         try
         {
-            var gestureBuilder = new GestureDescription.Builder();
-
-            // 在指定范围内随机生成手势的起点和终点坐标
-            int startX = _random.Next(450, 551);
-            int startY = _random.Next(1500, 1601);
-            int endX = _random.Next(450, 551);
-            int endY = _random.Next(800, 1000);
-
-            // 生成手势轨迹
-            var path = new Android.Graphics.Path();
-            path.MoveTo(startX, startY);
-
-            int steps = _random.Next(18, 32);
-            double freq = _random.NextDouble() * 2.0 + 2.0;
-            float amplitude = _random.Next(6, 16);
-
-            for (int i = 1; i <= steps; i++)
-            {   
-                float t = (float)i / steps; // 0..1
-
-                // linear interpolation between start and end
-                float baseX = startX + (endX - startX) * t;
-                float baseY = startY + (endY - startY) * t;
-
-                // sine wave on X to simulate tremor, plus small random noise on both axes
-                double sine = System.Math.Sin(t * freq * 2.0 * System.Math.PI);
-                float jitterX = (float)(sine * amplitude + (_random.NextDouble() * 4.0 - 2.0));
-                float jitterY = (float)(_random.NextDouble() * 4.0 - 2.0);
-
-                float px = baseX + jitterX;
-                float py = baseY + jitterY;
-
-                path.LineTo(px, py);
+            if (DateTime.Now >= _nextClockInTime) 
+            {
+                ClockIn();
+                SelectClockInTime();
             }
-
-            long duration = _random.Next(250, 401);
-            var stroke = new GestureDescription.StrokeDescription(path, 0, duration);
-            gestureBuilder.AddStroke(stroke);
-            DispatchGesture(gestureBuilder.Build(), null, null);
-
-            _handler?.PostDelayed(_actionRunnable, _random.Next(_minDelay, _maxDelay + 1));
+            else
+            {
+                var nextDelay = Swipe();
+                _handler?.PostDelayed(_actionRunnable, nextDelay);
+            }
         }
         catch (System.Exception ex)
         {
