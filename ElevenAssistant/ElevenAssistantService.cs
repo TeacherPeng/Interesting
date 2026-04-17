@@ -91,6 +91,7 @@ public class ElevenAssistantService : AccessibilityService
         {
             _isActing = true;
             SelectClockInTime();
+            _handler?.RemoveCallbacksAndMessages(null);
             _handler?.PostDelayed(_actionRunnable, 1000);
         }
     }
