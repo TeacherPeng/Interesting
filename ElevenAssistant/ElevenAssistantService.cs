@@ -98,7 +98,8 @@ public class ElevenAssistantService : AccessibilityService
     public void StopElevenAssistant()
     {
         _isActing = false;
-        _handler?.RemoveCallbacks(_actionRunnable);
+        // remove all pending callbacks and messages to ensure no scheduled actions remain
+        _handler?.RemoveCallbacksAndMessages(null);
     }
 
     private long Swipe()
