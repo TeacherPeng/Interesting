@@ -189,6 +189,8 @@ public class ElevenAssistantService : AccessibilityService
         _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
         backStartDelay += 500;
         _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
+        backStartDelay += 500;
+        _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
 
         // 继续_actionRunnable的执行
         backStartDelay += 500;
