@@ -21,17 +21,6 @@ public class ElevenAssistantService : AccessibilityService
     private int _minDelay = 4000;
     private int _maxDelay = 10000;
 
-    // 预定执行时间（小时:分钟）
-    private static readonly TimeOnly[] ScheduledTimes =
-    [
-        new TimeOnly(10, 0),
-        new TimeOnly(12, 0),
-        new TimeOnly(14, 0),
-        new TimeOnly(16, 0),
-        new TimeOnly(18, 0),
-    ];
-    private DateTime _nextClockInTime = DateTime.MaxValue;
-
     public override void OnCreate()
     {
         base.OnCreate();
@@ -63,26 +52,6 @@ public class ElevenAssistantService : AccessibilityService
         base.OnDestroy();
     }
 
-    public override void OnAccessibilityEvent(AccessibilityEvent? e)
-    {
-        // 判断是否是 WindowStateChanged 事件
-        //if (e?.EventType == EventTypes.WindowStateChanged)
-        //{
-        //    // 此时通常表示新页面/Activity 已显示，可安全获取当前屏幕内容
-        //    if (e.PackageName != "com.ss.android.ugc.aweme.lite") return;
-        //    System.Diagnostics.Debug.WriteLine($"[WindowStateChanged] Package: {e.PackageName}, Class: {e.ClassName}");
-
-        //    var root = GetRootInActiveWindow((int)PrefetchType.DescendantsBreadthFirst);
-        //    if (root != null)
-        //    {
-        //        LogScreenContent(root, 1);
-        //        root.Recycle(); // 别忘了回收
-        //    }
-        //}
-    }
-
-    public override void OnInterrupt() { }
-
     public void StartElevenAssistant(int minDelay, int maxDelay)
     {
         _minDelay = minDelay;
@@ -90,7 +59,6 @@ public class ElevenAssistantService : AccessibilityService
         if (!_isActing)
         {
             _isActing = true;
-            SelectClockInTime();
             _handler?.RemoveCallbacksAndMessages(null);
             _handler?.PostDelayed(_actionRunnable, 1000);
         }
@@ -148,117 +116,18 @@ public class ElevenAssistantService : AccessibilityService
         return _random.Next(_minDelay, _maxDelay + 1);
     }
 
-    private void Click(string prompt, int x, int y)
-    {
-        // simple tap gesture at the specified coordinates
-        var gestureBuilder = new GestureDescription.Builder();
-        var path = new Android.Graphics.Path();
-        path.MoveTo(x, y);
-        path.LineTo(x, y);
-        var stroke = new GestureDescription.StrokeDescription(path, 0, 50);
-        gestureBuilder.AddStroke(stroke);
-        DispatchGesture(gestureBuilder.Build(), null, null);
-        Toast.MakeText(this, prompt, ToastLength.Long)?.Show();
-    }
-
-    private void ClockIn()
-    {
-        // perform a sequence of taps with 2 seconds interval
-        int interval = 5000; // ms
-
-        // 1. 赚钱： (540, 2265)
-        Click("赚钱", 540, 2265);
-
-        // 2. 去打卡：(928, 1571)
-        _handler?.PostDelayed(new Runnable(() => Click("去打卡", 928, 1571)), interval);
-
-        // 3. 打卡：(554,2165)
-        interval += 4000;
-        _handler?.PostDelayed(new Runnable(() => Click("打卡", 554, 2165)), interval);
-
-        // 4. 指定页面打卡：(888, 1476)
-        interval += 4000;
-        _handler?.PostDelayed(new Runnable(() => Click("指定页面打卡", 888, 1476)), interval);
-
-        // 执行完指定页面打卡后，连续执行4次回退操作（间隔500ms）
-        int backStartDelay = interval + 4000;
-        _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
-        backStartDelay += 800;
-        _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
-        backStartDelay += 800;
-        _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
-        backStartDelay += 800;
-        _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
-        backStartDelay += 800;
-        _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
-
-        // 继续_actionRunnable的执行
-        backStartDelay += 800;
-        _handler?.PostDelayed(_actionRunnable, backStartDelay);
-    }
-
-    private void SelectClockInTime()
-    {
-        var now = TimeOnly.FromDateTime(DateTime.Now);
-        foreach (var time in ScheduledTimes)
-        {
-            if (now < time)
-            {
-                _nextClockInTime = DateTime.Today.Add(time.ToTimeSpan());
-                Toast.MakeText(this, $"下次打卡时间: {time:hh\\:mm}", ToastLength.Long)?.Show();
-                return;
-            }
-        }
-        Toast.MakeText(this, "今日打卡已完成，等待明天", ToastLength.Long)?.Show();
-        _nextClockInTime = DateTime.MaxValue; // 不再执行，直到第二天重启服务
-    }
-
     private void PerformAction()
     {
         if (Build.VERSION.SdkInt < BuildVersionCodes.N) return;
 
         try
         {
-            if (DateTime.Now >= _nextClockInTime) 
-            {
-                ClockIn();
-                SelectClockInTime();
-            }
-            else
-            {
-                var nextDelay = Swipe();
-                _handler?.PostDelayed(_actionRunnable, nextDelay);
-            }
+            var nextDelay = Swipe();
+            _handler?.PostDelayed(_actionRunnable, nextDelay);
         }
         catch (System.Exception ex)
         {
             Android.Util.Log.Error("Eleven Assistant", "Action failed: " + ex.Message);
-        }
-    }
-
-    private static void LogScreenContent(AccessibilityNodeInfo node, int level)
-    {
-        if (node == null) return;
-        
-        var bounds = new Rect();
-        node.GetBoundsInScreen(bounds);
-
-        // 打印当前节点信息
-        System.Diagnostics.Debug.WriteLine($"{new string(' ', level + level)}, {node.Text}, {node.ClassName}, {node.ViewIdResourceName}");
-        if (bounds.CenterX() > 800 || bounds.CenterY() > 2000)
-            System.Diagnostics.Debug.WriteLine($"{new string(' ', level + level)}, at ({bounds.CenterX()}, {bounds.CenterY()})");
-        //if (level >= 10) return;
-
-        // 递归遍历子节点
-        for (int i = 0; i < node.ChildCount; i++)
-        {
-            var child = node.GetChild(i);
-            if (child != null)
-            {
-                LogScreenContent(child, level + 1);
-                // 注意：使用完必须回收，避免内存泄漏
-                child.Recycle(); // ⚠️ 重要！
-            }
         }
     }
 
@@ -284,6 +153,14 @@ public class ElevenAssistantService : AccessibilityService
             child?.Recycle();
         }
         return null;
+    }
+
+    public override void OnAccessibilityEvent(AccessibilityEvent? e)
+    {
+    }
+
+    public override void OnInterrupt()
+    {
     }
 
     // 内部广播接收器
