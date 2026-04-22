@@ -77,7 +77,32 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="4s~5s" />
+            android:text="4s~5s" />     
+    </LinearLayout>
+
+    <!-- 新增控制开关（横向排列） -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"    
+        android:layout_marginTop="12dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:gravity="center_vertical">
+        <CheckBox
+            android:id="@+id/chkEnableSwipe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Swipe"
+            android:checked="true" />
+        <CheckBox
+            android:id="@+id/chkEnableSchedule"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ClockIn"
+            android:checked="true" />
     </LinearLayout>
 
     <Button

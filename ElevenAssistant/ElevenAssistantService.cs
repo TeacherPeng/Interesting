@@ -21,6 +21,10 @@ public class ElevenAssistantService : AccessibilityService
     private int _minDelay = 4000;
     private int _maxDelay = 10000;
 
+    // 控制开关
+    private bool _enableSwipe = true;
+    private bool _enableSchedule = true;
+
     // 预定执行时间（小时:分钟）
     private static readonly TimeOnly[] ScheduledTimes =
     [
@@ -65,32 +69,26 @@ public class ElevenAssistantService : AccessibilityService
 
     public override void OnAccessibilityEvent(AccessibilityEvent? e)
     {
-        // 判断是否是 WindowStateChanged 事件
-        //if (e?.EventType == EventTypes.WindowStateChanged)
-        //{
-        //    // 此时通常表示新页面/Activity 已显示，可安全获取当前屏幕内容
-        //    if (e.PackageName != "com.ss.android.ugc.aweme.lite") return;
-        //    System.Diagnostics.Debug.WriteLine($"[WindowStateChanged] Package: {e.PackageName}, Class: {e.ClassName}");
-
-        //    var root = GetRootInActiveWindow((int)PrefetchType.DescendantsBreadthFirst);
-        //    if (root != null)
-        //    {
-        //        LogScreenContent(root, 1);
-        //        root.Recycle(); // 别忘了回收
-        //    }
-        //}
+        // 保持原有注释逻辑
     }
 
     public override void OnInterrupt() { }
 
-    public void StartElevenAssistant(int minDelay, int maxDelay)
+    public void StartElevenAssistant(int minDelay, int maxDelay, bool enableSwipe, bool enableSchedule)
     {
         _minDelay = minDelay;
         _maxDelay = maxDelay;
+        _enableSwipe = enableSwipe;
+        _enableSchedule = enableSchedule;
+
         if (!_isActing)
         {
             _isActing = true;
-            SelectClockInTime();
+            if (_enableSchedule)
+                SelectClockInTime();
+            else
+                _nextClockInTime = DateTime.MaxValue;
+
             _handler?.RemoveCallbacksAndMessages(null);
             _handler?.PostDelayed(_actionRunnable, 1000);
         }
@@ -219,16 +217,24 @@ public class ElevenAssistantService : AccessibilityService
 
         try
         {
-            if (DateTime.Now >= _nextClockInTime) 
+            // 优先处理定时打卡（如果开启）
+            if (_enableSchedule && DateTime.Now >= _nextClockInTime)
             {
                 ClockIn();
                 SelectClockInTime();
+                return;
             }
-            else
+
+            // 如果开启Swipe，则执行Swipe并根据返回间隔继续调度
+            if (_enableSwipe)
             {
                 var nextDelay = Swipe();
                 _handler?.PostDelayed(_actionRunnable, nextDelay);
+                return;
             }
+
+            // 如果既不开启Swipe也不开启定时任务，则仅短暂轮询等待（避免忙循环）
+            _handler?.PostDelayed(_actionRunnable, 2000);
         }
         catch (System.Exception ex)
         {
@@ -297,7 +303,9 @@ public class ElevenAssistantService : AccessibilityService
             {
                 int minDelay = intent.GetIntExtra(PackageInfo.ExtraMinDelay, 4000);
                 int maxDelay = intent.GetIntExtra(PackageInfo.ExtraMaxDelay, 10000);
-                _service.StartElevenAssistant(minDelay, maxDelay);
+                bool enableSwipe = intent.GetBooleanExtra(PackageInfo.ExtraEnableSwipe, true);
+                bool enableSchedule = intent.GetBooleanExtra(PackageInfo.ExtraEnableSchedule, true);
+                _service.StartElevenAssistant(minDelay, maxDelay, enableSwipe, enableSchedule);
             }
             else if (intent?.Action == PackageInfo.ActionStop)
             {
