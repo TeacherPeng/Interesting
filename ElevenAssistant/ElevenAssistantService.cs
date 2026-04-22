@@ -164,7 +164,7 @@ public class ElevenAssistantService : AccessibilityService
     private void ClockIn()
     {
         // perform a sequence of taps with 2 seconds interval
-        int interval = 4000; // ms
+        int interval = 5000; // ms
 
         // 1. 赚钱： (540, 2265)
         Click("赚钱", 540, 2265);
@@ -183,17 +183,17 @@ public class ElevenAssistantService : AccessibilityService
         // 执行完指定页面打卡后，连续执行4次回退操作（间隔500ms）
         int backStartDelay = interval + 4000;
         _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
-        backStartDelay += 500;
+        backStartDelay += 800;
         _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
-        backStartDelay += 500;
+        backStartDelay += 800;
         _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
-        backStartDelay += 500;
+        backStartDelay += 800;
         _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
-        backStartDelay += 500;
+        backStartDelay += 800;
         _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
 
         // 继续_actionRunnable的执行
-        backStartDelay += 500;
+        backStartDelay += 800;
         _handler?.PostDelayed(_actionRunnable, backStartDelay);
     }
 

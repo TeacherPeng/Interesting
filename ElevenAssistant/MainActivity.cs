@@ -62,6 +62,10 @@ public class MainActivity : Activity
                 Toast.MakeText(this, "最小延时必须小于最大延时", ToastLength.Short)?.Show();
                 return;
             }
+
+            // 提示用户开启无障碍服务（可选）
+            if (!CheckAccessibilityPermission()) return;
+
             CallService(PackageInfo.ActionStart, "开始", minDelay, maxDelay);
             LaunchApp("com.ss.android.ugc.aweme.lite");
         };
@@ -71,8 +75,6 @@ public class MainActivity : Activity
             CallService(PackageInfo.ActionStop, "停止", 0, 0);
         };
 
-        // 提示用户开启无障碍服务（可选）
-        CheckAccessibilityPermission();
     }
 
     private void CallService(string action, string tooltip, int minDelay, int maxDelay)
@@ -107,16 +109,17 @@ public class MainActivity : Activity
         }
     }
 
-    private void CheckAccessibilityPermission()
+    private bool CheckAccessibilityPermission()
     {
         var enabledServices = Settings.Secure.GetString(ContentResolver, Settings.Secure.EnabledAccessibilityServices);
         var serviceName = $"{PackageInfo.PackageName}/{PackageInfo.ServiceName}";
         var accessibilityEnabled = !string.IsNullOrEmpty(enabledServices) && enabledServices.Contains(serviceName);
-        if (accessibilityEnabled) return;
+        if (accessibilityEnabled) return true;
 
         // 跳转到无障碍设置页
         Toast.MakeText(this, "请先在设置中启用无障碍服务！", ToastLength.Long)?.Show();
         var intent = new Intent(Android.Provider.Settings.ActionAccessibilitySettings);
         StartActivity(intent);
+        return false;
     }
 }
