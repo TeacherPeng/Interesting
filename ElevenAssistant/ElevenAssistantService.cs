@@ -75,11 +75,23 @@ public class ElevenAssistantService : AccessibilityService
     {
         var gestureBuilder = new GestureDescription.Builder();
 
-        // 在指定范围内随机生成手势的起点和终点坐标
-        int startX = _random.Next(450, 551);
-        int startY = _random.Next(1500, 1601);
-        int endX = _random.Next(450, 551);
-        int endY = _random.Next(800, 1000);
+        // 获取屏幕分辨率（像素）
+        var metrics = Resources.DisplayMetrics;
+        int screenWidth = metrics.WidthPixels;
+        int screenHeight = metrics.HeightPixels;
+        float density = metrics.Density;
+
+        // 以屏幕尺寸为基准计算起点和终点（这里生成一个向上滑动的大致轨迹）
+        int centerX = screenWidth / 2;
+
+        // 横向偏移范围（取屏宽的 5%）并至少为 10px
+        int horizOffsetRange = System.Math.Max(10, (int)(screenWidth * 0.05f));
+        int startX = centerX + _random.Next(-horizOffsetRange, horizOffsetRange + 1);
+        int endX = centerX + _random.Next(-horizOffsetRange, horizOffsetRange + 1);
+
+        // 纵向位置按屏高百分比计算：起点在 75%~90% 区间（接近底部），终点在 30%~50% 区间（较上方）
+        int startY = _random.Next((int)(screenHeight * 0.75f), (int)(screenHeight * 0.90f) + 1);
+        int endY = _random.Next((int)(screenHeight * 0.30f), (int)(screenHeight * 0.50f) + 1);
 
         // 生成手势轨迹
         var path = new Android.Graphics.Path();
@@ -87,7 +99,8 @@ public class ElevenAssistantService : AccessibilityService
 
         int steps = _random.Next(18, 32);
         double freq = _random.NextDouble() * 2.0 + 2.0;
-        float amplitude = _random.Next(6, 16);
+        // 震颤振幅按屏幕密度缩放，使不同密度设备表现更一致
+        float amplitude = (float)_random.Next(6, 16) * density;
 
         for (int i = 1; i <= steps; i++)
         {
