@@ -67,11 +67,7 @@ public class ElevenAssistantService : AccessibilityService
         base.OnDestroy();
     }
 
-    public override void OnAccessibilityEvent(AccessibilityEvent? e)
-    {
-        // 保持原有注释逻辑
-    }
-
+    public override void OnAccessibilityEvent(AccessibilityEvent? e) { }
     public override void OnInterrupt() { }
 
     public void StartElevenAssistant(int minDelay, int maxDelay, bool enableSwipe, bool enableSchedule)
@@ -168,7 +164,7 @@ public class ElevenAssistantService : AccessibilityService
         Click("赚钱", 540, 2265);
 
         // 2. 去打卡：(928, 1571)
-        _handler?.PostDelayed(new Runnable(() => Click("去打卡", 928, 1571)), interval);
+        _handler?.PostDelayed(new Runnable(() => Click("去打卡", 928, 1271)), interval);
 
         // 3. 打卡：(554,2165)
         interval += 4000;
