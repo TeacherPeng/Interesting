@@ -24,15 +24,16 @@ public class ElevenAssistantService : AccessibilityService
     // 控制开关
     private bool _enableSwipe = true;
     private bool _enableSchedule = true;
+    private bool _adverOnly = false;
 
     // 预定执行时间（小时:分钟）
     private static readonly TimeOnly[] ScheduledTimes =
     [
-        new TimeOnly(10, 0),
-        new TimeOnly(12, 0),
-        new TimeOnly(14, 0),
-        new TimeOnly(16, 0),
-        new TimeOnly(18, 0),
+        new TimeOnly(8, 40),
+        new TimeOnly(10, 40),
+        new TimeOnly(12, 40),
+        new TimeOnly(14, 40),
+        new TimeOnly(16, 40),
     ];
     private DateTime _nextClockInTime = DateTime.MaxValue;
 
@@ -74,12 +75,13 @@ public class ElevenAssistantService : AccessibilityService
 
     public override void OnInterrupt() { }
 
-    public void StartElevenAssistant(int minDelay, int maxDelay, bool enableSwipe, bool enableSchedule)
+    public void StartElevenAssistant(int minDelay, int maxDelay, bool enableSwipe, bool enableSchedule, bool adverOnly)
     {
         _minDelay = minDelay;
         _maxDelay = maxDelay;
         _enableSwipe = enableSwipe;
         _enableSchedule = enableSchedule;
+        _adverOnly = adverOnly;
 
         if (!_isActing)
         {
@@ -91,6 +93,8 @@ public class ElevenAssistantService : AccessibilityService
 
             _handler?.RemoveCallbacksAndMessages(null);
             _handler?.PostDelayed(_actionRunnable, 1000);
+            var aPrompt = _adverOnly ? "开始点广告" : (_enableSchedule ? "开始定时打卡" : (_enableSchedule ? "开始刷视频" : "未指定任务"));
+            Toast.MakeText(this, aPrompt, ToastLength.Short)?.Show();
         }
     }
 
@@ -211,13 +215,33 @@ public class ElevenAssistantService : AccessibilityService
         _nextClockInTime = DateTime.MaxValue; // 不再执行，直到第二天重启服务
     }
 
+    private void AdvertiseClick()
+    {
+        // 1. 点击看广告
+        Click("看广告", 883, 958);
+
+        // 2. 点击关闭广告
+        _handler?.PostDelayed(new Runnable(() => Click("关闭广告", 981, 156)), 35000);
+
+        // 预约下一次看广告
+        Toast.MakeText(this, "10分钟后看下一个广告", ToastLength.Long)?.Show();
+        _handler?.PostDelayed(new Runnable(() => AdvertiseClick()), (11 * 60) * 1000);
+    }
+
     private void PerformAction()
     {
         if (Build.VERSION.SdkInt < BuildVersionCodes.N) return;
 
         try
         {
-            // 优先处理定时打卡（如果开启）
+            // 优先处理点广告（如果开启）
+            if (_adverOnly)
+            {
+                AdvertiseClick();
+                return;
+            }
+
+            // 次优先处理定时打卡（如果开启）
             if (_enableSchedule && DateTime.Now >= _nextClockInTime)
             {
                 ClockIn();
@@ -305,7 +329,8 @@ public class ElevenAssistantService : AccessibilityService
                 int maxDelay = intent.GetIntExtra(PackageInfo.ExtraMaxDelay, 10000);
                 bool enableSwipe = intent.GetBooleanExtra(PackageInfo.ExtraEnableSwipe, true);
                 bool enableSchedule = intent.GetBooleanExtra(PackageInfo.ExtraEnableSchedule, true);
-                _service.StartElevenAssistant(minDelay, maxDelay, enableSwipe, enableSchedule);
+                bool adverOnly = intent.GetBooleanExtra(PackageInfo.ExtraAdverOnly, false);
+                _service.StartElevenAssistant(minDelay, maxDelay, enableSwipe, enableSchedule, adverOnly);
             }
             else if (intent?.Action == PackageInfo.ActionStop)
             {

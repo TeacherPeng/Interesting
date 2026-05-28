@@ -15,6 +15,7 @@ public static class PackageInfo
     public const string ExtraMaxDelay = "max_delay";
     public const string ExtraEnableSwipe = "enable_swipe";
     public const string ExtraEnableSchedule = "enable_schedule";
+    public const string ExtraAdverOnly = "adver_only";
 }
 
 [Activity(Label = "Eleven Assistant", MainLauncher = true, LaunchMode = LaunchMode.SingleTop)]
@@ -35,6 +36,7 @@ public class MainActivity : Activity
         var _editMaxDelay = FindViewById<EditText>(Resource.Id.editMaxDelay);
         var _chkEnableSwipe = FindViewById<CheckBox>(Resource.Id.chkEnableSwipe);
         var _chkEnableSchedule = FindViewById<CheckBox>(Resource.Id.chkEnableSchedule);
+        var _chkAdverOnly = FindViewById<CheckBox>(Resource.Id.chkAdverOnly);
 
         // 预设按钮：设置编辑框的值
         _btnPreset1?.Click += (s, e) =>
@@ -72,20 +74,21 @@ public class MainActivity : Activity
 
             bool enableSwipe = _chkEnableSwipe?.Checked ?? true;
             bool enableSchedule = _chkEnableSchedule?.Checked ?? true;
+            bool adverOnly = _chkAdverOnly?.Checked ?? false;
 
-            CallService(PackageInfo.ActionStart, "开始", minDelay, maxDelay, enableSwipe, enableSchedule);
+            CallService(PackageInfo.ActionStart, "开始", minDelay, maxDelay, enableSwipe, enableSchedule, adverOnly);
             LaunchApp("com.ss.android.ugc.aweme.lite");
         };
 
         _btnStop?.Click += (s, e) =>
         {
-            // 停止时把两个开关设置为 false（服务收到停止广播后会停止动作）
-            CallService(PackageInfo.ActionStop, "停止", 0, 0, false, false);
+            // 停止时把所有开关设置为 false（服务收到停止广播后会停止动作）
+            CallService(PackageInfo.ActionStop, "停止", 0, 0, false, false, false);
         };
 
     }
 
-    private void CallService(string action, string tooltip, int minDelay, int maxDelay, bool enableSwipe, bool enableSchedule)
+    private void CallService(string action, string tooltip, int minDelay, int maxDelay, bool enableSwipe, bool enableSchedule, bool adverOnly)
     {
         var intent = new Intent(action);
         intent.SetPackage(PackageName);
@@ -93,6 +96,7 @@ public class MainActivity : Activity
         intent.PutExtra(PackageInfo.ExtraMaxDelay, maxDelay);
         intent.PutExtra(PackageInfo.ExtraEnableSwipe, enableSwipe);
         intent.PutExtra(PackageInfo.ExtraEnableSchedule, enableSchedule);
+        intent.PutExtra(PackageInfo.ExtraAdverOnly, adverOnly);
         SendBroadcast(intent);
         Toast.MakeText(this, tooltip, ToastLength.Short)?.Show();
     }
