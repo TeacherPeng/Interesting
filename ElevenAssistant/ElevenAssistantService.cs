@@ -29,11 +29,11 @@ public class ElevenAssistantService : AccessibilityService
     // 预定执行时间（小时:分钟）
     private static readonly TimeOnly[] ScheduledTimes =
     [
-        new TimeOnly(8, 40),
-        new TimeOnly(10, 40),
-        new TimeOnly(12, 40),
-        new TimeOnly(14, 40),
-        new TimeOnly(16, 40),
+        new TimeOnly(10, 0),
+        new TimeOnly(12, 0),
+        new TimeOnly(14, 0),
+        new TimeOnly(16, 0),
+        new TimeOnly(18, 0),
     ];
     private DateTime _nextClockInTime = DateTime.MaxValue;
 
@@ -167,8 +167,8 @@ public class ElevenAssistantService : AccessibilityService
         // 1. 赚钱： (540, 2265)
         Click("赚钱", 540, 2265);
 
-        // 2. 去打卡：(928, 1571)
-        _handler?.PostDelayed(new Runnable(() => Click("去打卡", 928, 1271)), interval);
+        // 2. 去打卡：(928, 1513)
+        _handler?.PostDelayed(new Runnable(() => Click("去打卡", 928, 1513)), interval); // 第一行1271，第二行1513，第三行1783
 
         // 3. 打卡：(554,2165)
         interval += 4000;
