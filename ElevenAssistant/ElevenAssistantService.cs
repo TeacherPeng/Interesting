@@ -26,15 +26,8 @@ public class ElevenAssistantService : AccessibilityService
     private bool _enableSchedule = true;
     private bool _adverOnly = false;
 
-    // 预定执行时间（小时:分钟）
-    private static readonly TimeOnly[] ScheduledTimes =
-    [
-        new TimeOnly(10, 0),
-        new TimeOnly(12, 0),
-        new TimeOnly(14, 0),
-        new TimeOnly(16, 0),
-        new TimeOnly(18, 0),
-    ];
+    private TimeOnly _clockInStartTime = new(8, 40);
+    private TimeOnly[] _scheduledTimes = [];
     private DateTime _nextClockInTime = DateTime.MaxValue;
 
     public override void OnCreate()
@@ -71,13 +64,25 @@ public class ElevenAssistantService : AccessibilityService
     public override void OnAccessibilityEvent(AccessibilityEvent? e) { }
     public override void OnInterrupt() { }
 
-    public void StartElevenAssistant(int minDelay, int maxDelay, bool enableSwipe, bool enableSchedule, bool adverOnly)
+    public void StartElevenAssistant(int minDelay, int maxDelay, bool enableSwipe, bool enableSchedule, bool adverOnly, string startTime)
     {
         _minDelay = minDelay;
         _maxDelay = maxDelay;
         _enableSwipe = enableSwipe;
         _enableSchedule = enableSchedule;
         _adverOnly = adverOnly;
+
+        if (TimeOnly.TryParse(startTime, out var parsed))
+            _clockInStartTime = parsed;
+
+        _scheduledTimes =
+        [
+            _clockInStartTime,
+            _clockInStartTime.AddHours(2),
+            _clockInStartTime.AddHours(4),
+            _clockInStartTime.AddHours(6),
+            _clockInStartTime.AddHours(8),
+        ];
 
         if (!_isActing)
         {
@@ -89,7 +94,7 @@ public class ElevenAssistantService : AccessibilityService
 
             _handler?.RemoveCallbacksAndMessages(null);
             _handler?.PostDelayed(_actionRunnable, 1000);
-            var aPrompt = _adverOnly ? "开始点广告" : (_enableSchedule ? "开始定时打卡" : (_enableSchedule ? "开始刷视频" : "未指定任务"));
+            var aPrompt = _adverOnly ? "开始点广告" : (_enableSchedule ? "开始定时打卡" : "开始刷视频");
             Toast.MakeText(this, aPrompt, ToastLength.Short)?.Show();
         }
     }
@@ -198,7 +203,7 @@ public class ElevenAssistantService : AccessibilityService
     private void SelectClockInTime()
     {
         var now = TimeOnly.FromDateTime(DateTime.Now);
-        foreach (var time in ScheduledTimes)
+        foreach (var time in _scheduledTimes)
         {
             if (now < time)
             {
@@ -326,7 +331,8 @@ public class ElevenAssistantService : AccessibilityService
                 bool enableSwipe = intent.GetBooleanExtra(PackageInfo.ExtraEnableSwipe, true);
                 bool enableSchedule = intent.GetBooleanExtra(PackageInfo.ExtraEnableSchedule, true);
                 bool adverOnly = intent.GetBooleanExtra(PackageInfo.ExtraAdverOnly, false);
-                _service.StartElevenAssistant(minDelay, maxDelay, enableSwipe, enableSchedule, adverOnly);
+                string startTime = intent.GetStringExtra(PackageInfo.ExtraStartTime) ?? "8:40";
+                _service.StartElevenAssistant(minDelay, maxDelay, enableSwipe, enableSchedule, adverOnly, startTime);
             }
             else if (intent?.Action == PackageInfo.ActionStop)
             {

@@ -80,6 +80,26 @@
             android:text="4s~5s" />     
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始打卡时间"
+            android:layout_marginRight="8dp" />
+        <EditText
+            android:id="@+id/editStartTime"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:text="8:40"
+            android:gravity="center" />
+    </LinearLayout>
+
     <!-- 新增控制开关（横向排列） -->
     <LinearLayout
         android:layout_width="match_parent"
