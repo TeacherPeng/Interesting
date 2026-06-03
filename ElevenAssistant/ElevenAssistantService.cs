@@ -26,8 +26,13 @@ public class ElevenAssistantService : AccessibilityService
     private bool _enableSchedule = true;
     private bool _adverOnly = false;
 
-    private TimeOnly _clockInStartTime = new(8, 40);
-    private TimeOnly[] _scheduledTimes = [];
+    private TimeOnly[] _scheduledTimes = [
+        TimeOnly.Parse("10:30"),
+        TimeOnly.Parse("13:30"),
+        TimeOnly.Parse("15:30"),
+        TimeOnly.Parse("17:30"),
+        TimeOnly.Parse("19:30"),
+    ];
     private DateTime _nextClockInTime = DateTime.MaxValue;
 
     public override void OnCreate()
@@ -71,18 +76,6 @@ public class ElevenAssistantService : AccessibilityService
         _enableSwipe = enableSwipe;
         _enableSchedule = enableSchedule;
         _adverOnly = adverOnly;
-
-        if (TimeOnly.TryParse(startTime, out var parsed))
-            _clockInStartTime = parsed;
-
-        _scheduledTimes =
-        [
-            _clockInStartTime,
-            _clockInStartTime.AddHours(2),
-            _clockInStartTime.AddHours(4),
-            _clockInStartTime.AddHours(6),
-            _clockInStartTime.AddHours(8),
-        ];
 
         if (!_isActing)
         {
