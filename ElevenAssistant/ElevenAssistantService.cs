@@ -18,8 +18,8 @@ public class ElevenAssistantService : AccessibilityService
     private bool _isActing = false;
     private BroadcastReceiver? _broadcastReceiver;
     private readonly Random _random = new();
-    private int _minDelay = 4000;
-    private int _maxDelay = 10000;
+    private int _minDelay = 10000;
+    private int _maxDelay = 30000;
 
     // 控制开关
     private bool _enableSwipe = true;
@@ -27,13 +27,20 @@ public class ElevenAssistantService : AccessibilityService
     private bool _adverOnly = false;
 
     private TimeOnly[] _scheduledTimes = [
-        TimeOnly.Parse("10:30"),
-        TimeOnly.Parse("13:30"),
-        TimeOnly.Parse("15:30"),
-        TimeOnly.Parse("17:30"),
-        TimeOnly.Parse("19:30"),
+        TimeOnly.Parse("9:10"),
+        TimeOnly.Parse("11:10"),
+        TimeOnly.Parse("13:10"),
+        TimeOnly.Parse("15:10"),
+        TimeOnly.Parse("17:10"),
     ];
     private DateTime _nextClockInTime = DateTime.MaxValue;
+
+    // 屏幕检测参数
+    private const int CheckX = 956;
+    private const int CheckY = 718;
+    private static readonly int GoldColor = Android.Graphics.Color.ParseColor("#FFC641");
+    private static readonly int RedColor = Android.Graphics.Color.ParseColor("#FF3F54");
+    private const int ColorThreshold = 60; // 判断“接近”的阈值（RGB欧氏距离）
 
     public override void OnCreate()
     {
@@ -87,8 +94,8 @@ public class ElevenAssistantService : AccessibilityService
 
             _handler?.RemoveCallbacksAndMessages(null);
             _handler?.PostDelayed(_actionRunnable, 1000);
-            var aPrompt = _adverOnly ? "开始点广告" : (_enableSchedule ? "开始定时打卡" : "开始刷视频");
-            Toast.MakeText(this, aPrompt, ToastLength.Short)?.Show();
+            //var aPrompt = _adverOnly ? "开始点广告" : (_enableSchedule ? "开始定时打卡" : "开始刷视频");
+            //Toast.MakeText(this, aPrompt, ToastLength.Short)?.Show();
         }
     }
 
@@ -243,9 +250,11 @@ public class ElevenAssistantService : AccessibilityService
                 return;
             }
 
-            // 如果开启Swipe，则执行Swipe并根据返回间隔继续调度
+            // 如果开启Swipe，则按新策略：每秒检查指定像素颜色决定是否Swipe
             if (_enableSwipe)
             {
+                //Toast.MakeText(this, "检查屏幕状态决定是否执行Swipe...", ToastLength.Short)?.Show();
+                //MonitorPixelAndMaybeSwipe();
                 var nextDelay = Swipe();
                 _handler?.PostDelayed(_actionRunnable, nextDelay);
                 return;
@@ -258,6 +267,142 @@ public class ElevenAssistantService : AccessibilityService
         {
             Android.Util.Log.Error("Eleven Assistant", "Action failed: " + ex.Message);
         }
+    }
+
+    // 每秒检查屏幕指定像素，符合条件时执行Swipe
+    private void MonitorPixelAndMaybeSwipe()
+    {
+        // 最大等待次数30次（约30秒）
+        const int maxChecks = 30;
+        int checks = 0;
+
+        // 每次检查的Runnable
+        Runnable checkRunnable = null!;
+        checkRunnable = new Runnable(() =>
+        {
+            checks++;
+            // 使用 AccessibilityService.TakeScreenshot API (API 30+) 进行截图
+            try
+            {
+                // 使用单线程执行器来运行回调
+                var executor = Java.Util.Concurrent.Executors.NewSingleThreadExecutor();
+#pragma warning disable CA1416 // 验证平台兼容性
+                TakeScreenshot(0, executor, new ScreenshotCallback((screenshot) =>
+                {
+                    if (screenshot == null)
+                    {
+                        Toast.MakeText(this, "截图失败，刷屏...", ToastLength.Short)?.Show();
+                        DoSwipeAndScheduleNext();
+                        return;
+                    }
+
+                    // 尝试从 ScreenshotResult 获取 Bitmap（API 30+，binding 可能支持 GetBitmap 或 Bitmap 属性）
+                    Android.Graphics.Bitmap? bmp = null;
+                    try
+                    {
+                        // 某些 platform binding 使用 GetBitmap(), 有的使用 Bitmap 属性；分支尝试两种
+                        var getBitmapMethod = screenshot.Class.GetMethod("getBitmap");
+                        if (getBitmapMethod != null)
+                        {
+                            // 尝试调用 getBitmap()
+                            var obj = getBitmapMethod.Invoke(screenshot);
+                            bmp = obj as Android.Graphics.Bitmap;
+                        }
+                    }
+                    catch
+                    {
+                        // 忽略反射失败
+                        try
+                        {
+                            bmp = screenshot.GetType().GetProperty("Bitmap")?.GetValue(screenshot) as Android.Graphics.Bitmap;
+                        }
+                        catch { bmp = null; }
+                    }
+
+                    if (bmp == null)
+                    {
+                        Toast.MakeText(this, "无法获取截图内容，刷屏...", ToastLength.Short)?.Show();
+                        // 无法取得bitmap，视为失败继续或超时处理
+                        DoSwipeAndScheduleNext();
+                        return;
+                    }
+
+                    try
+                    {
+                        // 检查像素颜色
+                        int pixelColor = 0;
+                        try
+                        {
+                            // 防止越界异常
+                            int px = System.Math.Max(0, System.Math.Min(bmp.Width - 1, CheckX));
+                            int py = System.Math.Max(0, System.Math.Min(bmp.Height - 1, CheckY));
+                            pixelColor = bmp.GetPixel(px, py);
+                        }
+                        catch
+                        {
+                            pixelColor = 0;
+                        }
+
+                        if (IsCloseColor(pixelColor, GoldColor, ColorThreshold))
+                        {
+                            // 发现“接近金色”，按要求继续等待，不执行Swipe，本次周期结束
+                            // 重新安排下次检查（保持轮询）
+                            _handler?.PostDelayed(checkRunnable, 1000);
+                        }
+                        else
+                        {
+                            DoSwipeAndScheduleNext();
+                        }
+                    }
+                    finally
+                    {
+                        try { bmp.Recycle(); } catch { }
+                    }
+                }));
+#pragma warning restore CA1416 // 验证平台兼容性
+            }
+            catch (System.Exception ex)
+            {
+                Android.Util.Log.Warn("Eleven Assistant", "Screenshot failed: " + ex.Message);
+                if (checks >= maxChecks)
+                {
+                    DoSwipeAndScheduleNext();
+                }
+                else
+                {
+                    _handler?.PostDelayed(checkRunnable, 1000);
+                }
+            }
+        });
+
+        // 启动第一次检查
+        _handler?.Post(checkRunnable);
+    }
+
+    // 实际执行 Swipe 并根据返回的延时安排下次执行
+    private void DoSwipeAndScheduleNext()
+    {
+        var nextDelay = Swipe();
+        _handler?.PostDelayed(_actionRunnable, 1000);
+    }
+
+    // 判断两个颜色在RGB空间的欧氏距离是否小于阈值
+    private static bool IsCloseColor(int colorA, int colorB, int threshold)
+    {
+        // 从 ARGB 整数中提取 R/G/B 分量（忽略 Alpha）
+        int r1 = (colorA >> 16) & 0xFF;
+        int g1 = (colorA >> 8) & 0xFF;
+        int b1 = colorA & 0xFF;
+
+        int r2 = (colorB >> 16) & 0xFF;
+        int g2 = (colorB >> 8) & 0xFF;
+        int b2 = colorB & 0xFF;
+
+        int dr = r1 - r2;
+        int dg = g1 - g2;
+        int db = b1 - b2;
+        int distSq = dr * dr + dg * dg + db * db;
+        return distSq <= threshold * threshold;
     }
 
     private static void LogScreenContent(AccessibilityNodeInfo node, int level)
@@ -331,6 +476,36 @@ public class ElevenAssistantService : AccessibilityService
             {
                 _service.StopElevenAssistant();
             }
+        }
+    }
+
+    // 截图回调实现（简化，成功/失败分别回调）
+    private class ScreenshotCallback : Java.Lang.Object, AccessibilityService.ITakeScreenshotCallback
+    {
+        private readonly Action<Android.AccessibilityServices.AccessibilityService.ScreenshotResult?> _onSuccess;
+
+        public ScreenshotCallback(Action<Android.AccessibilityServices.AccessibilityService.ScreenshotResult?> onSuccess)
+        {
+            _onSuccess = onSuccess;
+        }
+
+        public void OnSuccess(Android.AccessibilityServices.AccessibilityService.ScreenshotResult screenshot)
+        {
+            try
+            {
+                _onSuccess?.Invoke(screenshot);
+            }
+            catch { }
+        }
+
+        public void OnFailure()
+        {
+            _onSuccess?.Invoke(null);
+        }
+
+        public void OnFailure(int errorCode)
+        {
+            //throw new NotImplementedException();
         }
     }
 }

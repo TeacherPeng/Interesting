@@ -30,7 +30,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:text="4000"
+                android:text="10000"
                 android:gravity="center" />
         </LinearLayout>
         <LinearLayout
@@ -48,7 +48,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:text="20000"
+                android:text="30000"
                 android:gravity="center" />
         </LinearLayout>
     </LinearLayout>
@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="ClockIn"
-            android:checked="true" />
+            android:checked="false" />
         <!-- 新增 AdverOnly 选项 -->
         <CheckBox
             android:id="@+id/chkAdverOnly"
