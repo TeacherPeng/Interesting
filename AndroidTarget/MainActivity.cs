@@ -4,6 +4,7 @@ using Android.Graphics;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using System;
 using System.Collections.Generic;
 
 namespace AndroidTarget
@@ -22,6 +23,9 @@ namespace AndroidTarget
         // 自定义视图：响应触摸以绘制划屏轨迹（Path）和点击位置（圆点）
         private class TouchView : View
         {
+            private static readonly Color GoldColor = Android.Graphics.Color.ParseColor("#FFC641");
+            private static readonly Color RedColor = Android.Graphics.Color.ParseColor("#FF3F54");
+
             readonly Paint _pathPaint;
             readonly Paint _tapPaint;
 
@@ -33,7 +37,12 @@ namespace AndroidTarget
             readonly int _touchSlop;
             readonly Handler _handler;
             readonly Java.Lang.IRunnable _clearRunnable;
+            Java.Lang.IRunnable? _colorToggleRunnable;
+            readonly Random _rng = new();
+            bool _isGold = true;
             const long ClearDelayMs = 2000;
+            const int MinToggleMs = 3000;
+            const int MaxToggleMs = 5000;
 
             public TouchView(Context context) : base(context)
             {
@@ -64,17 +73,29 @@ namespace AndroidTarget
                     Invalidate();
                 });
 
-                // 设置视图背景颜色为 #FFC641
-                SetBackgroundColor(Color.ParseColor("#FFC641"));
+                // 设置初始背景颜色为 Gold
+                SetBackgroundColor(GoldColor);
+
+                // 创建背景色切换 Runnable（不在构造中直接启动，启动放到 OnAttachedToWindow）
+                _colorToggleRunnable = new Java.Lang.Runnable(() =>
+                {
+                    // 切换颜色状态
+                    _isGold = !_isGold;
+                    // 在主线程更新背景颜色（Runnable 已在主线程）
+                    SetBackgroundColor(_isGold ? GoldColor : RedColor);
+                    // 安排下一次切换，间隔 3~5 秒随机
+                    int delay = _rng.Next(MinToggleMs, MaxToggleMs + 1);
+                    _handler.PostDelayed(_colorToggleRunnable, delay);
+                });
 
                 // 启用触摸
                 Focusable = true;
                 FocusableInTouchMode = true;
             }
 
-            public override bool OnTouchEvent(MotionEvent e)
+            public override bool OnTouchEvent(MotionEvent? e)
             {
-                switch (e.ActionMasked)
+                switch (e?.ActionMasked)
                 {
                     case MotionEventActions.Down:
                         _handler.RemoveCallbacks(_clearRunnable);
@@ -154,6 +175,28 @@ namespace AndroidTarget
                 {
                     canvas.DrawCircle(t.X, t.Y, tapRadius, _tapPaint);
                 }
+            }
+
+            protected override void OnAttachedToWindow()
+            {
+                base.OnAttachedToWindow();
+                // 启动背景色切换：首次延迟也为 3~5 秒内随机
+                if (_colorToggleRunnable != null)
+                {
+                    int initialDelay = _rng.Next(MinToggleMs, MaxToggleMs + 1);
+                    _handler.PostDelayed(_colorToggleRunnable, initialDelay);
+                }
+            }
+
+            protected override void OnDetachedFromWindow()
+            {
+                base.OnDetachedFromWindow();
+                // 停止所有延迟任务，防止泄漏
+                if (_colorToggleRunnable != null)
+                {
+                    _handler.RemoveCallbacks(_colorToggleRunnable);
+                }
+                _handler.RemoveCallbacks(_clearRunnable);
             }
         }
     }

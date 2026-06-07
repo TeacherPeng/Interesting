@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="ClockIn"
-            android:checked="false" />
+            android:checked="true" />
         <!-- 新增 AdverOnly 选项 -->
         <CheckBox
             android:id="@+id/chkAdverOnly"

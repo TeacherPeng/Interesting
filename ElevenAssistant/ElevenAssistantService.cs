@@ -40,6 +40,7 @@ public class ElevenAssistantService : AccessibilityService
     private const int CheckX = 956;
     private const int CheckY = 718;
     private static readonly int GoldColor = Android.Graphics.Color.ParseColor("#FFC641");
+    private static readonly int RedColor = Android.Graphics.Color.ParseColor("#FF3F54");
     private const int ColorThreshold = 60; // 判断“接近”的阈值（RGB欧氏距离）
 
     public override void OnCreate()
@@ -83,6 +84,7 @@ public class ElevenAssistantService : AccessibilityService
         _enableSwipe = enableSwipe;
         _enableSchedule = enableSchedule;
         _adverOnly = adverOnly;
+        _monitor_count = 0;
 
         if (!_isActing)
         {
@@ -249,20 +251,20 @@ public class ElevenAssistantService : AccessibilityService
             if (_enableSwipe)
             {
                 // 异步等待截屏和颜色判定结果
-                bool isGold = await PixelIsGoldAsync();
+                bool isTarget = await PixelColorIsTarget(RedColor);
 
-                if (!isGold)
+                if (isTarget)
                 {
-                    Android.Util.Log.Debug("Elevent Assistant", "Pixel is not gold, performing swipe");
+                    Android.Util.Log.Debug("Elevent Assistant", "Pixel is target color, performing swipe");
                     Swipe();
                 }
                 else
                 {
-                    Android.Util.Log.Debug("Elevent Assistant", "Pixel is gold, counting...");
+                    Android.Util.Log.Debug("Elevent Assistant", "Pixel is not target color, counting...");
                     _monitor_count++;
                     if (_monitor_count > 30)
                     {
-                        Android.Util.Log.Debug("Elevent Assistant", "Pixel has been gold for too long, performing swipe");
+                        Android.Util.Log.Debug("Elevent Assistant", "Pixel has been not target color for too long, performing swipe");
                         _monitor_count = 0;
                         Swipe();
                     }
@@ -279,7 +281,7 @@ public class ElevenAssistantService : AccessibilityService
     }
 
     // 检查屏幕指定像素，符合条件时返回 true
-    private async Task<bool> PixelIsGoldAsync()
+    private async Task<bool> PixelColorIsTarget(int aTargetColor)
     {
         // TakeScreenshot 需要 Android 11 (API 30) 及以上
         if (Build.VERSION.SdkInt < BuildVersionCodes.R)
@@ -304,7 +306,7 @@ public class ElevenAssistantService : AccessibilityService
                     if (softwareBitmap != null)
                     {
                         int pixelColor = softwareBitmap.GetPixel(CheckX, CheckY);
-                        bool isClose = IsCloseColor(pixelColor, GoldColor, ColorThreshold);
+                        bool isClose = IsCloseColor(pixelColor, aTargetColor, ColorThreshold);
                         tcs.TrySetResult(isClose);
                     }
                     else
