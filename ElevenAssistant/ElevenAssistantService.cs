@@ -285,14 +285,14 @@ public class ElevenAssistantService : AccessibilityService
             try
             {
                 // 使用单线程执行器来运行回调
-                var executor = Java.Util.Concurrent.Executors.NewSingleThreadExecutor();
+                //var executor = Java.Util.Concurrent.Executors.NewSingleThreadExecutor();
 #pragma warning disable CA1416 // 验证平台兼容性
-                TakeScreenshot(0, executor, new ScreenshotCallback((screenshot) =>
+                TakeScreenshot(0, /*executor*/ null, new ScreenshotCallback((screenshot) =>
                 {
                     if (screenshot == null)
                     {
                         Toast.MakeText(this, "截图失败，刷屏...", ToastLength.Short)?.Show();
-                        DoSwipeAndScheduleNext();
+                        OnScreenshotFailureAndScheduleNext();
                         return;
                     }
 
@@ -507,5 +507,38 @@ public class ElevenAssistantService : AccessibilityService
         {
             //throw new NotImplementedException();
         }
+    }
+
+    // 当截屏失败时执行，并安排下一次执行
+    private void OnScreenshotFailureAndScheduleNext()
+    {
+        try
+        {
+            // 固定从 (100,300) 到 (800,300)
+            SwipeFixed(100, 300, 800, 300);
+        }
+        catch (System.Exception ex)
+        {
+            Android.Util.Log.Warn("Eleven Assistant", "Fixed swipe failed: " + ex.Message);
+        }
+        // 安排下一次动作（保持与原来类似的节奏）
+        _handler?.PostDelayed(_actionRunnable, 1000);
+    }
+
+    // 执行一个从指定点到指定点的单条直线滑动手势
+    private void SwipeFixed(int startX, int startY, int endX, int endY)
+    {
+        var gestureBuilder = new GestureDescription.Builder();
+        var path = new Android.Graphics.Path();
+        path.MoveTo(startX, startY);
+        path.LineTo(endX, endY);
+
+        // 使用可控时长，模拟自然滑动（300ms）
+        long duration = 300;
+        var stroke = new GestureDescription.StrokeDescription(path, 0, duration);
+        gestureBuilder.AddStroke(stroke);
+
+        // DispatchGesture 是异步的；不需要回调处理
+        DispatchGesture(gestureBuilder.Build(), null, null);
     }
 }
