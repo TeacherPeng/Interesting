@@ -7,12 +7,12 @@ using Android.Views;
 using Android.Views.Accessibility;
 using Java.Lang;
 
-namespace ElevenAssistant;
+namespace ElevenAssistantV2;
 
 [Service(Name = PackageInfo.ServiceName, Permission = "android.permission.BIND_ACCESSIBILITY_SERVICE", Exported = true)]
 [IntentFilter(["android.accessibilityservice.AccessibilityService"])]
 [MetaData("android.accessibilityservice", Resource = "@xml/accessibility_service_config")]
-public class ElevenAssistantService : AccessibilityService
+public class ElevenAssistantV2Service : AccessibilityService
 {
     private Handler? _handler;
     private Runnable? _actionRunnable;
@@ -65,7 +65,7 @@ public class ElevenAssistantService : AccessibilityService
     }
     public override void OnDestroy()
     {
-        StopElevenAssistant();
+        StopElevenAssistantV2();
         if (_broadcastReceiver != null)
         {
             UnregisterReceiver(_broadcastReceiver);
@@ -77,7 +77,7 @@ public class ElevenAssistantService : AccessibilityService
     public override void OnAccessibilityEvent(AccessibilityEvent? e) { }
     public override void OnInterrupt() { }
 
-    public void StartElevenAssistant(int minDelay, int maxDelay, bool enableSwipe, bool enableSchedule, bool adverOnly, string startTime)
+    public void StartElevenAssistantV2(int minDelay, int maxDelay, bool enableSwipe, bool enableSchedule, bool adverOnly, string startTime)
     {
         _minDelay = minDelay;
         _maxDelay = maxDelay;
@@ -108,7 +108,7 @@ public class ElevenAssistantService : AccessibilityService
         }
     }
 
-    public void StopElevenAssistant()
+    public void StopElevenAssistantV2()
     {
         _isActing = false;
         // remove all pending callbacks and messages to ensure no scheduled actions remain
@@ -280,7 +280,7 @@ public class ElevenAssistantService : AccessibilityService
                         Swipe();
                     }
                 }
-                var nextDelay = _random.Next(2000, 5000);
+                var nextDelay = _random.Next(_minDelay, _maxDelay);
                 _handler?.PostDelayed(_actionRunnable, nextDelay);
                 return;
             }
@@ -364,9 +364,9 @@ public class ElevenAssistantService : AccessibilityService
     }
 
     // 内部广播接收器
-    private class ActionControlReceiver(ElevenAssistantService service) : BroadcastReceiver
+    private class ActionControlReceiver(ElevenAssistantV2Service service) : BroadcastReceiver
     {
-        private readonly ElevenAssistantService _service = service;
+        private readonly ElevenAssistantV2Service _service = service;
 
         public override void OnReceive(Context? context, Intent? intent)
         {
@@ -378,11 +378,11 @@ public class ElevenAssistantService : AccessibilityService
                 bool enableSchedule = intent.GetBooleanExtra(PackageInfo.ExtraEnableSchedule, true);
                 bool adverOnly = intent.GetBooleanExtra(PackageInfo.ExtraAdverOnly, false);
                 string startTime = intent.GetStringExtra(PackageInfo.ExtraStartTime) ?? "8:40";
-                _service.StartElevenAssistant(minDelay, maxDelay, enableSwipe, enableSchedule, adverOnly, startTime);
+                _service.StartElevenAssistantV2(minDelay, maxDelay, enableSwipe, enableSchedule, adverOnly, startTime);
             }
             else if (intent?.Action == PackageInfo.ActionStop)
             {
-                _service.StopElevenAssistant();
+                _service.StopElevenAssistantV2();
             }
         }
     }

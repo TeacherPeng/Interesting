@@ -3,12 +3,12 @@ using Android.Content.PM;
 using Android.Provider;
 using Android.Widget;
 
-namespace ElevenAssistant;
+namespace ElevenAssistantV2;
 
 public static class PackageInfo
 {
-    public const string PackageName = "com.pengsw.elevenassistant";
-    public const string ServiceName = $"{PackageName}.elevenassistantService";
+    public const string PackageName = "com.pengsw.elevenassistantv2";
+    public const string ServiceName = $"{PackageName}.elevenassistantv2Service";
     public const string ActionStart = $"{PackageName}.START_ACTION";
     public const string ActionStop = $"{PackageName}.STOP_ACTION";
     public const string ExtraMinDelay = "min_delay";
@@ -55,15 +55,15 @@ public class MainActivity : Activity
         };
         _btnPreset3?.Click += (s, e) =>
         {
-            _editMinDelay!.Text = "4000";
+            _editMinDelay!.Text = "2000";
             _editMaxDelay!.Text = "5000";
-            Toast.MakeText(this, "已设置预设：4 - 5秒", ToastLength.Short)?.Show();
+            Toast.MakeText(this, "已设置预设：2 - 5秒", ToastLength.Short)?.Show();
         };
 
         _btnStart?.Click += (s, e) =>
         {
             int minDelay = int.TryParse(_editMinDelay?.Text, out var m) ? m : 2000;
-            int maxDelay = int.TryParse(_editMaxDelay?.Text, out var x) ? x : 10000;
+            int maxDelay = int.TryParse(_editMaxDelay?.Text, out var x) ? x : 5000;
             if (minDelay >= maxDelay)
             {
                 Toast.MakeText(this, "最小延时必须小于最大延时", ToastLength.Short)?.Show();
