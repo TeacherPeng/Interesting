@@ -28,11 +28,11 @@ public class ElevenAssistantService : AccessibilityService
     private bool _adverOnly = false;
 
     private TimeOnly[] _scheduledTimes = [
-        TimeOnly.Parse("9:10"),
-        TimeOnly.Parse("11:10"),
-        TimeOnly.Parse("13:10"),
-        TimeOnly.Parse("15:10"),
-        TimeOnly.Parse("17:10"),
+        TimeOnly.Parse("9:20"),
+        TimeOnly.Parse("11:20"),
+        TimeOnly.Parse("13:20"),
+        TimeOnly.Parse("15:20"),
+        TimeOnly.Parse("17:20"),
     ];
     private DateTime _nextClockInTime = DateTime.MaxValue;
 
@@ -85,6 +85,15 @@ public class ElevenAssistantService : AccessibilityService
         _enableSchedule = enableSchedule;
         _adverOnly = adverOnly;
         _monitor_count = 0;
+        // 异步等待截屏和颜色判定结果
+        // 调用系统的截屏接口（在无障碍服务中静默执行）
+        // 1. 获取默认的 Display Manager
+        displayManager = (DisplayManager)GetSystemService(Context.DisplayService);
+        defaultDisplay = displayManager.GetDisplay(Display.DefaultDisplay);
+
+        // 2. 基于当前 Service 的 Context 和默认 Display，创建一个关联了显示的 Visual Context
+        // 注意：此方法需要 Android 11 (API 30) 及以上版本支持
+        visualContext = CreateDisplayContext(defaultDisplay);
 
         if (!_isActing)
         {
@@ -229,6 +238,9 @@ public class ElevenAssistantService : AccessibilityService
     }
 
     private int _monitor_count = 0;
+    private DisplayManager? displayManager;
+    private Display? defaultDisplay;
+    private Context? visualContext;
     private async Task PerformActionAsync()
     {
         if (Build.VERSION.SdkInt < BuildVersionCodes.N) return;
@@ -250,7 +262,6 @@ public class ElevenAssistantService : AccessibilityService
 
             if (_enableSwipe)
             {
-                // 异步等待截屏和颜色判定结果
                 bool isTarget = await PixelColorIsTarget(RedColor);
 
                 if (isTarget)
@@ -262,14 +273,14 @@ public class ElevenAssistantService : AccessibilityService
                 {
                     Android.Util.Log.Debug("Elevent Assistant", "Pixel is not target color, counting...");
                     _monitor_count++;
-                    if (_monitor_count > 30)
+                    if (_monitor_count > 10)
                     {
                         Android.Util.Log.Debug("Elevent Assistant", "Pixel has been not target color for too long, performing swipe");
                         _monitor_count = 0;
                         Swipe();
                     }
                 }
-                var nextDelay = _random.Next(1500, 2500);
+                var nextDelay = _random.Next(2000, 5000);
                 _handler?.PostDelayed(_actionRunnable, nextDelay);
                 return;
             }
@@ -327,14 +338,6 @@ public class ElevenAssistantService : AccessibilityService
             }
         );
 
-        // 调用系统的截屏接口（在无障碍服务中静默执行）
-        // 1. 获取默认的 Display Manager
-        var displayManager = (DisplayManager)GetSystemService(Context.DisplayService);
-        Display defaultDisplay = displayManager.GetDisplay(Display.DefaultDisplay);
-
-        // 2. 基于当前 Service 的 Context 和默认 Display，创建一个关联了显示的 Visual Context
-        // 注意：此方法需要 Android 11 (API 30) 及以上版本支持
-        Context visualContext = CreateDisplayContext(defaultDisplay);
         TakeScreenshot(visualContext.DeviceId, MainExecutor, callback);
 
         return await tcs.Task;
