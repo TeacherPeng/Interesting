@@ -1,5 +1,6 @@
 using Android.Content;
 using Android.Content.PM;
+using Android.OS;
 using Android.Provider;
 using Android.Widget;
 
@@ -70,6 +71,9 @@ public class MainActivity : Activity
                 return;
             }
 
+            // 引导用户关闭电池优化
+            if (!CheckBatteryOptimization()) return;
+
             // 提示用户开启无障碍服务（可选）
             if (!CheckAccessibilityPermission()) return;
 
@@ -134,6 +138,22 @@ public class MainActivity : Activity
         // 跳转到无障碍设置页
         Toast.MakeText(this, "请先在设置中启用无障碍服务！", ToastLength.Long)?.Show();
         var intent = new Intent(Android.Provider.Settings.ActionAccessibilitySettings);
+        StartActivity(intent);
+        return false;
+    }
+
+    private bool CheckBatteryOptimization()
+    {
+        if (Build.VERSION.SdkInt < BuildVersionCodes.M) return true;
+
+        var powerManager = (PowerManager?)GetSystemService(PowerService);
+        if (powerManager == null) return true;
+
+        if (powerManager.IsIgnoringBatteryOptimizations(PackageName)) return true;
+
+        Toast.MakeText(this, "请允许忽略电池优化以保证后台运行", ToastLength.Long)?.Show();
+        var intent = new Intent(Android.Provider.Settings.ActionRequestIgnoreBatteryOptimizations);
+        intent.SetData(Android.Net.Uri.Parse($"package:{PackageName}"));
         StartActivity(intent);
         return false;
     }

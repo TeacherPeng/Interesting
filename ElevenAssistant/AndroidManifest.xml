@@ -3,6 +3,7 @@
 	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:label="@string/app_name" android:supportsRtl="true"></application>
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+	<uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
 	<queries>
 		<package android:name="com.ss.android.ugc.aweme.lite" />
 		<package android:name="com.pengsw.elevenassistantv2" />
