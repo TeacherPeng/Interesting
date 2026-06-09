@@ -28,11 +28,11 @@ public class ElevenAssistantV2Service : AccessibilityService
     private bool _adverOnly = false;
 
     private TimeOnly[] _scheduledTimes = [
-        TimeOnly.Parse("9:20"),
-        TimeOnly.Parse("11:20"),
-        TimeOnly.Parse("13:20"),
-        TimeOnly.Parse("15:20"),
-        TimeOnly.Parse("17:20"),
+        TimeOnly.Parse("9:40"),
+        TimeOnly.Parse("11:40"),
+        TimeOnly.Parse("13:40"),
+        TimeOnly.Parse("15:40"),
+        TimeOnly.Parse("17:40"),
     ];
     private DateTime _nextClockInTime = DateTime.MaxValue;
 
