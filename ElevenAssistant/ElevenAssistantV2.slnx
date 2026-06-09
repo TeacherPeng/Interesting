@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ElevenAssistantV2.csproj">
+    <Deploy />
+  </Project>
+</Solution>

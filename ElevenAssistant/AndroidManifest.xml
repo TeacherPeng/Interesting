@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.pengsw.elevenassistant">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.pengsw.elevenassistantv2">
 	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:label="@string/app_name" android:supportsRtl="true"></application>
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+	<uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
 	<queries>
 		<package android:name="com.ss.android.ugc.aweme.lite" />
-		<package android:name="com.pengsw.elevenassistant" />
+		<package android:name="com.pengsw.elevenassistantv2" />
 	</queries>
 </manifest>

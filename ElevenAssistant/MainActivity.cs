@@ -1,14 +1,15 @@
 using Android.Content;
 using Android.Content.PM;
+using Android.OS;
 using Android.Provider;
 using Android.Widget;
 
-namespace ElevenAssistant;
+namespace ElevenAssistantV2;
 
 public static class PackageInfo
 {
-    public const string PackageName = "com.pengsw.elevenassistant";
-    public const string ServiceName = $"{PackageName}.elevenassistantService";
+    public const string PackageName = "com.pengsw.elevenassistantv2";
+    public const string ServiceName = $"{PackageName}.elevenassistantv2Service";
     public const string ActionStart = $"{PackageName}.START_ACTION";
     public const string ActionStop = $"{PackageName}.STOP_ACTION";
     public const string ExtraMinDelay = "min_delay";
@@ -55,20 +56,23 @@ public class MainActivity : Activity
         };
         _btnPreset3?.Click += (s, e) =>
         {
-            _editMinDelay!.Text = "4000";
+            _editMinDelay!.Text = "2000";
             _editMaxDelay!.Text = "5000";
-            Toast.MakeText(this, "已设置预设：4 - 5秒", ToastLength.Short)?.Show();
+            Toast.MakeText(this, "已设置预设：2 - 5秒", ToastLength.Short)?.Show();
         };
 
         _btnStart?.Click += (s, e) =>
         {
             int minDelay = int.TryParse(_editMinDelay?.Text, out var m) ? m : 2000;
-            int maxDelay = int.TryParse(_editMaxDelay?.Text, out var x) ? x : 10000;
+            int maxDelay = int.TryParse(_editMaxDelay?.Text, out var x) ? x : 5000;
             if (minDelay >= maxDelay)
             {
                 Toast.MakeText(this, "最小延时必须小于最大延时", ToastLength.Short)?.Show();
                 return;
             }
+
+            // 引导用户关闭电池优化
+            if (!CheckBatteryOptimization()) return;
 
             // 提示用户开启无障碍服务（可选）
             if (!CheckAccessibilityPermission()) return;
@@ -134,6 +138,22 @@ public class MainActivity : Activity
         // 跳转到无障碍设置页
         Toast.MakeText(this, "请先在设置中启用无障碍服务！", ToastLength.Long)?.Show();
         var intent = new Intent(Android.Provider.Settings.ActionAccessibilitySettings);
+        StartActivity(intent);
+        return false;
+    }
+
+    private bool CheckBatteryOptimization()
+    {
+        if (Build.VERSION.SdkInt < BuildVersionCodes.M) return true;
+
+        var powerManager = (PowerManager?)GetSystemService(PowerService);
+        if (powerManager == null) return true;
+
+        if (powerManager.IsIgnoringBatteryOptimizations(PackageName)) return true;
+
+        Toast.MakeText(this, "请允许忽略电池优化以保证后台运行", ToastLength.Long)?.Show();
+        var intent = new Intent(Android.Provider.Settings.ActionRequestIgnoreBatteryOptimizations);
+        intent.SetData(Android.Net.Uri.Parse($"package:{PackageName}"));
         StartActivity(intent);
         return false;
     }

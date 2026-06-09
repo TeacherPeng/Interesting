@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="ElevenAssistant.csproj">
+  <Project Path="AndroidTarget.csproj">
     <Deploy />
   </Project>
 </Solution>
