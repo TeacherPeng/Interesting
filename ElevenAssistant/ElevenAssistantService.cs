@@ -113,6 +113,46 @@ public class ElevenAssistantV2Service : AccessibilityService
         _isActing = false;
         // remove all pending callbacks and messages to ensure no scheduled actions remain
         _handler?.RemoveCallbacksAndMessages(null);
+
+        // 释放与显示相关的资源以避免内存泄漏（如果已创建）
+        try
+        {
+            if (visualContext != null)
+            {
+                visualContext.Dispose();
+                visualContext = null;
+            }
+        }
+        catch (System.Exception ex)
+        {
+            Android.Util.Log.Warn("Eleven Assistant", "Dispose visualContext failed: " + ex.Message);
+        }
+
+        try
+        {
+            if (defaultDisplay != null)
+            {
+                defaultDisplay.Dispose();
+                defaultDisplay = null;
+            }
+        }
+        catch (System.Exception ex)
+        {
+            Android.Util.Log.Warn("Eleven Assistant", "Dispose defaultDisplay failed: " + ex.Message);
+        }
+
+        try
+        {
+            if (displayManager != null)
+            {
+                displayManager.Dispose();
+                displayManager = null;
+            }
+        }
+        catch (System.Exception ex)
+        {
+            Android.Util.Log.Warn("Eleven Assistant", "Dispose displayManager failed: " + ex.Message);
+        }
     }
 
     private long Swipe()
