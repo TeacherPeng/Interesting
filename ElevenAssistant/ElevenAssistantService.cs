@@ -23,7 +23,7 @@ public class ElevenAssistantV2Service : AccessibilityService
     private int _maxDelay = 30000;
 
     // 控制开关
-    private bool _enableSwipe = true;
+    private bool _enableSwipeCoin = true;
     private bool _enableSchedule = true;
     private bool _adverOnly = false;
 
@@ -81,10 +81,10 @@ public class ElevenAssistantV2Service : AccessibilityService
     {
         _minDelay = minDelay;
         _maxDelay = maxDelay;
-        _enableSwipe = enableSwipe;
+        _enableSwipeCoin = enableSwipe;
         _enableSchedule = enableSchedule;
         _adverOnly = adverOnly;
-        _monitor_count = 0;
+        _monitor_time = DateTime.Now;
         // 异步等待截屏和颜色判定结果
         // 调用系统的截屏接口（在无障碍服务中静默执行）
         // 1. 获取默认的 Display Manager
@@ -237,7 +237,7 @@ public class ElevenAssistantV2Service : AccessibilityService
         _handler?.PostDelayed(new Runnable(() => AdvertiseClick()), (11 * 60) * 1000);
     }
 
-    private int _monitor_count = 0;
+    private DateTime _monitor_time = DateTime.Now;
     private DisplayManager? displayManager;
     private Display? defaultDisplay;
     private Context? visualContext;
@@ -260,7 +260,7 @@ public class ElevenAssistantV2Service : AccessibilityService
                 return;
             }
 
-            if (_enableSwipe)
+            if (_enableSwipeCoin)
             {
                 bool isTarget = await PixelColorIsTarget(RedColor);
 
@@ -272,17 +272,21 @@ public class ElevenAssistantV2Service : AccessibilityService
                 else
                 {
                     Android.Util.Log.Debug("Elevent Assistant", "Pixel is not target color, counting...");
-                    _monitor_count++;
-                    if (_monitor_count > 10)
+                    if (DateTime.Now - _monitor_time > TimeSpan.FromSeconds(30))
                     {
                         Android.Util.Log.Debug("Elevent Assistant", "Pixel has been not target color for too long, performing swipe");
-                        _monitor_count = 0;
+                        _monitor_time = DateTime.Now;
                         Swipe();
                     }
                 }
                 var nextDelay = _random.Next(_minDelay, _maxDelay);
                 _handler?.PostDelayed(_actionRunnable, nextDelay);
                 return;
+            }
+            else
+            {
+                var nextDelay = Swipe();
+                _handler?.PostDelayed(_actionRunnable, nextDelay); return;
             }
         }
         catch (System.Exception ex)
