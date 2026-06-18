@@ -28,11 +28,11 @@ public class ElevenAssistantV2Service : AccessibilityService
     private bool _adverOnly = false;
 
     private TimeOnly[] _scheduledTimes = [
-        TimeOnly.Parse("9:10"),
-        TimeOnly.Parse("11:10"),
-        TimeOnly.Parse("13:10"),
-        TimeOnly.Parse("15:10"),
-        TimeOnly.Parse("17:10"),
+        TimeOnly.Parse("9:20"),
+        TimeOnly.Parse("11:20"),
+        TimeOnly.Parse("13:20"),
+        TimeOnly.Parse("15:20"),
+        TimeOnly.Parse("17:20"),
     ];
     private DateTime _nextClockInTime = DateTime.MaxValue;
 
@@ -202,6 +202,23 @@ public class ElevenAssistantV2Service : AccessibilityService
         return _random.Next(_minDelay, _maxDelay + 1);
     }
 
+    private void SwipeRight()
+    {
+        var gestureBuilder = new GestureDescription.Builder();
+        int startX = _random.Next(150, 351);
+        int endX = _random.Next(750, 951);
+        int y = _random.Next(1200, 1601);
+
+        var path = new Android.Graphics.Path();
+        path.MoveTo(startX, y);
+        path.LineTo(endX, y);
+
+        long duration = _random.Next(250, 401);
+        var stroke = new GestureDescription.StrokeDescription(path, 0, duration);
+        gestureBuilder.AddStroke(stroke);
+        DispatchGesture(gestureBuilder.Build(), null, null);
+    }
+
     private void Click(string prompt, int x, int y)
     {
         // simple tap gesture at the specified coordinates
@@ -233,7 +250,7 @@ public class ElevenAssistantV2Service : AccessibilityService
         interval += 4000;
         _handler?.PostDelayed(new Runnable(() => Click("指定页面打卡", 888, 1476)), interval);
 
-        // 执行完指定页面打卡后，连续执行4次回退操作（间隔500ms）
+        // 执行完指定页面打卡后，连续执行5次回退操作（间隔800ms）
         int backStartDelay = interval + 4000;
         _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
         backStartDelay += 800;
@@ -244,6 +261,10 @@ public class ElevenAssistantV2Service : AccessibilityService
         _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
         backStartDelay += 800;
         _handler?.PostDelayed(new Runnable(() => PerformGlobalAction(GlobalAction.Back)), backStartDelay);
+
+        // 5次回退后，执行一次向右划
+        backStartDelay += 800;
+        _handler?.PostDelayed(new Runnable(() => SwipeRight()), backStartDelay);
 
         // 继续_actionRunnable的执行
         backStartDelay += 800;
