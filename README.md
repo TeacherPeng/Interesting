@@ -5,3 +5,5 @@ CreatePicture项目是用三个函数生成图片的C#(.NetFramework 4.8)版本�
 ImageProcessing项目是一个C#(.NetFramework 4.8)版本的图片处理框架程序，可以通过派生Processing类，添加图片处理算法，并查看处理效果。
 
 Dictation项目是为了孩子中考而写的一个C#(.NetFramework 4.8)版本的英语单词听写程序。
+
+ElevenAssistant最近更新较多，迁移到单独的仓库(https://github.com/TeacherPeng/ElevenAssistant)了。
