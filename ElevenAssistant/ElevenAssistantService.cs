@@ -27,7 +27,7 @@ public class ElevenAssistantV2Service : AccessibilityService
     private bool _enableSchedule = true;
     private bool _adverOnly = false;
 
-    private TimeOnly[] _scheduledTimes = [
+    public static TimeOnly[] ScheduledTimes = [
         TimeOnly.Parse("9:20"),
         TimeOnly.Parse("11:20"),
         TimeOnly.Parse("13:20"),
@@ -219,11 +219,13 @@ public class ElevenAssistantV2Service : AccessibilityService
         DispatchGesture(gestureBuilder.Build(), null, null);
     }
 
-    private void Click(string prompt, int x, int y)
+    private void Click(string prompt, int x0, int y0)
     {
         // simple tap gesture at the specified coordinates
         var gestureBuilder = new GestureDescription.Builder();
         var path = new Android.Graphics.Path();
+        var x = x0 + _random.Next(-3, 3); // add some random offset to simulate human touch
+        var y = y0 + _random.Next(-3, 3);
         path.MoveTo(x, y);
         path.LineTo(x, y);
         var stroke = new GestureDescription.StrokeDescription(path, 0, 50);
@@ -274,7 +276,7 @@ public class ElevenAssistantV2Service : AccessibilityService
     private void SelectClockInTime()
     {
         var now = TimeOnly.FromDateTime(DateTime.Now);
-        foreach (var time in _scheduledTimes)
+        foreach (var time in ScheduledTimes)
         {
             if (now < time)
             {

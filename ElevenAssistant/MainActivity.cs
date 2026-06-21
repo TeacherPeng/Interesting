@@ -40,6 +40,20 @@ public class MainActivity : Activity
         var _chkEnableSchedule = FindViewById<CheckBox>(Resource.Id.chkEnableSchedule);
         var _chkAdverOnly = FindViewById<CheckBox>(Resource.Id.chkAdverOnly);
 
+        int[] scheduledTimeViewIds =
+        [
+            Resource.Id.txtScheduledTime1,
+            Resource.Id.txtScheduledTime2,
+            Resource.Id.txtScheduledTime3,
+            Resource.Id.txtScheduledTime4,
+            Resource.Id.txtScheduledTime5,
+        ];
+        for (int i = 0; i < ElevenAssistantV2Service.ScheduledTimes.Length && i < scheduledTimeViewIds.Length; i++)
+        {
+            FindViewById<TextView>(scheduledTimeViewIds[i])!.Text =
+                ElevenAssistantV2Service.ScheduledTimes[i].ToString("HH:mm");
+        }
+
         // 预设按钮：设置编辑框的值
         _btnPreset1?.Click += (s, e) =>
         {
