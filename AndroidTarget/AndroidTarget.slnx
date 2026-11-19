@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="AndroidTarget.csproj">
-    <Deploy />
-  </Project>
-</Solution>
