@@ -1,0 +1,13 @@
+<Window x:Class="WeiDi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:v="clr-namespace:WeiDi.View"
+        Title="围地"
+        Width="1000" Height="1040"
+        MinWidth="640" MinHeight="680"
+        Background="#0A0D12"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <v:GameView x:Name="Game" />
+    </Grid>
+</Window>
