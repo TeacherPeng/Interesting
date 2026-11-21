@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="iPhone" />
+    <Platform Name="iPhoneSimulator" />
+  </Configurations>
+  <Project Path="ImageProcessing.net/ImageProcessing.net.csproj" />
+</Solution>

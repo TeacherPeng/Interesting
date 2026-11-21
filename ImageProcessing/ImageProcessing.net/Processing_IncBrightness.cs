@@ -1,5 +1,5 @@
-﻿using System;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
+using OpenCvSharp;
 
 namespace ImageProcessing
 {
@@ -14,11 +14,14 @@ namespace ImageProcessing
         public override UserControl Control { get { return _Control; } }
         private Ui_Slider _Control;
         public double Level { get; set; }
-        
-        protected override byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride)
+
+        protected override Mat ProcessImage(Mat aSource)
         {
-            for (int i = 0; i < aSourceRawData.Length; i++) { int abyte = (int)(aSourceRawData[i] * (1+(Level-50)/50)); if (abyte > 255) abyte = 255; if (abyte < 0) abyte = 0; aSourceRawData[i] = (byte)abyte; }
-            return aSourceRawData;
+            // 原公式: byte * (1 + (Level-50)/50) = byte * (Level/50)，结果 clamp 到 [0,255]
+            double aFactor = Level / 50.0;
+            Mat aResult = new Mat();
+            aSource.ConvertTo(aResult, aSource.Type(), aFactor, 0);
+            return aResult;
         }
     }
 }

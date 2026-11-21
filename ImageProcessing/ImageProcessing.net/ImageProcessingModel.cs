@@ -34,14 +34,14 @@ namespace ImageProcessing
         public void Exec(Processing? aProcessing)
         {
             CurrentProcessing = aProcessing;
-            ResultImage = CurrentProcessing?.GetResultImage(SourceImage);
+            ResultImage = CurrentProcessing?.GetResultImage(SourceImage)!;
         }
 
         public BitmapImage SourceImage { get { return _SourceImage; } set { if (_SourceImage == value) return; _SourceImage = value; OnPropertyChanged(nameof(SourceImage)); } }
-        private BitmapImage _SourceImage;
+        private BitmapImage _SourceImage = null!;
 
         public BitmapSource ResultImage { get { return _ResultImage; } set { if (_ResultImage == value) return; _ResultImage = value; OnPropertyChanged(nameof(ResultImage)); } }
-        private BitmapSource _ResultImage;
+        private BitmapSource _ResultImage = null!;
 
         public Processing? CurrentProcessing { get { return _CurrentProcessing; } set { if (_CurrentProcessing == value) return; _CurrentProcessing = value; OnPropertyChanged(nameof(CurrentProcessing)); } }
         private Processing? _CurrentProcessing;
@@ -55,6 +55,14 @@ namespace ImageProcessing
             new Processing_IncBrightness(),
             new Processing_IncConstrast(),
             new Processing_IncSaturation(),
+            new Processing_DarkChannel(),
+            new Processing_Dehaze(),
+            new Processing_SmoothGaussian(),
+            new Processing_SmoothBlur(),
+            new Processing_SmoothMedian(),
+            new Processing_SmoothBilatral(),
+            new Processing_Erode(),
+            new Processing_Sobel(),
         };
 
         private void OnPropertyChanged(string aPropertyName) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(aPropertyName)); }

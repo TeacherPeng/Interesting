@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
+using OpenCvSharp;
 
 namespace ImageProcessing
 {
-    public class Processing_IncConstrast:Processing
+    public class Processing_IncConstrast : Processing
     {
         public Processing_IncConstrast()
         {
@@ -18,18 +15,16 @@ namespace ImageProcessing
         private Ui_Slider _Control;
         public double Level { get; set; }
 
-        protected override byte[] ProcessImage(byte[] aSourceRawData, ref int aPixelWidth, ref int aPixelHeight, int aBytesPerPixel, ref int aStride)
+        protected override Mat ProcessImage(Mat aSource)
         {
-            double c = (Level-50)/50;
-            double k = Math.Tan((45+44*c)/180 * Math.PI);
+            // 原公式: (byte - 127.5) * k + 127.5，等价于 byte*k + 127.5*(1-k)
+            double c = (Level - 50) / 50;
+            double k = Math.Tan((45 + 44 * c) / 180 * Math.PI);
 
-            for (int i = 0; i < aSourceRawData.Length; i++)
-            { int abyte = (int)((aSourceRawData[i] - 127.5) * k + 127.5);
-                if (abyte > 255) abyte = 255;
-                if (abyte < 0) abyte = 0; 
-                aSourceRawData[i] = (byte)abyte; 
-            }
-            return aSourceRawData;
+            Mat aResult = new Mat();
+            // ConvertTo 会做 saturate（截断到 [0,255]），与原逻辑一致
+            aSource.ConvertTo(aResult, aSource.Type(), k, 127.5 * (1 - k));
+            return aResult;
         }
     }
 }

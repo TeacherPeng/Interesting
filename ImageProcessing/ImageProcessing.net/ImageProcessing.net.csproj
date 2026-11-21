@@ -15,4 +15,8 @@
     <Resource Include="resources\logo.ico" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="OpenCvSharp5.Windows" Version="5.1.0.20261115" />
+  </ItemGroup>
+
 </Project>
