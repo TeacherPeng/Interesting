@@ -24,6 +24,9 @@ internal static class GameConfig
     /// <summary>轨迹线宽（逻辑单位），同上。</summary>
     public const double TrailLineWidth = 1.0;
 
+    /// <summary>圆点碰到自己已画出的轨迹时的判定半径。</summary>
+    public const double SelfTrailHitRadius = DotRadius + TrailLineWidth / 2.0;
+
     /// <summary>轨迹点列抽稀距离：走这么远才记一个点，控顶点数又不丢形状。</summary>
     public const double TrailDecimate = 2.0;
 

@@ -15,7 +15,7 @@ internal enum GameMode
 /// 一局游戏的全部状态与推进逻辑。不碰任何绘制对象，只产出可读快照。
 ///
 /// 规则要点：
-/// 1. 离开边框后只画轨迹线，不填任何区域；
+/// 1. 离开边框后只画轨迹线，不填任何区域；碰到自己已画出的轨迹则失败；
 /// 2. 轨迹回到边框才结算，围出的那块填色；
 /// 3. 这条轨迹随即成为新的边框 —— 圆点可以沿它走，也可以从它再切入空地。
 /// </summary>
@@ -70,7 +70,7 @@ internal sealed class GameSession
     /// <summary>边框上已无任何可切入的空地（被围死），只能重开。</summary>
     public bool NoEntry => _noEntry;
 
-    /// <summary>圆点离开边框、尚未回框时被扫描线击中 → 游戏结束。</summary>
+    /// <summary>圆点离开边框后被扫描线击中或碰到自己已画出的轨迹 → 游戏结束。</summary>
     public bool Dead => _dead;
 
     /// <summary>
@@ -306,6 +306,14 @@ internal sealed class GameSession
         else if (ny > Arena.S) { ny = Arena.S; hitArenaEdge = true; }
 
         Point candidate = new(nx, ny);
+
+        if (!escaping && HitsOwnTrail(_pos, candidate))
+        {
+            _pos = candidate;
+            _dead = true;
+            return;
+        }
+
         _trailLength += Distance(_pos, candidate);
 
         // 本步就要贴上边线/色块，且已经离起笔点足够远 → 轨迹回到边框，结算
@@ -406,6 +414,75 @@ internal sealed class GameSession
         }
 
         _trail.Add(p);
+    }
+
+    private bool HitsOwnTrail(Point from, Point to)
+    {
+        if (_trail.Count < 2) return false;
+
+        double radius = GameConfig.SelfTrailHitRadius;
+        double radiusSq = radius * radius;
+        for (int i = 1; i < _trail.Count; i++)
+        {
+            Point a = _trail[i - 1];
+            Point b = _trail[i];
+
+            // 圆点附近的轨迹是它正在延伸的当前路径，不算与旧轨迹相撞。
+            if (DistToSegmentSq(from, a, b) <= radiusSq) continue;
+            if (SegSegDistSq(from, to, a, b) <= radiusSq) return true;
+        }
+
+        return false;
+    }
+
+    private static double SegSegDistSq(Point a, Point b, Point c, Point d)
+    {
+        if (SegmentsIntersect(a, b, c, d)) return 0;
+        double best = DistToSegmentSq(a, c, d);
+        best = Math.Min(best, DistToSegmentSq(b, c, d));
+        best = Math.Min(best, DistToSegmentSq(c, a, b));
+        return Math.Min(best, DistToSegmentSq(d, a, b));
+    }
+
+    private static bool SegmentsIntersect(Point a, Point b, Point c, Point d)
+    {
+        double c1 = Cross(a, b, c);
+        double c2 = Cross(a, b, d);
+        double c3 = Cross(c, d, a);
+        double c4 = Cross(c, d, b);
+        if (((c1 > 0 && c2 < 0) || (c1 < 0 && c2 > 0)) &&
+            ((c3 > 0 && c4 < 0) || (c3 < 0 && c4 > 0))) return true;
+
+        return (Math.Abs(c1) < 1e-9 && OnSegment(a, b, c)) ||
+               (Math.Abs(c2) < 1e-9 && OnSegment(a, b, d)) ||
+               (Math.Abs(c3) < 1e-9 && OnSegment(c, d, a)) ||
+               (Math.Abs(c4) < 1e-9 && OnSegment(c, d, b));
+    }
+
+    private static double Cross(Point o, Point a, Point b) =>
+        (a.X - o.X) * (b.Y - o.Y) - (a.Y - o.Y) * (b.X - o.X);
+
+    private static bool OnSegment(Point a, Point b, Point p) =>
+        p.X >= Math.Min(a.X, b.X) - 1e-9 && p.X <= Math.Max(a.X, b.X) + 1e-9 &&
+        p.Y >= Math.Min(a.Y, b.Y) - 1e-9 && p.Y <= Math.Max(a.Y, b.Y) + 1e-9;
+
+    private static double DistToSegmentSq(Point p, Point a, Point b)
+    {
+        double dx = b.X - a.X;
+        double dy = b.Y - a.Y;
+        double len2 = dx * dx + dy * dy;
+        if (len2 < 1e-12)
+        {
+            double ex = p.X - a.X;
+            double ey = p.Y - a.Y;
+            return ex * ex + ey * ey;
+        }
+
+        double t = ((p.X - a.X) * dx + (p.Y - a.Y) * dy) / len2;
+        t = Math.Clamp(t, 0, 1);
+        double qx = a.X + dx * t - p.X;
+        double qy = a.Y + dy * t - p.Y;
+        return qx * qx + qy * qy;
     }
 
     private int ClampCell(int v) => v < 0 ? 0 : (v > Arena.S - 1 ? (int)Arena.S - 1 : v);

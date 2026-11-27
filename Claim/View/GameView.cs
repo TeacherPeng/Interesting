@@ -375,13 +375,13 @@ public sealed class GameView : FrameworkElement
         FormattedText top = Text($"已围 {percent}%      {mode}", MonoFont, 14, Palette.HudStrong, dpi);
         dc.DrawText(top, new Point(field.X + 14, field.Y + 10));
 
-        FormattedText bottom = Text("方向键 控向   ·   向内切进区域   ·   当心扫描线碰到轨迹   ·   R 重开   ·   Esc 暂停",
+        FormattedText bottom = Text("方向键 控向   ·   向内切进区域   ·   当心自碰轨迹与扫描线   ·   R 重开   ·   Esc 暂停",
             UiFont, 12, Palette.HudDim, dpi);
         dc.DrawText(bottom, new Point(field.X + 14, field.Y + field.Height - 26));
 
         if (_session.Dead)
         {
-            DrawCenterText(dc, field, dpi, "被扫描线击中", "扫描线扫到了你画的轨迹   ·   Enter / R 重开");
+            DrawCenterText(dc, field, dpi, "轨迹碰撞", "碰到了自己的轨迹或被扫描线击中   ·   Enter / R 重开");
         }
         else if (_session.Paused)
         {

@@ -450,6 +450,17 @@ internal static class SelfTest
                 "关闭致命判定时扫描线仍扫到轨迹（只是不判死）");
             safe.Step(Dt, new Point(0, 0));
             Check(!safe.Dead, "关闭致命判定后扫到轨迹不判死");
+
+            // ── 圆点自碰轨迹：正常沿当前线行进不误判，之后折返穿过旧轨迹则失败 ──
+            var selfHit = NewSafeSession();
+            AdvanceUntil(selfHit, new Point(0, 1), () => selfHit.Mode == GameMode.Field, 0.3);
+            Advance(selfHit, 0.5, new Point(0, 1));
+            Check(selfHit.Mode == GameMode.Field && !selfHit.Dead, "沿当前轨迹继续画线不会自撞");
+            Advance(selfHit, 100.0 / GameConfig.Speed, new Point(1, 0));
+            Advance(selfHit, 40.0 / GameConfig.Speed, new Point(0, -1));
+            Advance(selfHit, 100.0 / GameConfig.Speed, new Point(-1, 0));
+            Check(selfHit.Dead && selfHit.Mode == GameMode.Field,
+                "圆点碰到自己先前画出的轨迹 → 游戏结束", Fmt(selfHit.Position));
         }
         catch (Exception ex)
         {
